@@ -1,0 +1,133 @@
+/*  Test */
+.miniInfoContainer{
+	width: 1040px;
+	margin: 528px 0 0 0;
+}
+
+.miniInfo{
+	position:relative;
+	background-color: #000;
+	font-family: "Proxima Nova", Helvetica, san-serif;
+	color: #00dcf2;
+	/*top: 110px;*/
+	/*margin-right: 10000px;*/
+	width: 775px;
+	height: 50px;
+	z-index: 10000;
+	-right: 300px;
+	margin: 0 auto 0 auto;
+	text-align: left;
+	font-size: 0.75em;
+	letter-spacing: 0.04em;
+
+}
+
+
+.miniInfo span{
+	color: #afafaf;
+	text-transform: uppercase;
+}
+
+.miniInfo ul{
+	margin-left: 200px;
+	width: 500px;
+}
+.miniInfo ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 40px;
+	margin-top: 12px;
+}
+
+.miniInfo ul li:first-child{
+		text-transform: uppercase;
+
+}
+
+/* Project Description (Info) */
+
+.pInfoContainer{
+	-moz-transform:rotate(125deg);
+	-webkit-transform:rotate(125deg);
+	-o-transform:rotate(125deg);
+	font-family: "Proxima Nova", Helvetica, "san-serif";
+	color: #bebebe;
+	width:649px;
+	height:420px;
+	/*margin-right:530px;*/
+	margin-top: 6000px;
+	margin-left: -112px;
+	overflow:hidden;
+	/*background:#aaa;*/
+	/*border:3px solid #fff;*/
+	position: relative;
+	z-index: 150;
+}
+
+.projectInfo{
+	background-color: #001113;
+	color: #bebebe;	
+	text-align: left;
+	float: left;
+
+	-moz-transform:rotate(-125deg);
+	-webkit-transform:rotate(-125deg);
+	-o-transform:rotate(-125deg);
+	width:518px;
+	height:134px;
+	margin-top:55px;
+	margin-left: 100px;
+	overflow:hidden;
+	position: relative;
+
+}
+
+.projectText{
+	width: 328px;
+	margin: 30px 0 0 78px;
+	font-weight: 300;
+	line-height: 1.2em;
+	color: #b4b4b4;
+}
+
+/* Side Div */
+
+.sideContainer{
+	-moz-transform:rotate(35deg);
+	-webkit-transform:rotate(35deg);
+	-o-transform:rotate(35deg);
+	width:180px;
+	height:420px;
+	margin-top:510px;
+	margin-left:930px;
+	overflow:hidden;
+	position: absolute;
+}
+
+.sideBg{
+	background-color: #001113;
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	width:131px;
+	height:134px;
+	margin-top:107px;
+	margin-left: -55px;
+	overflow:hidden;
+	position: relative;
+
+}
+
+
+/* Parallelogram CSS */
+
+
+.thumbPosition{
+	margin-left: -200px;
+}
+
+.galleryContainer{
+	position: relative;
+	width: 1044px;
+	margin: 0;
+}

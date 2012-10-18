@@ -1,0 +1,188 @@
+
+/* ----------------------> CSS RESET <---------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----------------------> CSS Main <---------------------- */
+
+
+html, body{
+	width: 100%;
+}
+
+body{
+	background-color: #0d161c;
+  	font-family: "proxima-nova",sans-serif;
+	font-size: 0.875em;
+	font-weight: 500;
+		overflow-x: hidden;
+
+}
+
+a:link, a:visited, a:active, a:hover{
+  	font-family: "proxima-nova",sans-serif;
+  	color: #a4a4a4;
+	font-size: 0.85em;
+	font-weight: 400;
+	letter-spacing: .01em;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+
+a.selected {
+  color: rgb(8, 215, 235);
+}
+
+a:hover{
+	color: #08d7eb;
+}
+
+#current{
+	width: 93px;
+	height: 3px;
+	position: absolute;
+	top: 58px;
+	background-color: rgb(8, 215, 235);
+}
+
+.clear{
+	clear: left;
+}
+
+
+#mainContainer{
+	width: 100%;
+	
+}
+
+#mainNavigation{
+	width: 100%;
+	padding: 15px 0 15px 0;
+	background-color: #0d161c;
+	position: fixed;
+	margin-top: -20px;
+	z-index: 100;
+}
+
+#mainNavigation li{
+	display: inline-block;
+	padding-right: 8%;
+	padding-top: 8px;
+	
+} 
+
+#mainNavigation img{
+	float: left;
+	margin-left: 5%;
+} 
+
+#mainNavigation ul{
+	margin-left: 13%;
+
+}
+
+/* ----------------------> Home <---------------------- */
+
+#greeting{
+	width: 100%;
+	height: 462px;
+	background: #000000 url(../images/welcome_bg.png) repeat;
+	margin: 20px 0 0 0;
+	text-align: center;
+	z-index: 99;
+	
+}
+
+
+
+#greeting h1{
+	font-size: 2.5em;
+	font-weight: 300;
+	color: #b0b0b0;
+	width: 60%;
+	line-height: 1.2em;
+	margin: 0 auto;
+}
+
+#greeting h1 span{
+	font-weight: 700;
+	color: #08d7eb;
+}
+
+#greeting img{
+	margin-top: 7%;
+}
+
+/* ----------------------> Our Work <---------------------- */
+
+.project{
+	background-color: #60aad6;
+	width: 1040px;
+	height: 100%;
+	float: left;
+	margin-right: 2px;
+}
+
+#workContainer{
+	width: 10000000px;
+	height: 726px;
+}
+
+/* ----------------------> Solutions <---------------------- */
+
+#solutions{
+	width: 100%;
+	height: 800px;
+	position: relative;
+	background-color: #fff;
+	margin-top: -75px;
+}

@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET ENDS */
+
+
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	float: left;
+	width: 1040px; 
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+div.controls {
+	margin-top: 0px; /* 5 */
+	height: 23px;
+}
+div.controls a {
+	padding: 5px;
+}
+div.ss-controls {
+	float: left;
+}
+div.nav-controls {
+	float: right;
+}
+div.slideshow-container {
+	position: relative;
+	clear: both;
+	height: 581px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+/* ---- Test Zone ---- */
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1040px;
+	height: 581px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+	position: relative;
+	z-index: 1;
+
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	width: 1044px;
+	height: 581px; /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 100%; /* This should be set to be at least the height of the largest image in the slideshow */
+	text-align: left;
+	text-indent: -4px;
+}
+
+/* a.advanced-link settings for Webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+	div.slideshow a.advance-link {
+		/*margin-top: -1px;*/
+	}
+}
+
+/* a.advanced-link settings for iPad */
+
+@media only screen and (device-width: 768px) {
+	div.slideshow a.advance-link {
+		/*margin-top: -3px;*/
+	}
+}
+
+/* ---- Test Zone 2 ---- */
+
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow img {
+	vertical-align: middle;
+	/*border: 1px solid #ccc;*/
+}
+div.download {
+	float: right;
+}
+div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+	/*width: 1040px;*/
+	top: 0;
+	left: 0;
+}
+div.caption {
+	padding: 12px;
+}
+div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+	z-index: 9999;
+	margin: -130px 0 0 445px;
+	height: 350px;
+	
+}
+
+
+
+/* Parallel Thumnail CSS */
+
+
+.navigation .innerShell{
+	-moz-transform:rotate(35deg);
+	-webkit-transform:rotate(35deg);
+	-o-transform:rotate(35deg);
+	width:84px;
+	height:359px;
+	margin-top:-70px;
+	margin-right:26px;
+	overflow:hidden;
+	/*background:#aaa;*/
+	float:right;
+	/*border:3px solid #fff;*/
+}
+
+.navigation .parallelContent{
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	width:500px;
+	height:149px;
+	margin-top:60px;
+	margin-left:-90px;
+	overflow:hidden;
+	/*background:#f1f1f1;*/
+
+}
+
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	/*margin: 5px 10px 5px 0;*/
+	margin: 0;
+	list-style: none;
+}
+a.thumb {
+	padding: 0px;
+	display: block;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	/*border: 1px solid #ccc;*/	
+}
+ul.thumbs li.selected a.thumb {
+	/*background: #000;*/
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+	max-width: 60%;
+}
+
+
+@media only screen and (device-width: 768px) {
+	div.slideshow a.advance-link {
+		/*margin-top: -3px;*/
+	}
+}
+
+div.pagination {
+	clear: both;
+}
+div.navigation div.top {
+	/*margin-bottom: 12px;*/
+	margin-bottom: 0;
+	height: 11px;
+}
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 0px;
+	padding: 0;
+	/*padding: 4px 7px 2px 7px;*/
+
+	border: 1px solid #ccc;
+}
+div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+
+/*  Test */
+.testContainer{
+	width: 1040px;
+}
+
+.test{
+	position:relative;
+	background-color: #000;
+	font-family: "Proxima Nova", Helvetica, san-serif;
+	color: #00dcf2;
+	top: -318px;
+	width: 775px;
+	height: 50px;
+	z-index: 10000;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 0.75em;
+	letter-spacing: 0.04em;
+}
+
+.test span{
+	color: #afafaf;
+	text-transform: uppercase;
+}
+
+.test ul li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.test ul li:first-child{
+		text-transform: uppercase;
+
+}
+
+/* Project Description (Info) */
+
+.pInfoContainer{
+	-moz-transform:rotate(125deg);
+	-webkit-transform:rotate(125deg);
+	-o-transform:rotate(125deg);
+	font-family: "Proxima Nova", Helvetica, "san-serif";
+	color: #bebebe;
+	width:649px;
+	height:420px;
+	margin-top:-433px;
+	margin-right:517px;
+	overflow:hidden;
+	/*background:#aaa;*/
+	float:right;
+	/*border:3px solid #fff;*/
+	position: relative;
+}
+
+.projectInfo{
+	background-color: #001113;
+	color: #bebebe;	
+	text-align: left;
+	float: left;
+
+	-moz-transform:rotate(-125deg);
+	-webkit-transform:rotate(-125deg);
+	-o-transform:rotate(-125deg);
+	width:518px;
+	height:149px;
+	margin-top:55px;
+	margin-left: 100px;
+	overflow:hidden;
+	position: relative;
+
+}
+
+.projectText{
+	width: 328px;
+	margin: 30px 0 0 78px;
+	font-weight: 300;
+	line-height: 1.2em;
+	color: #b4b4b4;
+}
+
+/* Side Div */
+
+.sideContainer{
+	-moz-transform:rotate(35deg);
+	-webkit-transform:rotate(35deg);
+	-o-transform:rotate(35deg);
+	width:180px;
+	height:420px;
+	margin-top:-1px;
+	margin-left:487px;
+	overflow:hidden;
+	position: relative;
+}
+
+.sideBg{
+	background-color: #001113;
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	width:131px;
+	height:149px;
+	margin-top:107px;
+	margin-left: -55px;
+	overflow:hidden;
+	position: relative;
+
+}

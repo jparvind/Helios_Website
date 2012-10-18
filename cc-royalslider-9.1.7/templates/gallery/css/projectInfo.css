@@ -1,0 +1,112 @@
+/*  Test */
+.testContainer{
+	width: 1040px;
+}
+
+.test{
+	position:relative;
+	background-color: #000;
+	font-family: "Proxima Nova", Helvetica, san-serif;
+	color: #00dcf2;
+	top: -198px;
+	margin-right: 10000px;
+	width: 775px;
+	height: 50px;
+	z-index: 10000;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 0.75em;
+	letter-spacing: 0.04em;
+}
+
+.test span{
+	color: #afafaf;
+	text-transform: uppercase;
+}
+
+.test ul li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.test ul li:first-child{
+		text-transform: uppercase;
+
+}
+
+/* Project Description (Info) */
+
+.pInfoContainer{
+	-moz-transform:rotate(125deg);
+	-webkit-transform:rotate(125deg);
+	-o-transform:rotate(125deg);
+	font-family: "Proxima Nova", Helvetica, "san-serif";
+	color: #bebebe;
+	width:649px;
+	height:420px;
+	margin-top:-433px;
+	margin-right:517px;
+	overflow:hidden;
+	/*background:#aaa;*/
+	float:right;
+	/*border:3px solid #fff;*/
+	position: relative;
+}
+
+.projectInfo{
+	background-color: #001113;
+	color: #bebebe;	
+	text-align: left;
+	float: left;
+
+	-moz-transform:rotate(-125deg);
+	-webkit-transform:rotate(-125deg);
+	-o-transform:rotate(-125deg);
+	width:518px;
+	height:149px;
+	margin-top:55px;
+	margin-left: 100px;
+	overflow:hidden;
+	position: relative;
+
+}
+
+.projectText{
+	width: 328px;
+	margin: 30px 0 0 78px;
+	font-weight: 300;
+	line-height: 1.2em;
+	color: #b4b4b4;
+}
+
+/* Side Div */
+
+.sideContainer{
+	-moz-transform:rotate(35deg);
+	-webkit-transform:rotate(35deg);
+	-o-transform:rotate(35deg);
+	width:180px;
+	height:420px;
+	margin-top:-1px;
+	margin-left:487px;
+	overflow:hidden;
+	position: relative;
+}
+
+.sideBg{
+	background-color: #001113;
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	width:131px;
+	height:149px;
+	margin-top:107px;
+	margin-left: -55px;
+	overflow:hidden;
+	position: relative;
+
+}
+
+
+/* Parallelogram CSS */

@@ -1,1 +1,4 @@
-/*	Repository for Helios Website 2012 !!!!	Let's make awesome.*/I AM JOE AND THIS IS MY EDIT 
+
+
+/*	Repository for Helios Website 2012 !!!!	Let's make awesome.*/I AM JOE AND THIS IS MY EDIT git instructions1 ) git add .//This will add all of your files to the next commit2 ) git commit -m '__INSERT MESSAGE WITH NO PUNCTUATION_____'//Commit ( which is local ) 3 ) git pull -u origin master//Pull any commits that have been added to the server after you pulled last4 ) git push -u origin master//Push to the master github server
+

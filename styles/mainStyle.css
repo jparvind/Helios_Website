@@ -186,3 +186,25 @@ a:hover{
 	background-color: #fff;
 	margin-top: -75px;
 }
+
+/* ----------------------> About <---------------------- */
+#about{
+	margin:auto;
+	width:1024px;
+}
+
+#about_image{
+	border:4px #666 solid;
+	height:673px;
+	width:1024px;
+
+}
+
+.about_thumb{
+	float:left;
+	position:relative;
+	top:-130px;
+	left:8px;
+	margin-right:8px;
+	margin-top:10px;
+}

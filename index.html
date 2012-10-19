@@ -61,7 +61,7 @@
         
         <li><a href="#work">Our Work</a></li>
         <li><a href="#solutions">Solutions</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
@@ -259,52 +259,7 @@
     </div>
     <!-- SOLUTIONS -->
     <div id="solutions">
-        <li id="project01">
-              <!-- PROJECT ONE START -->
-
-               <div class="galleryContainer">
-
-                <!--  Project, Client, and Launch Date -->
-                <div class="miniInfoContainer" style="position:relative; z-index: 100;">
-                   <div class="miniInfo">
-                     <ul>
-                       <li><span>Project</span> Ala Conference</li>
-                       <li><span>Client</span> Mcdonalds</li>
-                       <li><span>Launched</span> 08.27.2011</li>
-                    </ul>
-                  </div>
-                </div>
-     
-                <!-- Gallery Images & Thumbnails -->
-                <div style="position:relative; z-index: 3; margin-top:-578px;">
-                   <div id="gallery-1" class="royalSlider rsDefault fwImage col span_4">
- 
-                     <a class="rsImeg" data-rsBigImg="images/visa_01.png" href="images/visa_01.png"><img class="rsTmb" src="images/visathumb_01.png" alt="..." /></a>
-
-                      <a class="rsImg" data-rsBigImg="images/visa_02.png" href="images/visa_02.png">Leonardo da Vinci - Mona Lisa<img class="rsTmb" src="images/visathumb_02.png" alt="..." /></a>
-
-                      <a class="rsImg" data-rsBigImg="images/visa_03.png" href="images/visa_03.png">Grant DeVolson Wood - American Gothic<img class="rsTmb" src="images/visathumb_03.png" alt="..." /></a>
-
-                      <a class="rsImg" data-rsBigImg="images/visa_04.png" href="images/visa_04.png">Rembrandt - The Night Watch<img class="rsTmb" src="images/visathumb_04.png" alt="..." /></a>
-
-                      <a class="rsImg" data-rsBigImg="images/visa_05.png" href="images/visa_05.png">Johannes Vermeer - Girl with a Pearl Earring<img class="rsTmb" src="images/visathumb_05.png" alt="..." /></a>
-                   </div>
-                 </div>
-
-                  <!-- Project Description -->
-                  <div class="pInfoContainer" style="margin-left: -122px; margin-top: 356px; z-index: -1; position: absolute;">
-                  <div class="projectInfo">
-                    <div class="projectText">
-                       Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. 
-                     </div>
-                  </div>
-                </div>
-                
-                <!-- Side Div -->
-                <div class="sideContainer">
-                  <div class="sideBg">
-                  </div>
-                </div>
+      
 
               </div>
   
@@ -316,13 +271,45 @@
     </div>
 
   
+  <!-- About US -->
+  <div id="about">
+    <div id="container">
+
+<div id="about_image"><img src="images/JasonBWnew.png" border="0"/></div>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
   
 
+
+
+
+<div class="clear"></div>
+    </div>
+
+  </div>
+<!-- About Us -->
+  <script type="text/javascript">
+     $(function() {
+    $(".image").click(function() {
+    var about_image = $(this).attr("rel");
+    $('#about_image').hide();
+    $('#about_image').fadeIn('fast');    // Fade Bug if you double click too fast the page scrolls up a bit.
+    $('#about_image').html('<img src="' + about_image + '"/>');
+return false;
+  });
+});
+</script>
 <!-- ROYAL SLIDER START -->
   
 
     <script id="addJS">jQuery(document).ready(function($) {
-  $('#gallery-1, #gallery-2, #gallery-3').royalSlider({
+  $('#gallery-1, #gallery-2, #gallery-3,#solutionGallery').royalSlider({
     fullscreen: {
       enabled: false,
       nativeFS: true

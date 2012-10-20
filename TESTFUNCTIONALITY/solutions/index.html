@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+
+ 
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+ <script type="text/javascript">
+ $(function() {
+$(".image").click(function() {
+var about_image = $(this).attr("rel");
+$('#about_image').hide();
+$('#about_image').fadeIn('fast');
+$('#about_image').html('<img src="' + about_image + '"/>');
+return false;
+	});
+});
+</script>
+
+<style>
+	#about_image{
+	border:4px #666 solid;
+	height:673px;
+	width:1024px;
+
+}
+
+	.about_thumb{
+	float:left;
+	position:relative;
+	top:-130px;
+	
+	margin-right:10px;
+	margin-top:10px;}
+	</style>
+
+</head>
+<body>
+
+   <div id="subNavigation">
+       <ul>
+        
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+<div id="container">
+
+<div id="about_image"><img src="images/JasonBWnew.png" border="0"/></div>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+
+
+
+
+
+<div class="clear"></div>
+    </div>
+
+  </body>
+</html>
+
+
+
+

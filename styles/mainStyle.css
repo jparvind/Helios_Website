@@ -181,7 +181,7 @@ a:hover{
 
 #solutions{
 	width: 100%;
-	height: 800px;
+	height: 673px;
 	position: relative;
 	background-color: #fff;
 	margin-top: -75px;
@@ -190,21 +190,30 @@ a:hover{
 /* ----------------------> About <---------------------- */
 #about{
 	margin:auto;
+
+	height:673px;
 	width:1024px;
 }
 
 #about_image{
 	border:4px #666 solid;
-	height:673px;
-	width:1024px;
+	
 
 }
 
 .about_thumb{
 	float:left;
 	position:relative;
-	top:-130px;
+	top:-135px;
 	left:8px;
 	margin-right:8px;
 	margin-top:10px;
+}
+
+/* ---------------------->Contact <---------------------- */
+#contact{
+	margin:auto;
+
+	height:673px;
+	width:1024px;
 }

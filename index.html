@@ -62,7 +62,7 @@
         <li><a href="#work">Our Work</a></li>
         <li><a href="#solutions">Solutions</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
     </div>
@@ -259,15 +259,8 @@
     </div>
     <!-- SOLUTIONS -->
     <div id="solutions">
-      
+            <p> boop</p>
 
-              </div>
-  
-  
-
-              <!-- PROJECT ONE END -->
-
-            </li>
     </div>
 
   
@@ -277,13 +270,13 @@
 
 <div id="about_image"><img src="images/JasonBWnew.png" border="0"/></div>
 <a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_03.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
 <a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_03.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
 <a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_03.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
 <a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
-<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
-<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
-<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
-<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_03.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
   
 
 
@@ -293,13 +286,22 @@
     </div>
 
   </div>
+<!-- Contact -->
+<div id="contact">
+
+</div>
+
+
+<!-- Script -->
+
+
 <!-- About Us -->
   <script type="text/javascript">
      $(function() {
     $(".image").click(function() {
     var about_image = $(this).attr("rel");
     $('#about_image').hide();
-    $('#about_image').fadeIn('fast');    // Fade Bug if you double click too fast the page scrolls up a bit.
+    $('#about_image').fadeIn(500 +'ms');    // Fade Bug if you double click too fast the page scrolls up a bit.
     $('#about_image').html('<img src="' + about_image + '"/>');
 return false;
   });

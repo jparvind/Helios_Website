@@ -235,15 +235,15 @@
 
 .liveOn{
 	color: red;
-	width: 318px;
-	height: 149px;
+	width: 217px;
+	height: 108px;
 	-moz-transform:rotate(-125deg);
 	-webkit-transform:rotate(-125deg);
 	-o-transform:rotate(-125deg);
 }
 
 .liveOn img{
-		height: 90%;
+		height: 100%;
 
 
 }

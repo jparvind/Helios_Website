@@ -482,10 +482,6 @@ body{
 	}
 }
 
-.rsTmb{
-	width: 75%;
-	height: 75%;
-}
 
 
 
@@ -500,7 +496,7 @@ body{
 	margin-top:60px;
 	overflow:hidden;*/
 	float: left;
-	margin-left: 55px;
+	margin-left: -5px;
 	padding: 0;
 }
 

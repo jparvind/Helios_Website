@@ -124,14 +124,15 @@
 	-webkit-user-select: none;
 	user-select: none;
 }
-.rsNavItem {
+.rsNavItem {width:200;
 	-webkit-tap-highlight-color:rgba(0,0,0,0.25);
-	-moz-transform:rotate(125deg);
-	-webkit-transform:rotate(125deg);
-	-o-transform:rotate(125deg);
+	-moz-transform:skew(-35deg);
+	-webkit-transform:skew(-35deg);
+	-o-transform:skew(-35deg);
 	overflow: hidden;
 	height: 50px;
-	margin: 0px;
+	margin: 10px;
+	background-color: red;
 }
 
 /* Move The thumbs conainter */
@@ -234,16 +235,16 @@
 
 
 .liveOn{
+	margin-right: 500px;
 	color: red;
-	width: 217px;
+	width: 207px;
 	height: 108px;
-	-moz-transform:rotate(-125deg);
-	-webkit-transform:rotate(-125deg);
-	-o-transform:rotate(-125deg);
+	//-moz-transform:skew(-125deg);
+	//-webkit-transform:rotate(-125deg);
+	//-o-transform:rotate(-125deg);
 }
 
 .liveOn img{
 		height: 100%;
-
 
 }

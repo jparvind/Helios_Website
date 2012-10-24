@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<title>HTML5 Example</title>
+
+		<script type="text/javascript">
+
+			function init() {
+			
+			}
+
+		</script>
+		<style>
+			body{
+				background-color: #EEE;
+			}
+
+
+			.galleryContain{
+				background-color: grey;
+				width:1024px;
+				height:120px;
+			}
+			.galleryImageContain{
+				
+				float:left;
+		
+			}
+
+			.parallelogram {
+
+				float:left;
+			 	width: 93px;
+			 	height: 108px; 
+			  	-webkit-transform: skew(-35deg);
+			   	-moz-transform: skew(-35deg);
+			    -o-transform: skew(-35deg); 
+			    background: red; 
+			    overflow: hidden;
+
+			    border-style:solid;
+				border-color:red;
+			}
+			.rsTmb{
+				
+				position: relative;
+				left:-35px;
+				
+				-webkit-transform: skew(35deg);
+			   -moz-transform: skew(35deg);
+			    -o-transform: skew(35deg); 
+			}
+
+			
+
+
+		</style>
+
+	</head>
+
+	<body onload="init()">
+				<div class="galleryContain">
+
+	 				<div class="galleryImageContain">
+	 					<div>Chocko</div>
+	                   <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_01.png" alt="..." /></div>
+
+	                   <div class="parallelogram"> <img class="rsTmb" src="../../images/visathumb_02.png" alt="..." /></div>
+
+	                    <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_03.png" alt="..." /></div>
+
+	                   <div class="parallelogram"> <img class="rsTmb" src="../../images/visathumb_04.png" alt="..." /></div>
+
+	                    <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_05.png" alt="..." /></div>
+
+	                   <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_05.png" alt="..." /></div>
+	                </div>
+               </div>
+            
+	</body>
+
+</html>

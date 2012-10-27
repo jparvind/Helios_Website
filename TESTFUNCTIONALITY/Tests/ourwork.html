@@ -24,9 +24,10 @@
 				height:120px;
 			}
 			.galleryImageContain{
-				
-				float:left;
-		
+				width: 670px;
+				margin:auto;
+				position:relative;
+				left:100px;
 			}
 
 			.parallelogram {
@@ -43,6 +44,7 @@
 			    border-style:solid;
 				border-color:red;
 			}
+
 			.rsTmb{
 				
 				position: relative;
@@ -51,6 +53,24 @@
 				-webkit-transform: skew(35deg);
 			   -moz-transform: skew(35deg);
 			    -o-transform: skew(35deg); 
+			}
+
+			//galleryThing
+
+			#about_image{
+				border:4px #666 solid;
+				height:673px;
+				width:1024px;
+
+			}
+
+			.about_thumb{
+				float:left;
+				position:relative;
+				top:-130px;
+				
+				margin-right:10px;
+				margin-top:10px;
 			}
 
 			
@@ -62,20 +82,22 @@
 
 	<body onload="init()">
 				<div class="galleryContain">
+					<div id="about_image"><img src="../../images/visa_01.png" border="0"/></div>
 
 	 				<div class="galleryImageContain">
-	 					<div>Chocko</div>
-	                   <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_01.png" alt="..." /></div>
 
-	                   <div class="parallelogram"> <img class="rsTmb" src="../../images/visathumb_02.png" alt="..." /></div>
+	                   <a href="#" rel="../../images/visa_01.png" class="image" ><span class="parallelogram"><img class="rsTmb" src="../../images/visathumb_01.png" alt="..." /></span></a>
+	                   
+	                   <a href="#" rel="../../images/visa_02.png" class="image" ><span class="parallelogram"><img class="rsTmb" src="../../images/visathumb_02.png" alt="..." /></span></a>
 
-	                    <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_03.png" alt="..." /></div>
+	                   <a href="#" rel="../../images/visa_03.png" class="image" ><span class="parallelogram"><img class="rsTmb" src="../../images/visathumb_03.png" alt="..." /></span></a>
 
-	                   <div class="parallelogram"> <img class="rsTmb" src="../../images/visathumb_04.png" alt="..." /></div>
+	                   <a href="#" rel="../../images/visa_04.png" class="image" ><span class="parallelogram"><img class="rsTmb" src="../../images/visathumb_04.png" alt="..." /></span></a>
 
-	                    <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_05.png" alt="..." /></div>
+	                   <a href="#" rel="../../images/visa_05.png" class="image" ><span class="parallelogram"><img class="rsTmb" src="../../images/visathumb_05.png" alt="..." /></span></a>
 
-	                   <div class="parallelogram"><img class="rsTmb" src="../../images/visathumb_05.png" alt="..." /></div>
+	                   <a href="#" rel="../../images/visa_05.png" class="image" ><span class="parallelogram"><img class="rsTmb" src="../../images/visathumb_05.png" alt="..." /></span></a>
+
 	                </div>
                </div>
             

@@ -105,6 +105,8 @@ a:hover{
 }
 
 #mainNavigation{
+	//height:48px;
+	//line-height:48px;
 	width: 100%;
 	padding: 15px 0 15px 0;
 	background-color: #0d161c;
@@ -175,40 +177,43 @@ a:hover{
 	height: 726px;
 }
 
-	.galleryContain{
-		background-color: grey;
-		width:1024px;
-		height:120px;
-	}
-	.galleryImageContain{
-		
-		float:left;
 
-	}
+		.galleryContain{
+			background-color: grey;
+			width:1024px;
+			height:120px;
+		}
+		.galleryImageContain{
+			width: 670px;
+			margin:auto;
+			position:relative;
+			left:100px;
+		}
 
-	.parallelogram {
+		.parallelogram {
 
-		float:left;
-	 	width: 93px;
-	 	height: 108px; 
-	  	-webkit-transform: skew(-35deg);
-	   	-moz-transform: skew(-35deg);
-	    -o-transform: skew(-35deg); 
-	    background: red; 
-	    overflow: hidden;
+			float:left;
+		 	width: 93px;
+		 	height: 108px; 
+		  	-webkit-transform: skew(-35deg);
+		   	-moz-transform: skew(-35deg);
+		    -o-transform: skew(-35deg); 
+		    background: red; 
+		    overflow: hidden;
 
-	    border-style:solid;
-		border-color:red;
-	}
-	.skewSlide{
-		
-		position: relative;
-		left:-35px;
-		
-		-webkit-transform: skew(35deg);
-	   -moz-transform: skew(35deg);
-	    -o-transform: skew(35deg); 
-	}
+		    border-style:solid;
+			border-color:red;
+		}
+
+		.ourWorkThumb{
+			
+			position: relative;
+			left:-35px;
+			
+			-webkit-transform: skew(35deg);
+		   -moz-transform: skew(35deg);
+		    -o-transform: skew(35deg); 
+		}
 
 
 
@@ -216,11 +221,9 @@ a:hover{
 /* ----------------------> Solutions <---------------------- */
 
 #solutions{
-	width: 100%;
-	height: 673px;
-	position: relative;
+
 	background-color: #fff;
-	margin-top: -75px;
+
 }
 
 /* ----------------------> About <---------------------- */
@@ -233,18 +236,23 @@ a:hover{
 
 #about_image{
 	border:4px #666 solid;
-	
+	height:673px;
+	width:1024px;
+
 
 }
 
 .about_thumb{
 	float:left;
 	position:relative;
-	top:-135px;
-	left:8px;
-	margin-right:8px;
+	top:-130px;
+	
+	margin-right:10px;
 	margin-top:10px;
+			
 }
+			
+
 
 /* ---------------------->Contact <---------------------- */
 #contact{
@@ -253,3 +261,6 @@ a:hover{
 	height:673px;
 	width:1024px;
 }
+
+
+

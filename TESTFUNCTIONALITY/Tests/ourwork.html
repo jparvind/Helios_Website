@@ -3,7 +3,7 @@
 	
 	<head>
 		
-		<title>HTML5 Example</title>
+		<title>Our Work</title>
 
 		<script type="text/javascript">
 
@@ -12,48 +12,105 @@
 			}
 
 		</script>
+	   <link href="reset.css" rel="stylesheet">
+
 		<style>
 			body{
 				background-color: #EEE;
+
+				background-color: #0d161c;
+				font-family: "proxima-nova",sans-serif;
+				font-size: 0.875em;
+				font-weight: 500;
+				overflow-x: hidden;
+
 			}
 
 
-			.galleryContain{
-				background-color: grey;
-				width:1024px;
-				height:120px;
-			}
 			.galleryImageContain{
-				width: 670px;
-				margin:auto;
+
+				color:#272726;
+				border-top:solid;
+				border-width:5px;
+
+				width: 100%;
+				margin:0px;
 				position:relative;
-				left:100px;
+				
+				background-color: #001E21;
+				height:112px;
+			}
+
+		
+			.ourWorkThumbs{
+				float:left;
+				
+			}
+
+			.projectInfo{
+				font-size:0.825em;
+				width:290px;
+				float:left;
+
+				margin:15px 0px 40px 50px;
+				color:white;
+				
+
+
+
+			}
+			.projectInfo li{
+				margin-bottom:20px;
+			}
+			.projectInfoTitles{
+				text-transform: uppercase; 
+			}
+
+			.infoColor{
+				color:#0099A9;
+			}
+
+
+			.ourWorkThumb{
+				
+				
+				
+				-webkit-transform: skew(35deg);
+			   -moz-transform: skew(35deg);
+			    -o-transform: skew(35deg); 
+
+			    position: relative;
+				left:-40px;//Adjust Thumb alignment
 			}
 
 			.parallelogram {
-
+				border-top:#333333;
+			
 				float:left;
 			 	width: 93px;
 			 	height: 108px; 
 			  	-webkit-transform: skew(-35deg);
 			   	-moz-transform: skew(-35deg);
 			    -o-transform: skew(-35deg); 
-			    background: red; 
+
+
+			   
 			    overflow: hidden;
 
+			    border-width:0px 5px 5px 0px;
+			    border-spacing:0px;
 			    border-style:solid;
-				border-color:red;
+				border-color:#272726;
+				-webkit-backface-visibility:hidden; //Fix jagged images?
+
+
+				
+			}
+			.firstParallelogram{
+				 border-width:0px 5px 5px 5px;
 			}
 
-			.ourWorkThumb{
-				
-				position: relative;
-				left:-35px;
-				
-				-webkit-transform: skew(35deg);
-			   -moz-transform: skew(35deg);
-			    -o-transform: skew(35deg); 
-			}
+
 
 			
 
@@ -62,32 +119,38 @@
 
 		</style>
 		<!-- Royal Slider -->
-    <link href="../../css/royalslider.css" rel="stylesheet">
-    <script src="../../js/jquery-1.8.0.min.js"></script>
-    <script src="../../js/jquery.royalslider.min.js"></script>
+
 
 	</head>
 
 	<body onload="init()">
-				<div class="galleryContain">
-					<div id="about_image"><img src="../../images/visa_01.png" border="0"/></div>
+				
+					<div id="about_image"><img src="../../images/visa_1.png" border="0"/></div>
 
 	 				<div class="galleryImageContain">
+	 					<div class="ourWorkThumbs">
+	 						<div class="projectInfo">
+	 							<ul>
+	 								<li><span class="projectInfoTitles">Project</span> <span class="infoColor">ALA Conference</span></li>
+	 								<li><span class="projectInfoTitles">Client </span><span class="infoColor">McDonalds</span> </li>
+	 								<li><span class="projectInfoTitles">Launch date </span><span class="infoColor">08.27.2011</span></li>
+	 							</ul>
 
-	                   <a href="#" rel="../../images/visa_01.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visathumb_01.png" alt="..." /></span></a>
-	                   
-	                   <a href="#" rel="../../images/visa_02.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visathumb_02.png" alt="..." /></span></a>
+	 						</div>
+		                   <a href="#" rel="../../images/visa_1.png" class="image" ><span class="parallelogram firstParallelogram"><img class="ourWorkThumb" src="../../images/visa_1_thumb.png" alt="..." /></span></a>
+		                   
+		                   <a href="#" rel="../../images/visa_2.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 
-	                   <a href="#" rel="../../images/visa_03.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visathumb_03.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
 
-	                   <a href="#" rel="../../images/visa_04.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visathumb_04.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 
-	                   <a href="#" rel="../../images/visa_05.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visathumb_05.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
 
-	                   <a href="#" rel="../../images/visa_05.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visathumb_05.png" alt="..." /></span></a>
-
+		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
+	               		</div>
 	                </div>
-               </div>
+              
             
 	</body>
 

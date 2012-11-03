@@ -22,12 +22,36 @@
 				font-family: "proxima-nova",sans-serif;
 				font-size: 0.875em;
 				font-weight: 500;
-				overflow-x: hidden;
+				//overflow-x: hidden;
 
 			}
 
+			#siteContainer{
+				width:1024px;
+				margin:auto;
+				height:100%;
+			}
 
-			.galleryImageContain{
+			#ourWork{
+				
+			}
+			#ourWorkTop{
+				height:512px;
+			}
+			.ourWorkDescription{
+				background:#221F26;
+				height:512px;
+				width:285px;
+				float:left;
+				color:#FFFFFF;
+
+
+			}
+			.ourWorkDescription p{
+				margin:40px;
+			}
+
+			#ourWorkBottom{
 
 				color:#272726;
 				border-top:solid;
@@ -43,33 +67,13 @@
 
 		
 			.ourWorkThumbs{
-				float:left;
+				margin: 0 auto;
+				width:800px;
+
 				
 			}
 
-			.projectInfo{
-				font-size:0.825em;
-				width:290px;
-				float:left;
-
-				margin:15px 0px 40px 50px;
-				color:white;
-				
-
-
-
-			}
-			.projectInfo li{
-				margin-bottom:20px;
-			}
-			.projectInfoTitles{
-				text-transform: uppercase; 
-			}
-
-			.infoColor{
-				color:#0099A9;
-			}
-
+	
 
 			.ourWorkThumb{
 				
@@ -124,22 +128,27 @@
 	</head>
 
 	<body onload="init()">
-				
-					<div id="about_image"><img src="../../images/visa_1.png" border="0"/></div>
+		<div id="siteContainer">
+					
 
-	 				<div class="galleryImageContain">
+			<div id="ourWorkTop">
+				<div class="ourWorkDescription">
+					<p>
+					Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+					</p>
+				</div>
+				<div id="image">
+					<img src="../../images/visa_3.png" width="682px" height="384"/>
+				</div>
+					
+			</div>
+
+	 				<div id="ourWorkBottom">
 	 					<div class="ourWorkThumbs">
-	 						<div class="projectInfo">
-	 							<ul>
-	 								<li><span class="projectInfoTitles">Project</span> <span class="infoColor">ALA Conference</span></li>
-	 								<li><span class="projectInfoTitles">Client </span><span class="infoColor">McDonalds</span> </li>
-	 								<li><span class="projectInfoTitles">Launch date </span><span class="infoColor">08.27.2011</span></li>
-	 							</ul>
-
-	 						</div>
+	 						
 		                   <a href="#" rel="../../images/visa_1.png" class="image" ><span class="parallelogram firstParallelogram"><img class="ourWorkThumb" src="../../images/visa_1_thumb.png" alt="..." /></span></a>
 		                   
-		                   <a href="#" rel="../../images/visa_2.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 
 		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
 
@@ -148,10 +157,14 @@
 		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
 
 		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 	               		</div>
 	                </div>
               
-            
+            </div>
 	</body>
 
 </html>

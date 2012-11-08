@@ -12,6 +12,10 @@
 			}
 
 		</script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.touchslider.js"></script>
+
+
 	   <link href="reset.css" rel="stylesheet">
 
 		<style>
@@ -20,7 +24,7 @@
 
 				background-color: #0d161c;
 				font-family: "proxima-nova",sans-serif;
-				font-size: 0.875em;
+				font-size: 0.770em;
 				font-weight: 500;
 				//overflow-x: hidden;
 
@@ -33,22 +37,59 @@
 			}
 
 			#ourWork{
-				
-			}
-			#ourWorkTop{
+				background:#211E25;
 				height:512px;
+				//padding:55px 45px;
+			}
+
+			#ourWorkTop{
+				height:384px;
+				width:inherit;
+				background:inherit;
+				padding:55px 44px;
+	
 			}
 			.ourWorkDescription{
-				background:#221F26;
-				height:512px;
-				width:285px;
+				background:inherit;
+				height: 384px;	
+				width: 254px;
 				float:left;
-				color:#FFFFFF;
+				color:#AEAEAE;
 
 
 			}
+
 			.ourWorkDescription p{
-				margin:40px;
+				margin-right:40px;
+				margin-top: 15px;
+
+			}
+			.ourWorkDescription ul{
+				color:#19A6BB;
+			}
+			.ourWorkDescription li{
+				line-height: 2.5em;
+			}
+			.workTitle{
+				color:#AEAEAE;
+				text-transform:uppercase;
+			}
+			.awardTitle{
+
+				color:#19A6BB;
+				text-transform:uppercase;
+				font-style: italic;
+
+			}
+
+			.ourWorkRight{
+				width:682px;
+				float:left;
+				height:inherit;
+			}
+			.touchslider{
+				width:inherit;
+				float:left;
 			}
 
 			#ourWorkBottom{
@@ -61,7 +102,7 @@
 				margin:0px;
 				position:relative;
 				
-				background-color: #001E21;
+				background-color: #19171C;
 				height:112px;
 			}
 
@@ -114,10 +155,31 @@
 				 border-width:0px 5px 5px 5px;
 			}
 
+		/**************** Slider ******************/
+		.touchslider-nav{
+			margin:15px 0;
+			float:right;
+		}
+		.touchslider-demo .touchslider-nav a {
+			cursor: pointer;
+			color: #000;
 
+		}
+		
 
-			
-
+	
+		.touchslider-demo .touchslider-nav-item {
+			width: 12px;
+			height: 12px;
+			background: #312E36;
+			margin: 0 0 0 5px;
+			display: inline-block;
+			-webkit-border-radius: 12px;
+			        border-radius: 12px;
+			}
+		.touchslider-demo .touchslider-nav-item-current {
+			background: #655F6E;
+		}
 			
 
 
@@ -130,41 +192,100 @@
 	<body onload="init()">
 		<div id="siteContainer">
 					
-
+	<div id="ourWork">
 			<div id="ourWorkTop">
 				<div class="ourWorkDescription">
+					<ul>
+						<li><span class="workTitle">Project</span> McDonald's Global Convention</li>
+						<li><span class="workTitle">Client</span> McDonald's</li>
+						<li><span class="workTitle">Launch Date</span> 08.27.2012</li>
+					</ul>
 					<p>
-					Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						Helios created several interactive games, both moderated and self guided, that allowed attendees to have fun while learning about the McDonald's approach to technology, design and social media. From an MC moderated "game show" style question and answer game, to interactive games, attendees were encouraged to learn at their own pace.  Multiple technologies were used, including touch, multitouch, and a comprehensive CMS driven mobile app that allowed brand ambassadors access to product information, marketing materials, and user manuals for McDonalds menu items world wide. 
+								
+					<p><span class="awardTitle">Finalist for event Marketer award</span></p>
 					</p>
 				</div>
-				<div id="image">
-					<img src="../../images/visa_3.png" width="682px" height="384"/>
-				</div>
+		
+					<div class="ourWorkRight">
+						<div class="touchslider touchslider-demo">
+							<div class="touchslider-viewport" style="width: 682px; overflow: hidden; position: relative; height: 384px; ">
+								
+								<div class="touchslider-item " ><img src="../../images/visa_3.png" width="682px" height="384px"/></div>
+					
+								<div class="touchslider-item" >	
+									<iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+								</div>
+								
+								<div class="touchslider-item"><img src="../../images/visa_3.png" width="682px" height="384px"/></div>
+								<div class="touchslider-item" ><img src="../../images/visa_3.png" width="682px" height="384px"/></div>
+								<div class="touchslider-item"><img src="../../images/visa_3.png" width="682px" height="384px"/></div>
+							</div>
+
+							<div class="touchslider-nav">
+								
+								<a class="touchslider-nav-item touchslider-nav-item-current"></a>
+								<a class="touchslider-nav-item "></a>
+								<a class="touchslider-nav-item"></a>
+								<a class="touchslider-nav-item"></a>
+								<a class="touchslider-nav-item"></a>
+								
+							
+							</div>
+						</div>
+					</div>
+
 					
 			</div>
-
+	</div>
 	 				<div id="ourWorkBottom">
 	 					<div class="ourWorkThumbs">
 	 						
-		                   <a href="#" rel="../../images/visa_1.png" class="image" ><span class="parallelogram firstParallelogram"><img class="ourWorkThumb" src="../../images/visa_1_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_1.png"  ><span class="parallelogram firstParallelogram"><img class="ourWorkThumb" src="../../images/visa_1_thumb.png" alt="..." /></span></a>
 		                   
-		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_4.png"  ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 
-		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_3.png"  ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
 
-		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_4.png"  ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 
-		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_5.png"  ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
 
-		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_5.png" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
 
-		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_3.png"  ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
 
-		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+		                   <a href="#" rel="../../images/visa_4.png"  ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
 	               		</div>
 	                </div>
               
             </div>
+          
+	<script>
+			// Our work Content
+			$(document).ready(function() {
+			 	
+			      $('#ourWork').replaceWith('<h2>New heading</h2>');
+			});
+
+
+
+		$(".touchslider-demo").touchSlider({
+			duration: 1000, // the speed of the sliding animation in milliseconds
+			delay: 5000, // initial auto-scrolling delay for each loop
+			margin: 5, // borders size. The margin is set in pixels.
+			mouseTouch: true,
+			namespace: "touchslider",
+			next: ".touchslider-next", // jQuery object for the elements to which a "scroll forwards" action should be bound.
+			pagination: ".touchslider-nav-item",
+			currentClass: "touchslider-nav-item-current", // class name for current pagination item.
+			prev: ".touchslider-prev", // jQuery object for the elements to which a "scroll backwards" action should be bound.
+
+			autoplay: true, // whether to move from image to image automatically
+			});
+		</script>
+
+
 	</body>
 
 </html>

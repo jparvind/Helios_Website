@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://touchslider.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>TouchSlider — JavaScript slide content</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.touchslider.js"></script>
+<script>
+	function init(){
+		$(".touchslider-demo").touchSlider({container: this,
+			duration: 1000, // the speed of the sliding animation in milliseconds
+			delay: 5000, // initial auto-scrolling delay for each loop
+			margin: 5, // borders size. The margin is set in pixels.
+			mouseTouch: true,
+			namespace: "touchslider",
+			next: ".touchslider-next", // jQuery object for the elements to which a "scroll forwards" action should be bound.
+			pagination: ".touchslider-nav-item",
+			currentClass: "touchslider-nav-item-current", // class name for current pagination item.
+			prev: ".touchslider-prev", // jQuery object for the elements to which a "scroll backwards" action should be bound.
+
+			autoplay: false, // whether to move from image to image automatically
+			viewport: ".touchslider-viewport" });
+	}
+</script>
+
+
+	<style>
+		/* demo slider*/
+		
+		.touchslider-demo .touchslider-nav a {
+			cursor: pointer;
+			color: #000;
+		}
+		
+
+		
+		.touchslider-demo .touchslider-prev {
+			position: relative;
+			margin-right: 16px;
+			height: 16px;
+			background: #CCC;
+			width: 100px;
+			display: inline-block;
+			padding: 0 0 0 10px;
+			-webkit-border-radius: 12px 0 0 12px;
+			        border-radius: 12px 0 0 12px;
+		}
+		.touchslider-demo .touchslider-next {
+			position: relative;
+			margin-left: 16px;
+			width: 100px;
+			height: 16px;
+			background: #CCC;
+			display: inline-block;
+			-webkit-border-radius: 0 12px 12px 0;
+			        border-radius: 0 12px 12px 0;
+		}
+	
+		.touchslider-demo .touchslider-nav-item {
+			width: 16px;
+			height: 16px;
+			background: #CCC;
+			margin: 0 16px;
+			display: inline-block;
+			-webkit-border-radius: 12px;
+			        border-radius: 12px;
+			}
+		.touchslider-demo .touchslider-nav-item-current {
+			background: #cff0ff;
+		}
+
+	
+	
+	</style>
+</head>
+<body onload="init()">
+
+
+
+	<div class="touchslider touchslider-demo">
+		<div class="touchslider-viewport" style="width: 500px; overflow: hidden; position: relative; height: 345px; ">
+			
+			<div class="touchslider-item" ><img src="./TouchSlider — JavaScript slide content_files/3540115854_5d302001da.jpg" width="500" height="375" alt="Tree and cloud"></div>
+			<div class="touchslider-item"><img src="./TouchSlider — JavaScript slide content_files/3540231388_f8ec22b549.jpg" width="500" height="347" alt="Ekaterina smile"></div>
+			<div class="touchslider-item" ><img src="./TouchSlider — JavaScript slide content_files/3542680555_ea43d85e0a.jpg" width="500" height="347" alt="Dasha &amp; Masha"></div>
+			<div class="touchslider-item"><img src="./TouchSlider — JavaScript slide content_files/3546828250_6f91b64ba7.jpg" width="500" height="354" alt="Nastya">&nbsp;</div>
+	</div>
+		<div class="touchslider-nav"><a class="touchslider-prev"><span class="touchslider-prev-in">previous</span></a><a class="touchslider-nav-item"></a><a class="touchslider-nav-item touchslider-nav-item-current"></a><a class="touchslider-nav-item"></a><a class="touchslider-nav-item"></a><a class="touchslider-next"><span class="touchslider-next-in">next</span></a></div>
+	</div>
+
+
+
+
+
+
+</body></html>

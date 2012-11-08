@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<title>Our Work</title>
+
+		<script type="text/javascript">
+
+			function init() {
+			
+			}
+
+		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="jquery.touchslider.min.js"></script>
+		<script>
+		jQuery(function($) {
+		    $(".touchslider").touchSlider({/*options*/});
+		});
+		</script>
+
+
+
+	   <link href="reset.css" rel="stylesheet">
+
+		<style>
+			body{
+				background-color: #EEE;
+
+				background-color: #0d161c;
+				font-family: "proxima-nova",sans-serif;
+				font-size: 0.875em;
+				font-weight: 500;
+				//overflow-x: hidden;
+
+			}
+
+			#siteContainer{
+				width:1024px;
+				margin:auto;
+				height:100%;
+			}
+
+			#ourWork{
+				
+			}
+			#ourWorkTop{
+				height:512px;
+			}
+			.ourWorkDescription{
+				background:#221F26;
+				height:512px;
+				width:285px;
+				float:left;
+				color:#FFFFFF;
+
+
+			}
+			.ourWorkDescription p{
+				margin:40px;
+			}
+
+			#ourWorkBottom{
+
+				color:#272726;
+				border-top:solid;
+				border-width:5px;
+
+				width: 100%;
+				margin:0px;
+				position:relative;
+				
+				background-color: #001E21;
+				height:112px;
+			}
+
+		
+			.ourWorkThumbs{
+				margin: 0 auto;
+				width:800px;
+
+				
+			}
+
+	
+
+			.ourWorkThumb{
+				
+				
+				
+				-webkit-transform: skew(35deg);
+			   -moz-transform: skew(35deg);
+			    -o-transform: skew(35deg); 
+
+			    position: relative;
+				left:-40px;//Adjust Thumb alignment
+			}
+
+			.parallelogram {
+				border-top:#333333;
+			
+				float:left;
+			 	width: 93px;
+			 	height: 108px; 
+			  	-webkit-transform: skew(-35deg);
+			   	-moz-transform: skew(-35deg);
+			    -o-transform: skew(-35deg); 
+
+
+			   
+			    overflow: hidden;
+
+			    border-width:0px 5px 5px 0px;
+			    border-spacing:0px;
+			    border-style:solid;
+				border-color:#272726;
+				-webkit-backface-visibility:hidden; //Fix jagged images?
+
+
+				
+			}
+			.firstParallelogram{
+				 border-width:0px 5px 5px 5px;
+			}
+
+
+
+			
+
+			
+
+
+		</style>
+		<!-- Royal Slider -->
+
+
+	</head>
+
+	<body onload="init()">
+		<div id="siteContainer">
+					
+
+			<div id="ourWorkTop">
+				<div class="ourWorkDescription">
+					<p>
+					Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+					</p>
+				</div>
+				<div id="image">
+					<div class="touchslider">
+					    <div class="touchslider-viewport" style="width:500px;overflow:hidden"><div>
+					        <div class="touchslider-item"><img src="../../images/visa_3.png" width="682px" height="384"/></div>
+					        <div class="touchslider-item"><img src="../../images/visa_3.png" width="682px" height="384"/></div>
+					        
+					    </div></div>
+
+					    <div>
+					        <span class="touchslider-prev">←</span>
+					        <span class="touchslider-nav-item touchslider-nav-item-current">1</span>
+					        <span class="touchslider-nav-item">2</span>
+					        
+					        <span class="touchslider-next">→</span>
+					    </div>
+					</div>
+
+
+					
+				</div>
+					
+			</div>
+
+	 				<div id="ourWorkBottom">
+	 					<div class="ourWorkThumbs">
+	 						
+		                   <a href="#" rel="../../images/visa_1.png" class="image" ><span class="parallelogram firstParallelogram"><img class="ourWorkThumb" src="../../images/visa_1_thumb.png" alt="..." /></span></a>
+		                   
+		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_5.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_5_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_3.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_3_thumb.png" alt="..." /></span></a>
+
+		                   <a href="#" rel="../../images/visa_4.png" class="image" ><span class="parallelogram"><img class="ourWorkThumb" src="../../images/visa_4_thumb.png" alt="..." /></span></a>
+	               		</div>
+	                </div>
+              
+            </div>
+	</body>
+
+</html>

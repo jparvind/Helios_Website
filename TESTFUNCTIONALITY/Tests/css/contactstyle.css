@@ -1,0 +1,52 @@
+body{background:#141414;}
+
+/* ----- set width and center layout ----- */
+#contactContainer {
+	background: red;
+	width:1024px;
+	margin:67px auto;
+}
+#contactInnerContainer {
+	background: green;
+	width:930px;
+	margin:auto;
+}
+
+
+/* --------------------------------------- */
+#map{
+	width: 931px;
+	margin:auto;
+	background: blue;
+}
+/* ----------- float columns ------------- */
+#primary {
+	background:#eee;
+	float:left;
+	width:240px;
+}
+
+#content {
+	background:#ccc;
+	float:left;
+	width:280px;
+}
+
+#secondary {
+	background:#ddd;
+	float:left;
+	width:440px;
+}
+
+
+/* --------------------------------------- */
+#footer {
+	background: blue;
+	clear:both;
+}
+/* --------------------------------------- */
+
+.questionBox {
+	width: 400px;
+	height:146px;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helios Interactive</title>
+	<link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+
+    <!-- preview-related stylesheets -->
+    <link href="css/preview-assets/reset.css" rel="stylesheet">
+
+
+</head>
+<body>
+	
+<div id="home">
+    <!-- Main Navigation -->
+    <div id="mainNavigation">
+      <a href="#home" class="selected logo"><img src="images/mainLogo_small.png" alt="Helios Interactive Home"></a>
+      <ul>
+        
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+
+    <!-- Home -->
+    <div id="greeting">
+      
+      <img src="images/mainLogo.png" alt="Helios Interactive Logo" />
+      <h1>
+        We are <span>Helios Interactive</span>, a cutting-edge design studio located in the heart of San Francisco.
+      </h1>
+
+    </div>
+    <div id="work">
+      </div>
+  </div>
+
+ <div id="ourWork">
+    
+  
+     
+    <div class="clear">
+    </div>
+    <!-- SOLUTIONS -->
+  
+  
+  <!-- About US -->
+  <div id="about">
+    <div id="container">
+
+<div id="about_image"><img src="images/JasonBWnew.png" border="0"/></div>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_3.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_3.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_3.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/JasonBWnew.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+<a href="#" rel="images/visa_3.png" class="image" ><img src="images/jason_thumb.png" class="about_thumb" border="0"/></a>
+  
+
+
+
+
+<div class="clear"></div>
+    </div>
+
+  </div>
+<!-- Contact -->
+<div id="contact">
+
+</div>
+
+
+<!-- Script -->
+
+
+<!-- About Us -->
+  <script type="text/javascript">
+     $(function() {
+    $(".image").click(function() {
+    var about_image = $(this).attr("rel");
+    //$('#about_image').hide();
+    $('#about_image').fadeIn(500 +'ms');    // Fade Bug if you double click too fast the page scrolls up a bit.
+    $('#about_image').html('<img src="' + about_image + '"/>');
+return false;
+  });
+});
+</script>
+
+  <!-- Navigation Current & Hover -->
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+    //Animated Div Highlighter
+    $('#mainNavigation').append('<div id="current"></div>');
+    $.currentNavItem = ('.selected');
+    //$(divHighlight) = $('#current');
+    $('#current').hide();
+    
+    var divIsVisible = false;
+
+    //Color of Selected and UnSelected Navigation
+    $('#mainNavigation a').click(function(){
+    var offset = $(this).offset();
+    var width = $(this).width();
+    var right = offset.left - width/9;
+    //alert(right);
+
+      $('#mainNavigation a').removeClass('selected');
+      $(this).toggleClass('selected');
+
+      //Div Highlight Function
+      if($(this).hasClass('logo')){
+        //do nothing with the logo
+        $('#current').fadeOut();
+
+      }
+      else{
+        //if the link does not have the .logo class
+        if($('selected').is(":visible")){
+          //do nothing
+          //alert('DIV IS VISIBLE');
+        }
+          else{
+            //alert('I CAN SEE THE DIV NOW!');
+            
+            
+            if(divIsVisible === false){
+             // alert('Fade In & Position');
+
+              
+              $('#current').css({
+                "margin-left": right
+              });
+              $('#current').fadeIn();
+            }
+            else{
+              //alert('Position Only')
+              
+             /* $('#current').css({
+                "margin-left": right
+              });*/
+
+              $("#current").animate({"margin-left": right}, "fast");
+              $('#current').fadeIn();
+
+            }
+            divIsVisible = true;
+          }
+
+      }
+
+    });
+
+    /*$('#mainNavigation a').hover(function(){
+
+      alert('Hover');
+
+    });*/
+
+    //Smooth Scroll To Links On Page
+    $('#mainNavigation a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+      return false;
+    });
+
+    
+  
+
+    });
+  </script>
+  
+
+
+
+  <!-- WayPoint -->
+  <script src="js/waypoints.js"></script>
+ 
+
+
+  <script type="text/javascript">
+    $(function() {
+      $('#solutions').waypoint(function(e, direction) {
+        
+        
+        if (direction === "down") {
+          //alert('Scrolled past solutions');
+          $('.pInfoContainer').fadeOut('slow', function() {
+            // Animation complete.
+          });
+          $('.rsThumbsContainer').fadeOut('slow', function() {
+            // Animation complete.
+          });
+          $('.sideContainer').fadeOut('slow', function() {
+            // Animation complete.
+          });
+          $.waypoints('refresh')
+        }
+        else{
+         //nada
+        }
+      });
+
+    $('.miniInfoContainer').waypoint(function(e, direction) {
+      offset: -250;
+      if(direction === "up")  {
+
+        //alert('up up up');
+        $('.pInfoContainer').fadeIn('slow', function() {
+            // Animation complete.
+          });
+          $('.rsThumbsContainer').fadeIn('slow', function() {
+            // Animation complete.
+          });
+          $('.sideContainer').fadeIn('slow', function() {
+            // Animation complete.
+          });
+          $.waypoints('refresh')
+      }
+      else{
+
+      }
+    });
+
+    });
+  </script>
+  
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  
+
+
+</body>
+</html>

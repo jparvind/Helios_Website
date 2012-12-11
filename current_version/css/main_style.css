@@ -1,0 +1,167 @@
+
+
+/* ----------------------> CSS Main <---------------------- */
+
+
+html, body{
+	width: 100%;
+}
+
+body{
+	background-color: #0d161c;
+  	font-family: "proxima-nova",sans-serif;
+	font-size: 0.875em;
+	font-weight: 500;
+		overflow-x: hidden;
+
+}
+
+a:link, a:visited, a:active, a:hover{
+  	font-family: "proxima-nova",sans-serif;
+  	color: #a4a4a4;
+	font-size: 0.85em;
+	font-weight: 400;
+	letter-spacing: .01em;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+
+a.selected {
+  color: rgb(8, 215, 235);
+}
+
+a:hover{
+	color: #08d7eb;
+}
+ul{
+	list-style-type: none;
+}
+
+#current{
+	width: 93px;
+	height: 3px;
+	position: absolute;
+	top: 58px;
+	background-color: rgb(8, 215, 235);
+}
+
+.clear{
+	clear: left;
+}
+
+
+#mainContainer{
+	width: 100%;
+	
+}
+
+#mainNavigation{
+	//height:48px;
+	//line-height:48px;
+	width: 100%;
+	padding: 15px 0 15px 0;
+	background-color: #0d161c;
+	position: fixed;
+	margin-top: -20px;
+	z-index: 100;
+}
+
+#mainNavigation li{
+	display: inline-block;
+	padding-right: 8%;
+	padding-top: 8px;
+	
+} 
+
+#mainNavigation img{
+	float: left;
+	margin-left: 5%;
+} 
+
+#mainNavigation ul{
+	margin-left: 13%;
+
+}
+
+/* ----------------------> Home <---------------------- */
+
+#greeting{
+	width: 100%;
+	height: 462px;
+	background: #000000 url(../images/main/welcome_bg.png) repeat;
+	margin: 20px 0 0 0;
+	text-align: center;
+	z-index: 99;
+	
+}
+
+#greeting h1{
+	font-size: 2.5em;
+	font-weight: 300;
+	color: #b0b0b0;
+	width: 60%;
+	line-height: 1.2em;
+	margin: 0 auto;
+}
+
+#greeting h1 span{
+	font-weight: 700;
+	color: #08d7eb;
+}
+
+#greeting img{
+	margin-top: 7%;
+}
+
+/* ----------------------> Our Work <---------------------- */
+#our_work{
+
+}
+
+
+
+/* ----------------------> Solutions <---------------------- */
+
+#solutions{
+	margin:auto;
+
+	height:673px;
+	width:1024px;
+	background-color: blue;
+
+}
+
+/* ----------------------> About <---------------------- */
+#about{
+	margin:auto;
+
+	height:673px;
+	width:1024px;
+}
+
+#about_image{
+	border:4px #666 solid;
+	height:673px;
+	width:1024px;
+
+
+}
+
+.about_thumb{
+	float:left;
+	position:relative;
+	top:-130px;
+	
+	margin-right:8px;
+	margin-top:10px;
+			
+}
+			
+
+
+/* ---------------------->Contact <---------------------- */
+
+
+
+

@@ -1,0 +1,162 @@
+body{
+				background-color: #EEE;
+
+				background-color: #0d161c;
+				font-family: "proxima-nova",sans-serif;
+				font-size: 0.770em;
+				font-weight: 500;
+				//overflow-x: hidden;
+
+			}
+
+			#siteContainer{
+				width:1024px;
+				margin:auto;
+				height:100%;
+			}
+
+			#our_work{
+				margin:auto;
+				height:384px;
+				width:1024px;
+
+				background:#211E25;
+				
+				padding:55px 0px;
+			}
+
+			#our_workTop{
+				height:384px;
+				width:inherit;
+				background:inherit;
+				
+	
+			}
+			.our_workDescription{
+				background:inherit;
+				height: 384px;	
+				width: 254px;
+				float:left;
+				color:#AEAEAE;
+			}
+
+			.our_workDescription p{
+				margin-right:40px;
+				margin-top: 15px;
+
+			}
+			.our_workDescription ul{
+				color:#19A6BB;
+			}
+			.our_workDescription li{
+				line-height: 2.5em;
+			}
+
+			.workTitle{
+				color:#AEAEAE;
+				text-transform:uppercase;
+			}
+			.awardTitle{
+
+				color:#19A6BB;
+				text-transform:uppercase;
+				font-style: italic;
+
+			}
+
+			.our_workRight{
+				width:682px;
+				float:left;
+				height:inherit;
+			}
+			.touchslider{
+				width:inherit;
+				float:left;
+			}
+			#project02{
+				//display: none;
+			}
+			#our_workBottom{
+
+				color:#272726;
+				border-top:solid;
+				border-width:5px;
+
+				width:1024px;
+				margin:0px auto;
+				position:relative;
+				
+				background-color: #19171C;
+				height:112px;
+			}
+
+		
+			.our_workThumbs{
+				margin: 0 auto;
+				width:800px;
+	
+			}
+
+			.our_workThumb{
+
+				-webkit-transform: skew(35deg);
+			   -moz-transform: skew(35deg);
+			    -o-transform: skew(35deg); 
+
+			    position: relative;
+				left:-40px;//Adjust Thumb alignment
+			}
+
+			.parallelogram {
+				border-top:#333333;
+			
+				float:left;
+			 	width: 93px;
+			 	height: 108px; 
+			  	-webkit-transform: skew(-35deg);
+			   	-moz-transform: skew(-35deg);
+			    -o-transform: skew(-35deg); 
+
+
+			   
+			    overflow: hidden;
+
+			    border-width:0px 5px 5px 0px;
+			    border-spacing:0px;
+			    border-style:solid;
+				border-color:#272726;
+				-webkit-backface-visibility:hidden; //Fix jagged images?
+
+
+				
+			}
+			.firstParallelogram{
+				 border-width:0px 5px 5px 5px;
+			}
+
+		/**************** Slider ******************/
+		.touchslider-nav{
+			margin:15px 0;
+			float:right;
+		}
+		.touchslider-demo .touchslider-nav a {
+			cursor: pointer;
+			color: #000;
+
+		}
+		
+
+	
+		.touchslider-demo .touchslider-nav-item {
+			width: 12px;
+			height: 12px;
+			background: #312E36;
+			margin: 0 0 0 5px;
+			display: inline-block;
+			-webkit-border-radius: 12px;
+			        border-radius: 12px;
+			}
+		.touchslider-demo .touchslider-nav-item-current {
+			background: #655F6E;
+		}
+			

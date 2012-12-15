@@ -11,13 +11,13 @@ body{
 
 			#siteContainer{
 				width:1024px;
-				margin:auto;
+				margin: 0 auto;
 				height:100%;
 			}
 
 			#our_work{
 				margin:auto;
-				height:384px;
+				height:424px;
 				width:1024px;
 
 				background:#211E25;
@@ -27,21 +27,25 @@ body{
 
 			#our_workTop{
 				height:384px;
-				width:inherit;
-				background:inherit;
 				
-	
+				margin:0px 44px;
+				background-image:url("images/our_work/OurWorkBG.jpg");
+				background-color: #18161B;
+				
 			}
+
 			.our_workDescription{
 				background:inherit;
 				height: 384px;	
 				width: 254px;
 				float:left;
 				color:#AEAEAE;
+				margin:10px 0px;
 			}
 
 			.our_workDescription p{
 				margin-right:40px;
+
 				margin-top: 15px;
 
 			}
@@ -79,33 +83,34 @@ body{
 			#our_workBottom{
 
 				color:#272726;
-				border-top:solid;
-				border-width:5px;
+		
+			
 
 				width:1024px;
 				margin:0px auto;
 				position:relative;
 				
 				background-color: #19171C;
-				height:112px;
+				height:64px;
 			}
 
 		
 			.our_workThumbs{
-				margin: 0 auto;
-				width:800px;
-	
+					
 			}
 
 			.our_workThumb{
 
+				/*
 				-webkit-transform: skew(35deg);
 			   -moz-transform: skew(35deg);
-			    -o-transform: skew(35deg); 
+			    -o-transform: skew(35deg); */
+			    float:left;
+			    position:relative;
 
-			    position: relative;
-				left:-40px;//Adjust Thumb alignment
+			
 			}
+
 
 			.parallelogram {
 				border-top:#333333;

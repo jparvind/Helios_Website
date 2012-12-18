@@ -79,10 +79,7 @@ body{
 				float:left;
 				height:inherit;
 			}
-			.touchslider{
-				width:inherit;
-				float:left;
-			}
+
 			#project02{
 				//display: none;
 			}
@@ -101,7 +98,14 @@ body{
 			    float:left;
 			    position:relative;
 
-			
+			}
+
+			#our_work_divide{
+		
+			z-index: 1;
+			  position:absolute;
+			  left:0px;
+				
 			}
 
 
@@ -132,7 +136,14 @@ body{
 				 border-width:0px 5px 5px 5px;
 			}
 
+
 		/**************** Slider ******************/
+		.touchslider{
+			width:inherit;
+			float:left;
+			position:absolute;
+
+		}
 		.touchslider-nav{
 			margin:15px 0;
 			float:right;
@@ -146,15 +157,43 @@ body{
 
 	
 		.touchslider-demo .touchslider-nav-item {
+
 			width: 12px;
 			height: 12px;
 			background: #312E36;
 			margin: 0 0 0 5px;
 			display: inline-block;
 			-webkit-border-radius: 12px;
-			        border-radius: 12px;
+			border-radius: 12px;
 			}
 		.touchslider-demo .touchslider-nav-item-current {
 			background: #655F6E;
 		}
-			
+		.touchslider-prev{
+			position: absolute;
+			left: 00px;
+			top: 140px;
+			z-index: 1;
+		}
+
+		.touchslider-next{
+			position: absolute;
+			left: 637px;
+			top: 140px;
+			z-index: 1;
+		}
+		.touchslider-viewport{
+			width: 682px; 
+			overflow: hidden; 
+			position: absolute;
+			height: 384px;
+			background-color:rgba(0,0,0,0.3);
+
+		}
+
+		#play_btn{
+			position: absolute;
+			left: 637px;
+			top: 140px;
+			z-index: 1;
+		}

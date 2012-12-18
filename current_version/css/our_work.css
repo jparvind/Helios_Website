@@ -41,11 +41,12 @@ body{
 
 			.our_workDescription{
 				background:inherit;
-				height: 384px;	
-				width: 184px;
+				height: 360px;	
+				width: 204px;
 				float:left;
 				color:#AEAEAE;
-				padding:0px 35px;
+				padding:24px 25px 0px 25px;
+
 				background-color:rgba(0,0,0,0.3);
 			}
 
@@ -90,23 +91,36 @@ body{
 				bottom:0px;
 			}
 			.our_workThumb{
-				
-				/*
-				-webkit-transform: skew(35deg);
-			   -moz-transform: skew(35deg);
-			    -o-transform: skew(35deg); */
-			    float:left;
-			    position:relative;
+					width:122px;
+					height:64px;
+					/*
+					-webkit-transform: skew(35deg);
+				   -moz-transform: skew(35deg);
+				    -o-transform: skew(35deg); */
+				    float:left;
+				    position:relative;
 
 			}
 
-			#our_work_divide{
-		
-			z-index: 1;
-			  position:absolute;
-			  left:0px;
+			.our_work_divide{
+			float:right;
 				
 			}
+			.thumb_number{
+					font-size: 1.2em;
+					color:#FFFFFF;
+					position:absolute;
+					bottom:3px;
+					left:4px;
+			}
+			.thumb_name{
+				font-size: 1.2em;
+				color:#FFFFFF;
+				position:absolute;
+				bottom:3px;
+				right:4px;
+			}
+
 
 
 			.parallelogram {

@@ -1,13 +1,4 @@
-body{
-				background-color: #EEE;
 
-				background-color: #0d161c;
-				font-family: "proxima-nova",sans-serif;
-				font-size: 0.770em;
-				font-weight: 500;
-				//overflow-x: hidden;
-
-			}
 
 			#siteContainer{
 				width:1024px;
@@ -150,7 +141,7 @@ body{
 				 border-width:0px 5px 5px 5px;
 			}
 
-
+			
 		/**************** Slider ******************/
 		.touchslider{
 			width:inherit;

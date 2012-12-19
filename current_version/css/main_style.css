@@ -8,12 +8,16 @@ html, body{
 }
 
 body{
-	background-color: #0d161c;
+	background: #000000;
   	font-family: "proxima-nova",sans-serif;
 	font-size: 0.875em;
 	font-weight: 500;
 		overflow-x: hidden;
 
+}
+h1{
+	font-size: 1.5em;
+	color:#0AB8C9;
 }
 
 a:link, a:visited, a:active, a:hover{
@@ -141,7 +145,7 @@ ul{
 }
 
 #about_image{
-	border:4px #666 solid;
+	border:0px #666 solid;
 	height:673px;
 	width:1024px;
 

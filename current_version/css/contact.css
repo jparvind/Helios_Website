@@ -1,56 +1,77 @@
-body{background:#141414;}
 
 /* ----- set width and center layout ----- */
 #contactContainer {
-	background: red;
+	background: #141414;
 	width:1024px;
 	height:673px;
-	margin:67px auto;
+	margin:0px auto;
+	color:#484848;
 }
 #contactInnerContainer {
-	background: green;
-	width:930px;
+	background: #141414;
+	width:933px;
 	margin:auto;
 }
 
 
 /* --------------------------------------- */
 #map{
-	width: 931px;
-	margin:auto;
+	//width: 931px;
+	//margin:auto;
 	background: blue;
 }
 /* ----------- float columns ------------- */
-#contactInfo {
-	background:#eee;
+#contactInfo { 
+	
 	float:left;
 	width:25%;
 }
 
 #contactMid {
-	background:#ccc;
+	
 	float:left;
 	width:25%;
 }
 
 #contactRight {
-	background:#ddd;
+	
 	float:left;
 	width:50%;
 }
 
-
 /* --------------------------------------- */
 #footer {
-	background: blue;
+	background: #292929;
 	clear:both;
+	text-align:center;
+	color:#3F3F3F;
 }
 /* --------------------------------------- */
-
-.questionBox {
-	width: 400px;
+.fieldStyle{
+	background-color: #292929;
+	border-style: none;
+}
+#questionBox {
+	width: 465px;
 	height:146px;
+
+
 }
 .contactInfo ul{
 	list-style-type: square;
+}
+
+.emailFont a{
+	color:blue;
+}
+
+.formBtn {
+  color: #0AB8C9;
+  background-color: #121212;
+  font-weight: bold;
+  border-style: none;
+  font-size: 1.2em;
+}
+#submit{
+	float: right;
 }

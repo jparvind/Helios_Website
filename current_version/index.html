@@ -530,10 +530,10 @@
 <div id="contact">
   <div id="contactContainer">
   <div id="contactInnerContainer">
-    <div id="map">
-      <img src="images/contact/map.png"</img>
-    </div>
-    <div id="contact">
+  
+      <img src="images/contact/map.png"></img>
+   
+   
       <div id="contactInfo">
         <h1>General</h1>
         <ul>
@@ -552,7 +552,7 @@
           </tr>
           <tr>
             <td>Email</td>
-            <td>info@heliosinteractive.com</td>
+            <td><a class="emailFont" href="mailto:info@heliosinteractive.com">info@heliosinteractive.com</a></td>
           </tr>
         </table> 
 
@@ -562,18 +562,19 @@
       <div id="contactMid">
         <h1> Get In Touch</h1>
         <form>
-        Name: <input type="text" name="name"><br>
-        E-mail <input type="text" name="email">
-        Company/Organization <input type="text" name="company">
-        
+          <ul>
+        <li>Name:</li><li><input type="text" name="name" class="fieldStyle"></li>
+        <li> E-mail </li><li><input type="text" name="email" class="fieldStyle"></li>
+        <li>Company/Organization <input type="text" name="company" class="fieldStyle"></li>
+        </ul>
       </div>
       
       <div id="contactRight">
-          Question/Comments <input type="text" name="question" class="questionBox">
+          Question/Comments <input type="text" name="question" id="questionBox" class="fieldStyle">
         
           <div id="submit">
-             <input type="submit" value="Clear"/>
-             <input type="submit"  value="Submit"/>
+             <input class="formBtn" type="submit" value="Clear"/>
+             <input class="formBtn" type="submit"  value="Submit"/>
             </form> 
           </div>
       </div>

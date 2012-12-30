@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
     <link href="css/our_work.css" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
+    <link href="css/solutions.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 
     <!-- Scripts -->
 
@@ -503,20 +505,58 @@
     </div>
     <!-- SOLUTIONS -->
     <div id="solutions">
+      <div id="solutionFloater"></div>
+      <div id="solutionButtonsContain">
+        <div class="solutionButton">
+            <p>Branded Experience</p>
+        </div>
+        <div class="solutionButton">
+            <p>Content Development</p>
+        </div>
+        <div class="solutionButton solutionsButtonSelected">
+            <p>Multi-Platform</p>
+        </div>
+        <div class="solutionButton ">
+            <p>Social Media</p>
+        </div>
+        <div class="solutionButton">
+            <p>Technology</p>
+        </div>
+      </div>
+     
+        <div id="solutionDesc"> 
+          <div id="solutionDescContain">
+            <h1>Multi-Platform <span class="workTitle">Approach</span></h1>
+            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+        </div>
+      </div>
     </div>
   
   <!-- About US -->
   <div id="about">
-    <div id="about_container">
+    <div id="aboutFloater"></div>
+           <div id="aboutButtonContain">
+          <div class="aboutButtonSelected"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
+        </div>
 
-      <div id="about_image"><img src="images/about/JasonBWnew.png" /></div>
-
-      <div id="abouts_thumbs">
-          
+      <div id="aboutDesc"> 
+          <div id="aboutDescContain">
+            <h1>Ben McChesney.</h1>
+            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+        </div>
       </div>
-    </div>
-    <div class="clear"></div>
-    </div>
+        
+      
+
+      <div class="clear"></div>
+      </div>
 
   </div>
 <!-- Contact -->
@@ -616,7 +656,10 @@
 
   <script>
       // Our work Content
-      $(document).ready(function() {//TODO crossfade
+      $(document).ready(function() {
+
+
+      //TODO crossfade
         //Hide all our_work_projects exect first one
         $("#our_workTop").children().not(".our_work_project:nth-Child(1)").hide();
           //$("#our_workTop").children().not('#our_work_project02').hide();

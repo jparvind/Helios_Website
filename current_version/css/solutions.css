@@ -1,0 +1,63 @@
+#solutions{
+	margin:auto;
+	height:609px;
+	width:1024px;
+	background-image:url('../images/solutions/solutions_image.png');
+	position: relative;
+}
+
+.solutionButton{
+	width:189px;
+	height:72px;
+	background:#000;
+	margin-bottom:6px;
+	background-color:rgba(0,0,0,0.3);
+	position: relative;
+	
+
+}
+.solutionsButtonSelected{
+	background-color:rgba(10,184,201,0.3);
+}
+.solutionButton p{
+	position:absolute;
+	bottom:8px;
+	right:10px;
+	color:#FFF;
+}
+
+#solutionButtonsContain{
+	clear: both;
+	height:387px;
+	width: 200px;
+}
+
+#solutionFloater {
+  float: left;
+  height: 50%;
+  width: 100%;
+  margin-bottom: -193px; 
+}
+
+#solutionDesc{
+	position: absolute;
+	right:16px;
+	bottom:13px;
+	width:690px;
+	height:211px;
+	background-color:rgba(0,0,0,0.6);
+
+}
+#solutionDescContain{
+	margin:41px 50px;
+}
+
+#solutionDesc h1{
+	text-transform: uppercase;
+}
+
+#solutionDesc p{
+	color:#FFF;
+	margin-top: 14px;
+	line-height: 1.6;
+}

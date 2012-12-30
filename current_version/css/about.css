@@ -1,0 +1,53 @@
+
+#about{
+	position: relative;
+	margin:auto;
+
+	height:609px;
+	width:1024px;
+	background-image:url('../images/about/JasonBWnew.png');
+}
+.aboutButtonContain{
+	clear: both;
+	height:509px;
+	width: 200px;
+}
+.aboutButton{
+	margin-bottom:10px;
+	opacity: 0.3;
+}
+
+.aboutButtonSelected{
+	margin-bottom:10px;
+	opacity: 1;
+}
+
+#aboutFloater {
+  float: left;
+  height: 50%;
+  width: 100%;
+  margin-bottom: -254px; 
+}
+
+#aboutDesc{
+	position: absolute;
+	right:16px;
+	bottom:217px;
+	width:538px;
+	height:222px;
+	background-color:rgba(255,255,255,0.1);
+
+}
+#aboutDescContain{
+	margin:58px 21px;
+}
+
+#aboutDesc h1{
+	font-size: 24px;
+}
+
+#aboutDesc p{
+	color:#FFF;
+	margin-top: 14px;
+	line-height: 1.6;
+}

@@ -42,7 +42,7 @@
 #contactInfo { 
 	
 	float:left;
-	width:25%;
+	width:240px;
 }
 .contactLineSpace{
 	margin-bottom: 17px
@@ -51,18 +51,18 @@
 #contactMid {
 	
 	float:left;
-	width:25%;
+	width:257px;
 
 }
 
 #contactRight {
 	
 	float:left;
-	width:50%;
+	width:436px;
 }
 
 #questionBox {
-	width: 437px;
+	width: 436px;
 	height:147px;
 
 
@@ -73,6 +73,7 @@
 	clear:both;
 	text-align:center;
 	color:#3F3F3F;
+	height:33px;
 }
 /* --------------------------------------- */
 .fieldStyle{
@@ -92,7 +93,7 @@
 
 .emailFont a{
 	color: #08d7eb;
-
+	text-decoration: underline;
 }
 
 .formBtn {
@@ -101,6 +102,8 @@
   font-weight: bold;
   border-style: none;
   font-size: 12px;
+  height:33px;
+  width:100px;
 }
 #submit{
 	float: right;

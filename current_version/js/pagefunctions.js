@@ -158,6 +158,11 @@ function our_work_slider(){
               $(".solutionDesc:nth-Child("+selectedIndex+")").show();
 
               //Swap background Image
-            //  alert($(#value).val('//'));
+              //alert($(this).attr("bgImage"));
+              var solutionImg = $(this).attr("bgImage");
+             // background-image:url('../images/solutions/solutions_image.png');
+
+              // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
+              $('#solutions').css('background-image', 'url(' + solutionImg + ')');
             });
  }

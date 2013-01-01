@@ -39,7 +39,7 @@
   margin-bottom: -193px; 
 }
 
-#solutionDesc{
+#solutionDescContain{
 	position: absolute;
 	right:16px;
 	bottom:13px;
@@ -48,15 +48,15 @@
 	background-color:rgba(0,0,0,0.6);
 
 }
-#solutionDescContain{
+.solutionDesc{
 	margin:41px 50px;
 }
 
-#solutionDesc h1{
+#solutionDescContain h1{
 	text-transform: uppercase;
 }
 
-#solutionDesc p{
+#solutionDescContain p{
 	color:#FFF;
 	margin-top: 14px;
 	line-height: 1.6;

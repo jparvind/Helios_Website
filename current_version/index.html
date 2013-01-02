@@ -21,14 +21,15 @@
     <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
     <script src="js/pagefunctions.js" type="text/javascript"></script>
     <script src="js/jquery.touchslider.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 
 
 </head>
 <body>
 	
-<div id="home">
-    <!-- Main Navigation -->
-    <div id="mainNavigation">
+
+<!-- Main Navigation -->
+  <div id="mainNavigation">
       <a href="#home" class="selected logo"><img src="images/main/helios_logo_small.png" alt="Logo"></a>
      
       <ul>
@@ -39,299 +40,95 @@
       </ul>
 
     </div>
+<div id="pageContent">
+  <div id="home" class="section">
+      <!-- Home -->
+      <div id="greeting">
+        
+        <img src="images/main/main_logo.png" alt="Helios Interactive Logo" />
+        <h1>
+          We are <span>Helios Interactive</span>, a cutting-edge design studio located in the heart of San Francisco.
+        </h1>
 
-    <!-- Home -->
-    <div id="greeting">
-      
-      <img src="images/main/main_logo.png" alt="Helios Interactive Logo" />
-      <h1>
-        We are <span>Helios Interactive</span>, a cutting-edge design studio located in the heart of San Francisco.
-      </h1>
-
-    </div>
-    <div id="work">
       </div>
-  </div>
-<!--- OUR WORK -->
-<div id="our_work">
-
-      <div id="our_workTop">
-        <div class="our_work_project">
-          <!--VISA-->
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Visa Network</li>
-              <li><span class="workTitle">Client</span> Doremus Visa  </li>
-              <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
-            </ul>
-            <p>
-
-            Visa’s Network marketing team was looking for an interactive way of teaching their customers about the different services offered while imparting the secure and reliable nature of their network. Helios programmed multiple interfaces and interactive elements with organic yet cohesive UX devices that highlighted the various attributes and connections between the offerings. Hardware and software solutions were engineered and installed at Visa’s Headquarters by our team.
-
-            
-            </p>
-          </div>
-      
-            <div class="our_workRight">
-
-
-            <div class="touchslider touchslider-demo" >
-             
-              <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-
-              <div class="touchslider-viewport">
-              
-                <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>   
-
-                <div class="touchslider-item" > 
-                  <span> 
-                  <iframe id="visa_vid" src="http://player.vimeo.com/video/52493450?api=1?player_id=visa_vid" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></span>
-                </div>
-
-                        
-                <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
-                <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
-              </div>
-
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                
-              
-              </div>
-            
-          </div>
-          </div>
+      <div id="work">
         </div>
-       
+    </div>
+  <!--- OUR WORK -->
+  <div id="our_work" class="section">
 
+        <div id="our_workTop">
           <div class="our_work_project">
+            <!--VISA-->
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Visa Network</li>
+                <li><span class="workTitle">Client</span> Doremus Visa  </li>
+                <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
+              </ul>
+              <p>
 
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Emirates Airlines + US Open</li>
-              <li><span class="workTitle">Client</span>Creative Artists Association/Emirates Airlines</li>
-              <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
-            </ul>
-            <p>
-              Emirates was looking for a unique, interactive way to engage attendees of the 2012 US Open .  Helios built a ‘Ball Flight Simulator’, a gesture-driven digital experience that encouraged participants to virtually ‘hit’ a tennis ball and then guide it’s flight around the globe, eventually landing on one of Emirates destination points.  At the culmination of the experience, the user’s photo was taken in front of a postcard image of the destination, and sent to them to share via various social media platforms.  
-            </p>
-          </div>
-      
-            <div class="our_workRight">
+              Visa’s Network marketing team was looking for an interactive way of teaching their customers about the different services offered while imparting the secure and reliable nature of their network. Helios programmed multiple interfaces and interactive elements with organic yet cohesive UX devices that highlighted the various attributes and connections between the offerings. Hardware and software solutions were engineered and installed at Visa’s Headquarters by our team.
+
+              
+              </p>
+            </div>
+        
+              <div class="our_workRight">
 
 
-            <div class="touchslider touchslider-demo">
-                <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-              <div class="touchslider-viewport">
-                
-                <div class="touchslider-item " ><img src="images/our_work/Emirates_1.jpg" /></div>   
-
-                <div class="touchslider-item" > 
-                  <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                </div>
-
-                        
-                <div class="touchslider-item"><img src="images/our_work/Emirates_2.jpg" /></div>
-                <div class="touchslider-item" ><img src="images/our_work/Emirates_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Emirates_4.jpg" /></div>
+              <div class="touchslider touchslider-demo" >
                
-              </div>
-
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                 <a class="touchslider-nav-item"></a>
-               
-
-                
-              
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="our_work_project">
-
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Dream Force</li>
-              <li><span class="workTitle">Client</span> Arnold/Panasonic </li>
-              <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
-            </ul>
-            <p>
-              Arnold and Panasonic were looking for interesting ways to integrate their celebrity partner, US Men’s Tennis Pro Mardy Fish, into an experience that would surprise and delight attendees.  Helios built an Augmented Reality (AR) photo experience, which allowed fans to interactive with a virtual version of the tennis star.  Consumers would see themselves on-screen standing at center court, and an image of Mardy would ‘magically’ appear next to them, interacting in various ways until prompting them to take a photo together.  The photos were posted directly to Panasonic’s Facebook page, and ever consumer was sent a link to access their photo to “like” and share with their friends.  
-                  
-            
-            </p>
-          </div>
-      
-            <div class="our_workRight">
-
-
-            <div class="touchslider touchslider-demo">
                 <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-              <div class="touchslider-viewport">
-               
-                <div class="touchslider-item"><img src="images/our_work/Salesforce_1.jpg" /></div>
+                  <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
 
-                <div class="touchslider-item" > 
-                  <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <div class="touchslider-viewport">
+                
+                  <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>   
+
+                  <div class="touchslider-item" > 
+                    <span> 
+                    <iframe id="visa_vid" src="http://player.vimeo.com/video/52493450?api=1?player_id=visa_vid" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></span>
+                  </div>
+
+                          
+                  <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
+                  <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
                 </div>
 
-                           
-                <div class="touchslider-item"><img src="images/our_work/Salesforce_2.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Salesforce_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Salesforce_4.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Salesforce_5.jpg"/></div>
-                <div class="touchslider-item"><img src="images/our_work/Salesforce_6.jpg"/></div>
-              </div>
-
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                
-              
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-          <div class="our_work_project">
-
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Bally Total Fitness + Retail </li>
-              <li><span class="workTitle">Client</span>  Manifest Digital/Bally Total Fitness</li>
-              <li><span class="workTitle">Launch Date</span> 05.01.2011</li>
-            </ul>
-            <p>
-          Bally Total Fitness was searching for a gesture-based interactive piece to provide a unique, information-driven experience to existing members and to entice new members to sign up at their flagship locations.  Helios built a gesture based fitness application that allows attendees to control a large-format video wall through their motions and movement.  A cursor driven UI is used to navigate four different applications including nutritional information, a virtual trainer, and a personalized visualization tool.  THIS DISPLAY RECEIVED AN APEX DIGITAL SIGNAGE AWARD
+                <div class="touchslider-nav">
                   
-            
-            </p>
-          </div>
-      
-            <div class="our_workRight">
-
-
-            <div class="touchslider touchslider-demo">
-                <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-              <div class="touchslider-viewport">
+                  <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  
                 
-                <div class="touchslider-item" > 
-                  <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
-
-                 <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>           
-                <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
-                <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
-              </div>
-
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                
               
-              </div>
             </div>
-
-          </div>
-        </div>
-
-        <div class="our_work_project">
-
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Panasonic  + US Open</li>
-              <li><span class="workTitle">Client</span> Arnold/Panasonic </li>
-              <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
-            </ul>
-            <p>
-
-              Arnold and Panasonic were looking for interesting ways to integrate their celebrity partner, US Men’s Tennis Pro Mardy Fish, into an experience that would surprise and delight attendees.  Helios built an Augmented Reality (AR) photo experience, which allowed fans to interactive with a virtual version of the tennis star.  Consumers would see themselves on-screen standing at center court, and an image of Mardy would ‘magically’ appear next to them, interacting in various ways until prompting them to take a photo together.  The photos were posted directly to Panasonic’s Facebook page, and ever consumer was sent a link to access their photo to “like” and share with their friends.  
-                  
-             </p>
-          </div>
-      
-            <div class="our_workRight">
-
-
-            <div class="touchslider touchslider-demo">
-                <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-              <div class="touchslider-viewport">
-                
-                <div class="touchslider-item" > 
-                  <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                </div>
-
-                 <div class="touchslider-item"><img src="images/our_work/Visa_1.jpg" /></div>           
-                <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
-              </div>
-
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                
-              
-              </div>
             </div>
-
           </div>
-        </div>
+         
 
-        <div class="our_work_project">
-          
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> McDonald's Global Convention</li>
-              <li><span class="workTitle">Client</span> McDonald's</li>
-              <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
-            </ul>
-            <p>
-              Helios created several interactive games, both moderated and self guided, that allowed attendees to have fun while learning about the McDonald's approach to technology, design and social media. From an MC moderated "game show" style question and answer game, to interactive games, attendees were encouraged to learn at their own pace.  Multiple technologies were used, including touch, multitouch, and a comprehensive CMS driven mobile app that allowed brand ambassadors access to product information, marketing materials, and user manuals for McDonalds menu items world wide. 
-                  
-            <p><span class="awardTitle">Finalist for event Marketer award</span></p>
-            </p>
-          </div>
-      
-            <div class="our_workRight">
+            <div class="our_work_project" style="display:none">
+
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Emirates Airlines + US Open</li>
+                <li><span class="workTitle">Client</span>Creative Artists Association/Emirates Airlines</li>
+                <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
+              </ul>
+              <p>
+                Emirates was looking for a unique, interactive way to engage attendees of the 2012 US Open .  Helios built a ‘Ball Flight Simulator’, a gesture-driven digital experience that encouraged participants to virtually ‘hit’ a tennis ball and then guide it’s flight around the globe, eventually landing on one of Emirates destination points.  At the culmination of the experience, the user’s photo was taken in front of a postcard image of the destination, and sent to them to share via various social media platforms.  
+              </p>
+            </div>
+        
+              <div class="our_workRight">
 
 
               <div class="touchslider touchslider-demo">
@@ -339,17 +136,122 @@
                   <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
                 <div class="touchslider-viewport">
                   
-                  <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div> 
-            
+                  <div class="touchslider-item " ><img src="images/our_work/Emirates_1.jpg" /></div>   
+
                   <div class="touchslider-item" > 
                     <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                   </div>
+
+                          
+                  <div class="touchslider-item"><img src="images/our_work/Emirates_2.jpg" /></div>
+                  <div class="touchslider-item" ><img src="images/our_work/Emirates_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Emirates_4.jpg" /></div>
+                 
+                </div>
+
+                <div class="touchslider-nav">
                   
-                              
-                    <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
-                    <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
-                    <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
-                    <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
+                  <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                   <a class="touchslider-nav-item"></a>
+                 
+
+                  
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="our_work_project" style="display:none">
+
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Dream Force</li>
+                <li><span class="workTitle">Client</span> Arnold/Panasonic </li>
+                <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
+              </ul>
+              <p>
+                Arnold and Panasonic were looking for interesting ways to integrate their celebrity partner, US Men’s Tennis Pro Mardy Fish, into an experience that would surprise and delight attendees.  Helios built an Augmented Reality (AR) photo experience, which allowed fans to interactive with a virtual version of the tennis star.  Consumers would see themselves on-screen standing at center court, and an image of Mardy would ‘magically’ appear next to them, interacting in various ways until prompting them to take a photo together.  The photos were posted directly to Panasonic’s Facebook page, and ever consumer was sent a link to access their photo to “like” and share with their friends.  
+                    
+              
+              </p>
+            </div>
+        
+              <div class="our_workRight">
+
+
+              <div class="touchslider touchslider-demo">
+                  <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
+                  <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
+                <div class="touchslider-viewport">
+                 
+                  <div class="touchslider-item"><img src="images/our_work/Salesforce_1.jpg" /></div>
+
+                  <div class="touchslider-item" > 
+                    <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
+
+                             
+                  <div class="touchslider-item"><img src="images/our_work/Salesforce_2.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Salesforce_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Salesforce_4.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Salesforce_5.jpg"/></div>
+                  <div class="touchslider-item"><img src="images/our_work/Salesforce_6.jpg"/></div>
+                </div>
+
+                <div class="touchslider-nav">
+                  
+                  <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+            <div class="our_work_project" style="display:none">
+
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Bally Total Fitness + Retail </li>
+                <li><span class="workTitle">Client</span>  Manifest Digital/Bally Total Fitness</li>
+                <li><span class="workTitle">Launch Date</span> 05.01.2011</li>
+              </ul>
+              <p>
+            Bally Total Fitness was searching for a gesture-based interactive piece to provide a unique, information-driven experience to existing members and to entice new members to sign up at their flagship locations.  Helios built a gesture based fitness application that allows attendees to control a large-format video wall through their motions and movement.  A cursor driven UI is used to navigate four different applications including nutritional information, a virtual trainer, and a personalized visualization tool.  THIS DISPLAY RECEIVED AN APEX DIGITAL SIGNAGE AWARD
+                    
+              
+              </p>
+            </div>
+        
+              <div class="our_workRight">
+
+
+              <div class="touchslider touchslider-demo">
+                  <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
+                  <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
+                <div class="touchslider-viewport">
+                  
+                  <div class="touchslider-item" > 
+                    <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
+
+                   <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>           
+                  <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
+                  <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
                 </div>
 
                 <div class="touchslider-nav">
@@ -364,289 +266,435 @@
                 </div>
               </div>
 
-
             </div>
-
-        </div>
-
-          <div class="our_work_project">
-
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Kellogg’s + Amazing Spider Man Exclusive Content</li>
-              <li><span class="workTitle">Client</span> Catapult Marketing/Kellogg’s</li>
-              <li><span class="workTitle">Launch Date</span> 04.01.2012</li>
-            </ul>
-            <p>
-            
-              Kellogg’s wanted to provide consumers access to three exclusive clips from the Amazing Spider Man ™ movie in order to drive purchase of their products.  Helios built an augmented reality mobile application that required consumers to buy a box of the cereal, asked them to download the ‘Amazing Spider Man Exclusive’ app. Consumers would then use their ‘Spidey Sense’ (and the camera on their smart phone) to find the target image of Peter Parker on the back of the box that would automatically launch the exclusive video content, trailer, and links to special offers.  
-
-            
-            </p>
           </div>
-      
-            <div class="our_workRight">
 
+          <div class="our_work_project" style="display:none">
 
-            <div class="touchslider touchslider-demo">
-                <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-              <div class="touchslider-viewport">
-                
-                <div class="touchslider-item" > 
-                  <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                </div>
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Panasonic  + US Open</li>
+                <li><span class="workTitle">Client</span> Arnold/Panasonic </li>
+                <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
+              </ul>
+              <p>
 
-                 <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>           
-                <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
-                <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
-              </div>
-
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                
-              
-              </div>
+                Arnold and Panasonic were looking for interesting ways to integrate their celebrity partner, US Men’s Tennis Pro Mardy Fish, into an experience that would surprise and delight attendees.  Helios built an Augmented Reality (AR) photo experience, which allowed fans to interactive with a virtual version of the tennis star.  Consumers would see themselves on-screen standing at center court, and an image of Mardy would ‘magically’ appear next to them, interacting in various ways until prompting them to take a photo together.  The photos were posted directly to Panasonic’s Facebook page, and ever consumer was sent a link to access their photo to “like” and share with their friends.  
+                    
+               </p>
             </div>
+        
+              <div class="our_workRight">
 
-          </div>
-        </div>
 
-         
-
-          <div class="our_work_project">
-
-          <div class="our_workDescription">
-            <ul>
-              <li><span class="workTitle">Project</span> Macy’s + Macy’s Thanksgiving Day Parade Holiday Windows </li>
-              <li><span class="workTitle">Client</span> Macy’s</li>
-              <li><span class="workTitle">Launch Date</span> 11.10.2011</li>
-            </ul>
-            <p>
-              Macy’s was looking to create a compelling experience in the storefront windows of their Herald Square flagship location that would provide a unique, fun element for consumers to interact with.  Helios built an Augmented Reality (AR) photo opp using facial recognition to determine when users were looking at the screen.  This in turn activated the interactive content – iconic balloons appearing around their head, and an animated parade ticker.  A countdown was also trigger for taking their photo was which was automatically posted to Macy’s Facebook page.  Over 20,000 photos were taken in twenty-eight days, with more than 70,000 participants overall.
+              <div class="touchslider touchslider-demo">
+                  <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
+                  <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
+                <div class="touchslider-viewport">
                   
-            
-            </p>
-          </div>
-      
-            <div class="our_workRight">
+                  <div class="touchslider-item" > 
+                    <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
 
-
-            <div class="touchslider touchslider-demo">
-                <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
-                <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
-              <div class="touchslider-viewport">
-                
-                <div class="touchslider-item" > 
-                  <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                   <div class="touchslider-item"><img src="images/our_work/Visa_1.jpg" /></div>           
+                  <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
                 </div>
 
-                <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>           
-                <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
-                <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
-                <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
+                <div class="touchslider-nav">
+                  
+                  <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  
+                
+                </div>
               </div>
 
-              <div class="touchslider-nav">
-                
-                <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                <a class="touchslider-nav-item "></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                <a class="touchslider-nav-item"></a>
-                
+            </div>
+          </div>
+
+          <div class="our_work_project" style="display:none">
+            
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> McDonald's Global Convention</li>
+                <li><span class="workTitle">Client</span> McDonald's</li>
+                <li><span class="workTitle">Launch Date</span> 08.27.2012</li>
+              </ul>
+              <p>
+                Helios created several interactive games, both moderated and self guided, that allowed attendees to have fun while learning about the McDonald's approach to technology, design and social media. From an MC moderated "game show" style question and answer game, to interactive games, attendees were encouraged to learn at their own pace.  Multiple technologies were used, including touch, multitouch, and a comprehensive CMS driven mobile app that allowed brand ambassadors access to product information, marketing materials, and user manuals for McDonalds menu items world wide. 
+                    
+              <p><span class="awardTitle">Finalist for event Marketer award</span></p>
+              </p>
+            </div>
+        
+              <div class="our_workRight">
+
+
+                <div class="touchslider touchslider-demo">
+                    <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
+                    <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
+                  <div class="touchslider-viewport">
+                    
+                    <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div> 
               
+                    <div class="touchslider-item" > 
+                      <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                    
+                                
+                      <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
+                      <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
+                      <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
+                      <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
+                  </div>
+
+                  <div class="touchslider-nav">
+                    
+                    <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                    <a class="touchslider-nav-item "></a>
+                    <a class="touchslider-nav-item"></a>
+                    <a class="touchslider-nav-item"></a>
+                    <a class="touchslider-nav-item"></a>
+                    
+                  
+                  </div>
+                </div>
+
+
               </div>
-            </div>
 
           </div>
-        </div>
 
-        
-        <!---->
-      </div>
+            <div class="our_work_project" style="display:none">
 
-     
-          <div id="our_work_bottom">
-            <div class ="our_work_thumbs">           
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Visa.jpg')"><p> <span class="thumb_number">01.</span><span class="thumb_name"> Visa </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Emirates.jpg')"><p> <span class="thumb_number">02.</span><span class="thumb_name"> Emirates </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Salesforce.jpg')"><p> <span class="thumb_number">03.</span><span class="thumb_name"> Dreamforce </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Ballys.jpg')"><p> <span class="thumb_number">04.</span><span class="thumb_name"> Ballys </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Panasonic.jpg')"><p> <span class="thumb_number">05.</span><span class="thumb_name"> Panasonic </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_McDonalds.jpg')"><p> <span class="thumb_number">06.</span><span class="thumb_name"> McDonalds </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Spiderman.jpg')"><p> <span class="thumb_number">07.</span><span class="thumb_name"> Kelloggs </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-
-                <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Macys.jpg')"><p> <span class="thumb_number">08.</span><span class="thumb_name"> Macys </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
-                   
-            </div>
-          </div>
-        
-  </div>
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Kellogg’s + Amazing Spider Man Exclusive Content</li>
+                <li><span class="workTitle">Client</span> Catapult Marketing/Kellogg’s</li>
+                <li><span class="workTitle">Launch Date</span> 04.01.2012</li>
+              </ul>
+              <p>
               
-      
-    
-     
-    <div class="clear">
-    </div>
-    <!-- SOLUTIONS -->
-    <div id="solutions" >
-      <div id="solutionFloater"></div>
-      <div id="solutionButtonsContain">
-         <a href="#none" bgImage="images/solutions/solutions_branded_experience.jpg">
-          <div class="solutionButton">
-            <p>Branded Experience</p>
-        </div></a>
-        <a href="#none" bgImage="images/solutions/solutions_content_development.jpg"> <div class="solutionButton">
-            <p>Content Development</p>
-        </div></a>
-         <a href="#none" bgImage="images/solutions/solutions_multiplatform.jpg"><div class="solutionButton solutionsButtonSelected">
-            <p>Multi-Platform</p>
-        </div></a>
-        <a href="#none" bgImage="images/solutions/solutions_social_media.jpg"> <div class="solutionButton ">
-            <p>Social Media</p>
-        </div></a>
-       <a href="#none" bgImage="images/solutions/solutions_technology.jpg">  <div class="solutionButton">
-            <p>Technology</p>
-          </div></a>
-      </div>
-     
-        <div id="solutionDescContain"> 
-          <div class="solutionDesc" >
-            <h1>Branded Experience<span class="workTitle"> Approach</span></h1>
-            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
-          </div>
+                Kellogg’s wanted to provide consumers access to three exclusive clips from the Amazing Spider Man ™ movie in order to drive purchase of their products.  Helios built an augmented reality mobile application that required consumers to buy a box of the cereal, asked them to download the ‘Amazing Spider Man Exclusive’ app. Consumers would then use their ‘Spidey Sense’ (and the camera on their smart phone) to find the target image of Peter Parker on the back of the box that would automatically launch the exclusive video content, trailer, and links to special offers.  
 
-          <div class="solutionDesc" style="display:none;">
-            <h1>Content Development<span class="workTitle"> Approach</span></h1>
-            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
-          </div>
-          <div class="solutionDesc" style="display:none;">
-            <h1>Multi-Platform <span class="workTitle"> Approach</span></h1>
-            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
-          </div>
-          <div class="solutionDesc" style="display:none;">
-            <h1>Social Media <span class="workTitle"> Approach</span></h1>
-            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
-          </div>
-          <div class="solutionDesc" style="display:none;">
-            <h1>Technology <span class="workTitle"> Integration</span></h1>
-            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
-          </div>
-      </div>
-    </div>
-  
-  <!-- About US -->
-  <div id="about">
-    <div id="aboutFloater"></div>
-           <div id="aboutButtonContain">
-          <div class="aboutButtonSelected"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-          <div class="aboutButton"><img src="images/about/about_person.png" border="0"/></div>
-        </div>
-
-      <div id="aboutDesc"> 
-          <div id="aboutDescContain">
-            <h1>Ben McChesney.</h1>
-            <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
-        </div>
-      </div>
+              
+              </p>
+            </div>
         
-      
+              <div class="our_workRight">
 
-      <div class="clear"></div>
-      </div>
 
-  </div>
-<!-- Contact -->
-<div id="contact">
-  <div id="contactContainer">
-  <div id="contactInnerContainer">
-   <img id="map" src="images/contact/map.png"></img>
-      
-      <div id="contactHead">
-        <div id="contactInfo">
-          <h1>General</h1>
-        </div>
-     
-        <div id="contactMid">
-          <h1> Get In Touch</h1>
-        </div>
-      </div>
-    <div id ="contactBody">
-      <div id="contactInfo">
+              <div class="touchslider touchslider-demo">
+                  <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
+                  <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
+                <div class="touchslider-viewport">
+                  
+                  <div class="touchslider-item" > 
+                    <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
+
+                   <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>           
+                  <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
+                  <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
+                </div>
+
+                <div class="touchslider-nav">
+                  
+                  <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+           
+
+            <div class="our_work_project">
+
+            <div class="our_workDescription">
+              <ul>
+                <li><span class="workTitle">Project</span> Macy’s + Macy’s Thanksgiving Day Parade Holiday Windows </li>
+                <li><span class="workTitle">Client</span> Macy’s</li>
+                <li><span class="workTitle">Launch Date</span> 11.10.2011</li>
+              </ul>
+              <p>
+                Macy’s was looking to create a compelling experience in the storefront windows of their Herald Square flagship location that would provide a unique, fun element for consumers to interact with.  Helios built an Augmented Reality (AR) photo opp using facial recognition to determine when users were looking at the screen.  This in turn activated the interactive content – iconic balloons appearing around their head, and an animated parade ticker.  A countdown was also trigger for taking their photo was which was automatically posted to Macy’s Facebook page.  Over 20,000 photos were taken in twenty-eight days, with more than 70,000 participants overall.
+                    
+              
+              </p>
+            </div>
         
-        <ul class="contactLineSpace">
-          <li>Helios Interactive</li>
-        </ul>
-        <ul class="contactLineSpace">
-          <li>301 8th Street</li>
-          <li>Suite 250</li>
-          <li>San Francisco, CA 94103</li>
+              <div class="our_workRight">
+
+
+              <div class="touchslider touchslider-demo">
+                  <div class="touchslider-prev"><img src="images/our_work/left_arrow.png" /></div>
+                  <div class="touchslider-next"><img src="images/our_work/right_arrow.png" /></div>
+                <div class="touchslider-viewport">
+                  
+                  <div class="touchslider-item" > 
+                    <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
+
+                  <div class="touchslider-item " ><img src="images/our_work/Visa_1.jpg" /></div>           
+                  <div class="touchslider-item"><img src="images/our_work/Visa_2.jpg" /></div>
+                  <div class="touchslider-item" ><img src="images/our_work/Visa_3.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_4.jpg" /></div>
+                  <div class="touchslider-item"><img src="images/our_work/Visa_5.jpg"/></div>
+                </div>
+
+                <div class="touchslider-nav">
+                  
+                  <a class="touchslider-nav-item touchslider-nav-item-current"></a>
+                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  <a class="touchslider-nav-item"></a>
+                  
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           
-        </ul>
-     
-        <table id="contactInfoTable">
-          <tr>
-            <td>Tel</td>
-            <td>415.520.6900</td>
-          </tr>
-          <tr>
-            <td>Email</td>
-            <td><a class="emailFont" href="mailto:info@heliosinteractive.com">info@heliosinteractive.com</a></td>
-          </tr>
-        </table> 
+          <!---->
+        </div>
 
-        
-      </div>
-      
-      <div id="contactMid">
        
-        <form>
-          <ul>
-        <li>Name:</li><li><input type="text" name="name" class="fieldStyle"></li>
-        <li> E-mail </li><li><input type="text" name="email" class="fieldStyle"></li>
-        <li>Company/Organization <input type="text" name="company" class="fieldStyle"></li>
-        </ul>
-      </div>
-      
-      <div id="contactRight">
-          Question/Comments <input type="text" name="question" id="questionBox" class="fieldStyle">
-        
-          <div id="submit">
-             <input class="formBtn" type="submit" value="Clear"/>
-             <input class="formBtn" type="submit"  value="Submit"/>
-            </form> 
-          </div>
-      </div>
-    </div>
-    </div>
-    <div id="footer">
-        <p>Content &copy; Helios interactive 2011-2012</p>
-    </div>
-  
-  </div>
-</div>
+            <div id="our_work_bottom">
+              <div class ="our_work_thumbs">           
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Visa.jpg')"><p> <span class="thumb_number">01.</span><span class="thumb_name"> Visa </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
 
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Emirates.jpg')"><p> <span class="thumb_number">02.</span><span class="thumb_name"> Emirates </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Salesforce.jpg')"><p> <span class="thumb_number">03.</span><span class="thumb_name"> Dreamforce </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Ballys.jpg')"><p> <span class="thumb_number">04.</span><span class="thumb_name"> Ballys </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Panasonic.jpg')"><p> <span class="thumb_number">05.</span><span class="thumb_name"> Panasonic </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_McDonalds.jpg')"><p> <span class="thumb_number">06.</span><span class="thumb_name"> McDonalds </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Spiderman.jpg')"><p> <span class="thumb_number">07.</span><span class="thumb_name"> Kelloggs </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none"><div class="our_workThumb" style="background-image:url('images/our_work/Thumbs_Macys.jpg')"><p> <span class="thumb_number">08.</span><span class="thumb_name"> Macys </span></p><img class="our_work_divide" src="images/our_work/Thumbs_divider.png"/></div></a>
+                     
+              </div>
+            </div>
+          
+    </div>
+                
+        
+      
+       
+      <div class="clear">
+      </div>
+      <!-- SOLUTIONS -->
+      <div id="solutions" class="section">
+        <div id="solutionFloater"></div>
+        <div id="solutionButtonsContain">
+           <a href="#none" bgImage="images/solutions/solutions_branded_experience.jpg">
+            <div class="solutionButton">
+              <p>Branded Experience</p>
+          </div></a>
+          <a href="#none" bgImage="images/solutions/solutions_content_development.jpg"> <div class="solutionButton">
+              <p>Content Development</p>
+          </div></a>
+           <a href="#none" bgImage="images/solutions/solutions_multiplatform.jpg"><div class="solutionButton solutionsButtonSelected">
+              <p>Multi-Platform</p>
+          </div></a>
+          <a href="#none" bgImage="images/solutions/solutions_social_media.jpg"> <div class="solutionButton ">
+              <p>Social Media</p>
+          </div></a>
+         <a href="#none" bgImage="images/solutions/solutions_technology.jpg">  <div class="solutionButton">
+              <p>Technology</p>
+            </div></a>
+        </div>
+       
+          <div id="solutionDescContain"> 
+            <div class="solutionDesc" >
+              <h1>Branded Experience<span class="workTitle"> Approach</span></h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+
+            <div class="solutionDesc" style="display:none;">
+              <h1>Content Development<span class="workTitle"> Approach</span></h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="solutionDesc" style="display:none;">
+              <h1>Multi-Platform <span class="workTitle"> Approach</span></h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="solutionDesc" style="display:none;">
+              <h1>Social Media <span class="workTitle"> Approach</span></h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="solutionDesc" style="display:none;">
+              <h1>Technology <span class="workTitle"> Integration</span></h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+        </div>
+      </div>
+    
+    <!-- About US -->
+    <div id="about" class="section">
+      <div id="aboutFloater"></div>
+        <div id="aboutButtonContain">
+          <div id="our_work_bottom">
+            <div class ="aboutThumbs">           
+                  <a href="#none" bgImage="images/solutions/solutions_technology.jpg"><div class="aboutThumb" ><img src="images/about/about_helios_thumb.jpg"></img><p> <span class="thumb_number">01.</span><span class="thumb_name"> Helios </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/about/about_ben.jpg"><div class="aboutThumb" ><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">02.</span><span class="thumb_name"> Ben M. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/solutions/solutions_technology.jpg"><div class="aboutThumb" ><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">03.</span><span class="thumb_name"> Hillary D. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/about/about_ben.jpg"><div class="aboutThumb"><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">04.</span><span class="thumb_name"> Mike S. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/solutions/solutions_technology.jpg"><div class="aboutThumb" ><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">05.</span><span class="thumb_name"> Jon F. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/about/about_ben.jpg"><div class="aboutThumb" ><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">06.</span><span class="thumb_name"> Devin H. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/solutions/solutions_technology.jpg"><div class="aboutThumb" ><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">07.</span><span class="thumb_name"> Mike M. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+
+                  <a href="#none" bgImage="images/about/about_ben.jpg"><div class="aboutThumb" ><img src="images/about/about_ben_thumb.jpg"></img><p> <span class="thumb_number">08.</span><span class="thumb_name"> Mike M. </span></p><img class="aboutDivide" src="images/our_work/Thumbs_divider.png"/></div></a>
+                     
+              </div>
+            </div>
+        </div>
+
+        <div id="aboutDescContain">
+            <div class="aboutDesc" >
+              <h1>Helios Interactive</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div> 
+            <div class="aboutDesc" style="display:none">
+              <h1>Ben McChesney.</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="aboutDesc" style="display:none">
+              <h1>Hillary Dennis.</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="aboutDesc" style="display:none">
+              <h1>Mike Schaiman</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="aboutDesc" style="display:none">
+              <h1>Mike Schaiman</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="aboutDesc" style="display:none">
+              <h1>Mike Schaiman</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="aboutDesc" style="display:none">
+              <h1>Mike Schaiman</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+            <div class="aboutDesc" style="display:none">
+              <h1>Mike Schaiman</h1>
+              <p> Helios Creates experiences that span multiple consumer touch points - live events, mobile devices, web, and more. We can leverage this ability to extend the reach of the experience that is built and touch consumers well beyond the initial point of contact.</p>
+            </div>
+        
+        </div>
+          
+        
+
+        <div class="clear"></div>
+    </div>
+
+    
+  <!-- Contact -->
+    <div id="contact" class="section">
+      <div id="contactContainer">
+        <div id="contactInnerContainer">
+         <img id="map" src="images/contact/map.png"></img>
+            
+            <div id="contactHead">
+              <div id="contactInfo">
+                <h1>General</h1>
+              </div>
+           
+              <div id="contactMid">
+                <h1> Get In Touch</h1>
+              </div>
+            </div>
+          <div id ="contactBody">
+            <div id="contactInfo">
+              
+              <ul class="contactLineSpace">
+                <li>Helios Interactive</li>
+              </ul>
+              <ul class="contactLineSpace">
+                <li>301 8th Street</li>
+                <li>Suite 250</li>
+                <li>San Francisco, CA 94103</li>
+                
+              </ul>
+           
+              <table id="contactInfoTable">
+                <tr>
+                  <td>Tel</td>
+                  <td>415.520.6900</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a class="emailFont" href="mailto:info@heliosinteractive.com">info@heliosinteractive.com</a></td>
+                </tr>
+              </table> 
+
+              
+            </div>
+         
+            
+          <div id="contactMid">
+             
+              <form>
+                <ul>
+              <li>Name:</li><li><input type="text" name="name" class="fieldStyle"></li>
+              <li> E-mail </li><li><input type="text" name="email" class="fieldStyle"></li>
+              <li>Company/Organization <input type="text" name="company" class="fieldStyle"></li>
+              </ul>
+            </form>
+          </div>
+            
+            <div id="contactRight">
+                Question/Comments <input type="text" name="question" id="questionBox" class="fieldStyle">
+              
+                <div id="submit">
+                   <input class="formBtn" type="submit" value="Clear"/>
+                   <input class="formBtn" type="submit"  value="Submit"/>
+                  </form> 
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+       <div id="footer">
+              <p>Content &copy; Helios interactive 2011-2012</p>
+          </div>
+    </div>
+    <div id="pageSpace">
+
+    </div>
+          
+        
 </div>
 
 
@@ -671,7 +719,15 @@
 
       //About
       about_image_switch();
+      about_thumbs();
 
+      //General functions
+      fade_pages('home');
+     
+      eventListener();
+      
+      //pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
+      getPageSpace();
 
     }); 
       </script>

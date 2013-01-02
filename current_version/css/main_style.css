@@ -9,8 +9,9 @@ html, body{
 
 body{
 	background: #000000;
-  	font-family: "proxima-nova",sans-serif;
-	font-size: 0.875em;
+  	
+	font-family:Helvetica,Arial;
+	font-size: 14px;
 	font-weight: 500;
 		overflow-x: hidden;
 
@@ -19,6 +20,7 @@ h1{
 	font-size: 1.5em;
 	color:#0AB8C9;
 }
+
 
 a:link, a:visited, a:active, a:hover{
   	font-family: "proxima-nova",sans-serif;
@@ -40,6 +42,11 @@ a:hover{
 }
 ul{
 	list-style-type: none;
+}
+#pageContent{
+	width:1024px;
+	margin:0 auto;
+
 }
 
 #current{
@@ -125,18 +132,12 @@ ul{
 }
 
 
-
-/* ----------------------> Solutions <---------------------- */
-
-
-
-/* ----------------------> About <---------------------- */
-
-			
-
-
-/* ---------------------->Contact <---------------------- */
-
-
-
+#footer {
+	background: #292929;
+	clear:both;
+	text-align:center;
+	color:#3F3F3F;
+	height:33px;
+	width: 
+}
 

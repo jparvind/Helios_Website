@@ -5,7 +5,7 @@
 
 	height:609px;
 	width:1024px;
-	background-image:url('../images/about/JasonBWnew.png');
+	background-image:url('../images/about/about_ben.jpg');
 }
 .aboutButtonContain{
 	clear: both;
@@ -29,25 +29,52 @@
   margin-bottom: -254px; 
 }
 
-#aboutDesc{
-	position: absolute;
-	right:16px;
-	bottom:217px;
-	width:538px;
-	height:222px;
-	background-color:rgba(255,255,255,0.1);
-
-}
 #aboutDescContain{
-	margin:58px 21px;
+	position: absolute;
+	left:48px;
+	top:185px;
+	width:450px;
+	height:195px;
+	background-color:rgba(0,0,0,0.6);
+
+}
+.aboutDesc{
+	margin:35px 32px;
 }
 
-#aboutDesc h1{
+#aboutDescContain h1{
 	font-size: 24px;
 }
 
-#aboutDesc p{
+#aboutDescContain p{
 	color:#FFF;
 	margin-top: 14px;
 	line-height: 1.6;
+}
+.aboutThumbs{
+	/*background:black;
+
+
+	width:1024px;
+	height:64px;*/
+}
+.aboutThumb{
+		width:128px;
+		height:64px;
+		/*
+		-webkit-transform: skew(35deg);
+	   -moz-transform: skew(35deg);
+	    -o-transform: skew(35deg); */
+	    float:left;
+	    position:relative;
+
+
+}
+.aboutThumb img{
+	position: absolute;
+	
+}
+.aboutDivide {
+	position:absolute;
+	right:0px;
 }

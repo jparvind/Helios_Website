@@ -13,7 +13,7 @@
 }
 #contactInnerContainer {
 	background: #141414;
-	width:933px;
+	width:934px;
 	margin:auto;
 }
 
@@ -51,7 +51,7 @@
 #contactMid {
 	
 	float:left;
-	width:257px;
+	width:256px;
 
 }
 
@@ -68,13 +68,7 @@
 
 }
 /* --------------------------------------- */
-#footer {
-	background: #292929;
-	clear:both;
-	text-align:center;
-	color:#3F3F3F;
-	height:33px;
-}
+
 /* --------------------------------------- */
 .fieldStyle{
 	background-color: #292929;

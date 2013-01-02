@@ -1,4 +1,7 @@
 //Navigation
+var navBarHeight =60;
+var pageHeight= 610;
+
 function current_nav_slide(){
 	    //Animated Div Highlighter
     $('#mainNavigation').append('<div id="current"></div>');
@@ -62,7 +65,7 @@ function current_nav_slide(){
 		//Top  minus nav bar height
         $('#mainNavigation a').click(function(){
           $('html, body').animate({
-              scrollTop: $( $(this).attr('href') ).offset().top -60
+              scrollTop: $( $(this).attr('href') ).offset().top -navBarHeight
           }, 500);
           return false;
         });
@@ -86,7 +89,7 @@ function current_nav_slide(){
         //Hide all our_work_projects exect first one
         $("#our_workTop").children().not(".our_work_project:nth-Child(1)").hide();
           //$("#our_workTop").children().not('#our_work_project02').hide();
-    
+        
 
         /*
           $('#our_workTop').children().fadeOut("slow", function(){
@@ -166,3 +169,114 @@ function our_work_slider(){
               $('#solutions').css('background-image', 'url(' + solutionImg + ')');
             });
  }
+
+  function about_thumbs(){
+     //TODO crossfade
+        //Hide all our_work_projects exect first one
+      
+
+
+            //Dim out all but first Thumb
+          // $('div.aboutThumbs').children().not(':first-Child').css({ opacity: 0.5 });
+          $(".aboutThumbs > a ").click(function() {
+            
+            //Fade All but selected Thumb Out
+              $('div.aboutThumbs').children().not($(this)).children().children("img").fadeTo('fast', 1);
+               //Fad Selected Thumb in
+              $("img:first",this).fadeTo('fast', 0);
+        
+               var selectedIndex = $(this).index()+1;
+         
+           //Swap Content
+              $("#aboutDescContain").children().not(".aboutDesc:nth-Child("+selectedIndex+")").hide();
+              $(".aboutDesc:nth-Child("+selectedIndex+")").show();
+
+              //Swap BG Image
+               var solutionImg = $(this).attr("bgImage");
+              $('#about').css('background-image', 'url(' + solutionImg + ')');
+            });
+ }
+ //Fades the pages
+ function fade_pages(currentPageID){
+    
+      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.05);
+      $('#'+currentPageID).fadeTo('fast',1);
+
+ }
+
+ function eventListener(){
+        $('body').mousewheel(function() {
+           scrollDelay();
+          
+          });
+        $('body').keyup(function() {
+          scrollDelay();
+        });
+       /* $('body').mouseup(function() {
+          scrollDelay();
+        });*/
+
+ }
+
+ function scrollDelay(){
+   clearTimeout($.data(this, 'timer'));
+
+             $.data(this, 'timer', setTimeout(function() {
+            
+             //do something 
+             scrollToDiv('.section');
+          }, 500));
+ }
+
+ function scrollToDiv(a){
+    //Get current scroll position
+    var current = (document.all ? document.scrollTop : window.pageYOffset);
+    //Define variables for data collection
+    var target = undefined;
+    var targetpos = undefined;
+    var dif = 0;
+    //check each selected element to see witch is closest
+    $(a).each(function(){
+        //Save the position of the element to avoid repeated property lookup
+        var t = $(this).position().top;
+        //check if there is an element to check against
+        if (target != undefined){
+            //save the difference between the current element's position and the current scroll position to avoid repeated calculations
+            var tdif = Math.abs(current - t);
+            //check if its closer than the selected element
+            if(tdif < dif){
+                //set the current element to be selected
+                target = this;
+                targetpos = t -navBarHeight;
+                dif = tdif;
+            }
+        } else {
+            //set the current element to be selected
+            target = this;
+            targetpos = t -navBarHeight;
+            dif = Math.abs(current - t);
+        }
+    });
+    //check if an element has been selected
+    if (target != undefined){
+      //Fade in Current page. Fade out others
+     
+      fade_pages(target.id);
+
+
+        //animate scroll to the elements position
+          
+
+        $('html,body').animate({scrollTop: targetpos}, 500);
+
+
+    }
+}
+
+//pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
+    function getPageSpace(){
+      var pageSpace = Math.abs(pageHeight - $(window).height());
+      
+      $('#pageSpace').css("height",pageSpace +"px");
+    }
+      

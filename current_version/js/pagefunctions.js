@@ -1,18 +1,18 @@
 //Navigation
-var navBarHeight =60;
-var pageHeight= 610;
+var navBarHeight = 60;
+var pageHeight = 610;
 
-function current_nav_slide(){
-	    //Animated Div Highlighter
+function current_nav_slide() {
+    //Animated Div Highlighter
     $('#mainNavigation').append('<div id="current"></div>');
     $.currentNavItem = ('.selected');
     //$(divHighlight) = $('#current');
     $('#current').hide();
-    
+
     var divIsVisible = false;
 
     //Color of Selected and UnSelected Navigation
-    $('#mainNavigation a').click(function(){
+    $('#mainNavigation a').click(function() {
     var offset = $(this).offset();
     var width = $(this).width();
     var right = offset.left - width/9;
@@ -83,7 +83,7 @@ function current_nav_slide(){
 	    return false;
  	});
  }
-
+///////Our Work/////////
  function our_work_hide(){
      //TODO crossfade
         //Hide all our_work_projects exect first one
@@ -100,17 +100,21 @@ function current_nav_slide(){
           // $('#our_work').replaceWith('<h2>New heading</h2>');
             */  
             //Dim out all but first Thumb
-           $('div.our_work_thumbs').children().not(':first-Child').css({ opacity: 0.5 });
+            $('.thumbDim:first').css({ opacity: 0.3 });
+            $('.our_workThumb:first').addClass('ourWorkSelected');
+           $('.thumbDim').not(':first').css({ opacity: 0.75 });
           $(".our_work_thumbs > a ").click(function() {
             
             //Fade All but selected Thumb Out
-               $('div.our_work_thumbs').children().not($(this)).fadeTo('fast', 0.4);
+               $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
+                $('.our_workThumb').removeClass('ourWorkSelected');
                //Fad Selected Thumb in
-              $(this).fadeTo('fast', 1);
-
+              $(this).children().children(':first').fadeTo('fast', 0.3);
+             $(this).children('.our_workThumb').addClass('ourWorkSelected');
               //Change Project 
               //Hide all but selected
               var selectedIndex = $(this).index()+1;
+
               //alert(selectedIndex);
               //$("#our_workTop").children().not(1).hide();
               //Swap Gallery Page
@@ -199,23 +203,17 @@ function our_work_slider(){
  //Fades the pages
  function fade_pages(currentPageID){
     
-      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.05);
-      $('#'+currentPageID).fadeTo('fast',1);
+      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.5);
+      $('#'+currentPageID).fadeTo(200,1);
 
  }
 
  function eventListener(){
-        $('body').mousewheel(function() {
-           scrollDelay();
-          
-          });
-        $('body').keyup(function() {
+  $(window).scroll(function () {
+
+       // $('html,body').stop();
           scrollDelay();
         });
-       /* $('body').mouseup(function() {
-          scrollDelay();
-        });*/
-
  }
 
  function scrollDelay(){
@@ -260,12 +258,10 @@ function our_work_slider(){
     //check if an element has been selected
     if (target != undefined){
       //Fade in Current page. Fade out others
-     
-      fade_pages(target.id);
-
-
-        //animate scroll to the elements position
-          
+      var targetId = target.id;
+      fade_pages(targetId);
+      $('#'+targetId).toggleClass('selected');
+        //animate scroll to the elements position      
 
         $('html,body').animate({scrollTop: targetpos}, 500);
 

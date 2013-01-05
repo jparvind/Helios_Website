@@ -81,23 +81,24 @@
 				position:absolute;
 				bottom:0px;
 			}
-			.our_work_thumbs{
-				background:black;
+	
+			.thumbDim{
+				background-color:black;
+				//opacity: .75;
+				height:84px;
+				width:122px;
 
-				/*Creates blacked out Images. More elegant solution?*/
-				width:976px;
-				height:64px;
 			}
 			.our_workThumb{
-					width:122px;
-					height:64px;
-					/*
-					-webkit-transform: skew(35deg);
-				   -moz-transform: skew(35deg);
-				    -o-transform: skew(35deg); */
-				    float:left;
-				    position:relative;
-
+				width:122px;
+				height:64px;
+				/*
+				-webkit-transform: skew(35deg);
+			   -moz-transform: skew(35deg);
+			    -o-transform: skew(35deg); */
+			    float:left;
+			    position:relative;
+				color:#cac8c8;
 
 			}
 
@@ -107,17 +108,20 @@
 			}
 			.thumb_number{
 					font-size: 1.2em;
-					color:#FFFFFF;
+					
 					position:absolute;
 					bottom:3px;
 					left:4px;
 			}
 			.thumb_name{
 				font-size: 1.2em;
-				color:#FFFFFF;
+				
 				position:absolute;
 				bottom:3px;
 				right:4px;
+			}
+			.ourWorkSelected{
+				color:#FFFFFF;
 			}
 
 

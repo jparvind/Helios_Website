@@ -11,13 +11,13 @@
 	height:72px;
 	background:#000;
 	margin-bottom:6px;
-	background-color:rgba(0,0,0,0.3);
+	background-color:rgba(0,0,0,0.6);
 	position: relative;
 	
 
 }
 .solutionsButtonSelected{
-	background-color:rgba(10,184,201,0.3);
+	background-color:rgba(10,184,201,0.6);
 }
 .solutionButton p{
 	position:absolute;

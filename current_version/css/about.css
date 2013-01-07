@@ -5,7 +5,7 @@
 
 	height:609px;
 	width:1024px;
-	background-image:url('../images/about/about_ben.jpg');
+	background-image:url('../images/about/about_landing.jpg');
 }
 .aboutButtonContain{
 	clear: both;
@@ -77,4 +77,22 @@
 .aboutDivide {
 	position:absolute;
 	right:0px;
+}
+
+/* Landing page*/
+#aboutTitle{
+	position: absolute;
+	right:48px;
+	bottom:116px;
+	width:927px;
+	height:194px;
+	background-color:rgba(0,0,0,0.6);
+	line-height: 1.5;
+}
+#aboutTitleDesc{
+	margin:56px 55px;
+}
+#aboutTitle h1{
+	font-size:30px;
+	
 }

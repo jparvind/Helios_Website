@@ -18,16 +18,42 @@
 
 				font-size: 11px;
 			}
-			#our_work_top_contain{
-
+			/* Landing  */
+			#our_work_landing{
+				position: absolute;
+				z-index: 2;
 			}
+			#ourWorkTitle{
+				position: absolute;
+				right:52px;
+				bottom:167px;
+				width:922px;
+				height:195px;
+				background-color:rgba(0,0,0,0.6);
+				line-height: 1.5;
+			}
+			#ourWorkTitleDesc{
+				margin:36px 53px;
+			}
+			#ourWorkTitle h1{
+				font-size:25px;
+				
+			}
+			#ourWorkTitle p{
+				position: absolute;
+				bottom: 11px;
+				color:#ffffff;
+			}
+
+
 			#our_workTop{
 
 				padding-top:60px;
 				overflow: hidden;
 				width:936px;
 				margin:0px auto;
-
+				height:610;
+			
 			}
 
 			.our_workDescription{

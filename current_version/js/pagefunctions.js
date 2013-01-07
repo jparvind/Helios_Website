@@ -66,7 +66,7 @@ function current_nav_slide() {
         $('#mainNavigation a').click(function(){
           $('html, body').animate({
               scrollTop: $( $(this).attr('href') ).offset().top -navBarHeight
-          }, 500);
+          }, 300);
           return false;
         });
      }
@@ -83,45 +83,10 @@ function current_nav_slide() {
 	    return false;
  	});
  }
+
+
 ///////Our Work/////////
- function our_work_hide(){
-     //TODO crossfade
-        //Hide all our_work_projects exect first one
-        $("#our_workTop").children().not(".our_work_project:nth-Child(1)").hide();
-          //$("#our_workTop").children().not('#our_work_project02').hide();
-        
 
-        /*
-          $('#our_workTop').children().fadeOut("slow", function(){
-              $("#our_workTop").children().not('#our_work_project01').hide();
-              //$(this).replaceWith(div);
-              $('#our_work_project02').fadeIn("slow");
-          });
-          // $('#our_work').replaceWith('<h2>New heading</h2>');
-            */  
-            //Dim out all but first Thumb
-            $('.thumbDim:first').css({ opacity: 0.3 });
-            $('.our_workThumb:first').addClass('ourWorkSelected');
-           $('.thumbDim').not(':first').css({ opacity: 0.75 });
-          $(".our_work_thumbs > a ").click(function() {
-            
-            //Fade All but selected Thumb Out
-               $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
-                $('.our_workThumb').removeClass('ourWorkSelected');
-               //Fad Selected Thumb in
-              $(this).children().children(':first').fadeTo('fast', 0.3);
-             $(this).children('.our_workThumb').addClass('ourWorkSelected');
-              //Change Project 
-              //Hide all but selected
-              var selectedIndex = $(this).index()+1;
-
-              //alert(selectedIndex);
-              //$("#our_workTop").children().not(1).hide();
-              //Swap Gallery Page
-              $("#our_workTop").children().not(".our_work_project:nth-Child("+selectedIndex+")").hide();
-              $(".our_work_project:nth-Child("+selectedIndex+")").show();
-            });
- }
 function our_work_slider(){
   
     $(".touchslider-demo").touchSlider({
@@ -145,12 +110,55 @@ function our_work_slider(){
 
 }
 
+ function our_work_hide(){
+     //TODO crossfade
+        //Hide all our_work_projects exect first one
+        $("#our_workTop").children().not(".our_work_project:nth-Child(1)").hide();
+          //$("#our_workTop").children().not('#our_work_project02').hide();
+        
+
+        /*
+          $('#our_workTop').children().fadeOut("slow", function(){
+              $("#our_workTop").children().not('#our_work_project01').hide();
+              //$(this).replaceWith(div);
+              $('#our_work_project02').fadeIn("slow");
+          });
+          // $('#our_work').replaceWith('<h2>New heading</h2>');
+            */  
+            //Dim out all but first Thumb
+            $('.thumbDim:first').css({ opacity: 0.3 });
+            $('.our_workThumb:first').addClass('ourWorkSelected');
+           $('.thumbDim').not(':first').css({ opacity: 0.75 });
+          $(".our_work_thumbs > a ").click(function() {
+               /////////// Title -landing //////////////
+              
+               $('#our_work_landing').hide();
+            //Fade All but selected Thumb Out
+               $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
+                $('.our_workThumb').removeClass('ourWorkSelected');
+               //Fad Selected Thumb in
+              $(this).children().children(':first').fadeTo('fast', 0.3);
+             $(this).children('.our_workThumb').addClass('ourWorkSelected');
+              //Change Project 
+              //Hide all but selected
+              var selectedIndex = $(this).index()+1;
+
+              //alert(selectedIndex);
+              //$("#our_workTop").children().not(1).hide();
+              //Swap Gallery Page
+              $("#our_workTop").children().not(".our_work_project:nth-Child("+selectedIndex+")").hide();
+              $(".our_work_project:nth-Child("+selectedIndex+")").show();
+            });
+ }
+
  function solutions_hide(){
           //Hide not selected
          $("#solutionDescContain").children().not(".solutionDesc:nth-Child(1)").hide();
           //Thumbs 
           $("#solutionButtonsContain > a ").click(function() {
-           
+              /////////// Title //////////////
+              $('#solutionDescContain').show();
+               $('#solutionTitle').hide();
             //Fade All but selected Thumb Out
                $('#solutionButtonsContain').children().not($(this)).children().removeClass("solutionsButtonSelected");
                //Fad Selected Thumb in
@@ -183,7 +191,11 @@ function our_work_slider(){
             //Dim out all but first Thumb
           // $('div.aboutThumbs').children().not(':first-Child').css({ opacity: 0.5 });
           $(".aboutThumbs > a ").click(function() {
-            
+             /////////// Title -landing //////////////
+              $('#aboutDescContain').show();
+               $('#aboutTitle').hide();
+
+
             //Fade All but selected Thumb Out
               $('div.aboutThumbs').children().not($(this)).children().children("img").fadeTo('fast', 1);
                //Fad Selected Thumb in
@@ -206,6 +218,7 @@ function our_work_slider(){
       $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.5);
       $('#'+currentPageID).fadeTo(200,1);
 
+
  }
 
  function eventListener(){
@@ -223,7 +236,37 @@ function our_work_slider(){
             
              //do something 
              scrollToDiv('.section');
+
+            resetLanding();
+
+
           }, 500));
+ }
+
+ function resetLanding(){
+   //Reset pages back to landing pages.
+
+              /////////Our Work//////////
+             $('#our_work_landing').show();
+             $('.thumbDim').fadeTo('fast', 0.75);
+              //Solutions////////
+              $('#solutionDescContain').hide();
+              $('#solutionTitle').show();
+
+              //Swap BG Image
+              var solutionImg = $('#solutionTitle').attr("bgImage");
+              $('#solutions').css('background-image', 'url(' + solutionImg + ')');
+
+              //Remove thumb glow
+              $('#solutionButtonsContain').children().children().removeClass("solutionsButtonSelected");
+              /////////// About //////////////
+              $('#aboutDescContain').hide();
+              $('#aboutTitle').show();
+
+              //Swap BG Image
+              var aboutImg = $('#aboutTitle').attr("bgImage");
+              $('#about').css('background-image', 'url(' + aboutImg + ')');
+              $('div.aboutThumbs').children().children().children("img").fadeTo('fast', 1);
  }
 
  function scrollToDiv(a){
@@ -263,9 +306,7 @@ function our_work_slider(){
       $('#'+targetId).toggleClass('selected');
         //animate scroll to the elements position      
 
-        $('html,body').animate({scrollTop: targetpos}, 500);
-
-
+        $('html,body').animate({scrollTop: targetpos}, 300);
     }
 }
 

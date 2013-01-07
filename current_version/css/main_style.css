@@ -101,8 +101,8 @@ ul{
 	width:inherit;
 }
 #greeting{
-	width: 100%;
-	height: 462px;
+
+	height: 610px;
 	background: #000000 url(../images/main/welcome_bg.png) repeat;
 	margin: 20px 0 0 0;
 	text-align: center;
@@ -111,10 +111,10 @@ ul{
 }
 
 #greeting h1{
-	font-size: 2.5em;
-	font-weight: 300;
+	font-size: 24px;
+	
 	color: #b0b0b0;
-	width: 60%;
+	width: 750px;
 	line-height: 1.2em;
 	margin: 0 auto;
 }
@@ -141,5 +141,12 @@ ul{
 	color:#3F3F3F;
 	height:33px;
 	width: 
+}
+
+.titleColor1{
+	color:#09B2C3;
+}
+.titleColor2{
+	color:#FFFFFF;
 }
 

@@ -2,7 +2,7 @@
 	margin:auto;
 	height:609px;
 	width:1024px;
-	background-image:url('../images/solutions/solutions_image.png');
+	background-image:url('../images/solutions/solutions_landing.jpg');
 	position: relative;
 }
 
@@ -60,4 +60,20 @@
 	color:#FFF;
 	margin-top: 14px;
 	line-height: 1.6;
+}
+#solutionTitle{
+	position: absolute;
+	right:15px;
+	bottom:58px;
+	width:689px;
+	height:118px;
+	background-color:rgba(0,0,0,0.6);
+	line-height: 1.5;
+}
+#solutionTitleDesc{
+	margin:20px 53px;
+}
+#solutionTitle h1{
+	font-size:25px;
+	
 }

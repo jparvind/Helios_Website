@@ -151,6 +151,21 @@ function our_work_slider(){
             });
  }
 
+ function our_work_vimeo(){
+         var player = $('#video1')[0];
+            $f(player).addEvent('ready', ready);
+
+      
+ }
+  function  ready(player_id) {
+                var froogaloop = $f(player_id);
+               $("button").click(function(){
+                    froogaloop.api(this.id);
+                });
+               froogaloop.api('play')
+            }
+ ////Solutions////
+
  function solutions_hide(){
           //Hide not selected
          $("#solutionDescContain").children().not(".solutionDesc:nth-Child(1)").hide();
@@ -215,7 +230,7 @@ function our_work_slider(){
  //Fades the pages
  function fade_pages(currentPageID){
     
-      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.5);
+      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.2);
       $('#'+currentPageID).fadeTo(200,1);
 
 

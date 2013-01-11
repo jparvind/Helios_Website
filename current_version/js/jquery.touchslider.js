@@ -341,7 +341,7 @@ http://touchslider.com
 					if (endCoords[0] + scrollerLeft > 0) { // space in left
 						toIndex = 0;
 					} else if (endCoords[inViewport.length - 1] + scrollerLeft < 0) { // space in right
-						/* nothing */
+						// nothing 
 					} else {
 						opt = {pxInMs: pxInMs};
 						// maximum area
@@ -419,7 +419,7 @@ http://touchslider.com
 			switching.to(ret.current - 1, { dirX: -1, complete: complete });
 		}
 
-		/* Autoplay */
+		// Autoplay //
 		var mouseInViewport = false,
 			isPlay = false,
 			autoPlayTimeout;
@@ -457,7 +457,7 @@ http://touchslider.com
 			return options.container;
 		}
 
-		/* Navigation */
+		// Navigation //
 		// not use delegate(), for correct selection in mobile webkit
 		pagination.click(function() {
 			step(pagination.index(this));

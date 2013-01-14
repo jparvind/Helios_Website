@@ -133,19 +133,32 @@ function our_work_slider(){
             $('.thumbDim:first').css({ opacity: 0.3 });
             $('.our_workThumb:first').addClass('ourWorkSelected');
            $('.thumbDim').not(':first').css({ opacity: 0.75 });
-          $(".our_work_thumbs > a ").click(function() {
+           
+        $(".our_work_thumbs > a ").click(function() {
+          our_work_project_swap(this);
+        });
+        //Landing page click
+         $("#ourWorkTitle").click(function() {
+             
+                our_work_project_swap( $('.thumbDim:first').parent().parent());
+
+         });
+ }
+
+ function our_work_project_swap(thisSelected){
+  
                /////////// Title -landing //////////////
              
-               $('#our_work_landing').hide();
+               $('#our_work_landing').fadeTo('fast', 0,function(){ $('#our_work_landing').hide()});
             //Fade All but selected Thumb Out
                $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
                 $('.our_workThumb').removeClass('ourWorkSelected');
-               //Fad Selected Thumb in
-              $(this).children().children(':first').fadeTo('fast', 0.3);
-             $(this).children('.our_workThumb').addClass('ourWorkSelected');
+               //Fade Selected Thumb in
+              $(thisSelected).children().children(':first').fadeTo('fast', 0.3);
+             $(thisSelected).children('.our_workThumb').addClass('ourWorkSelected');
               //Change Project 
               //Hide all but selected
-              var selectedIndex = $(this).index()+1;
+              var selectedIndex = $(thisSelected).index()+1;
 
               //alert(selectedIndex);
               //$("#our_workTop").children().not(1).hide();
@@ -161,7 +174,7 @@ function our_work_slider(){
            // alert(currentVideo);
              
              
-            });
+            
  }
 
  function our_work_vimeo(){
@@ -229,32 +242,40 @@ function our_work_slider(){
  }
 
   function about_thumbs(){
-     //TODO crossfade
-        //Hide all our_work_projects exect first one
-          //Dim out all but first Thumb
-          // $('div.aboutThumbs').children().not(':first-Child').css({ opacity: 0.5 });
+   //Landing page click
+         $("#aboutTitle").click(function() {
+             
+               about_person_swap( $('.aboutThumb:first').parent());
+
+         });
+
           $(".aboutThumbs > a ").click(function() {
-             /////////// Title -landing //////////////
-              $('#aboutDescContain').show();
-               $('#aboutTitle').hide();
+              about_person_swap(this);
+            });
+ }
+
+function about_person_swap(thisSelected){
+               /////////// Title -landing //////////////
+              $('#aboutDescContain').fadeTo(200, 1);
+               $('#aboutTitle').fadeTo('fast', 0);
 
 
             //Fade All but selected Thumb Out
-              $('div.aboutThumbs').children().not($(this)).children().children("img").fadeTo('fast', 1);
+              $('div.aboutThumbs').children().not($(thisSelected)).children().children("img").fadeTo('fast', 1);
                //Fad Selected Thumb in
-              $("img:first",this).fadeTo('fast', 0);
+              $("img:first",thisSelected).fadeTo(300, 0);
         
-               var selectedIndex = $(this).index()+1;
+               var selectedIndex = $(thisSelected).index()+1;
          
            //Swap Content
               $("#aboutDescContain").children().not(".aboutDesc:nth-Child("+selectedIndex+")").hide();
               $(".aboutDesc:nth-Child("+selectedIndex+")").show();
 
               //Swap BG Image
-               var solutionImg = $(this).attr("bgImage");
+               var solutionImg = $(thisSelected).attr("bgImage");
               $('#about').css('background-image', 'url(' + solutionImg + ')');
-            });
- }
+}
+
  //General
  //Fades the pages
  function fade_pages(currentPageID){
@@ -284,18 +305,18 @@ function our_work_slider(){
             resetLanding();
 
 
-          }, 500));
+          }, 200));
  }
 
  function resetLanding(){
    //Reset pages back to landing pages.
 
               /////////Our Work//////////
-             $('#our_work_landing').show();
+             $('#our_work_landing').fadeTo('fast', 1);
              $('.thumbDim').fadeTo('fast', 0.75);
               //Solutions////////
               $('#solutionDescContain').hide();
-              $('#solutionTitle').show();
+              $('#solutionTitle').fadeTo('fast', 1);
 
               //Swap BG Image
               var solutionImg = $('#solutionTitle').attr("bgImage");
@@ -305,8 +326,7 @@ function our_work_slider(){
               $('#solutionButtonsContain').children().children().removeClass("solutionsButtonSelected");
               /////////// About //////////////
               $('#aboutDescContain').hide();
-              $('#aboutTitle').show();
-
+              $('#aboutTitle').fadeTo('fast', 1);
               //Swap BG Image
               var aboutImg = $('#aboutTitle').attr("bgImage");
               $('#about').css('background-image', 'url(' + aboutImg + ')');

@@ -33,7 +33,7 @@ a:link, a:visited, a:active, a:hover{
 	display: block;
 }
 
-a.selected {
+a.selectedNav {
   color: rgb(8, 215, 235);
 }
 

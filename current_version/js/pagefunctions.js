@@ -5,35 +5,44 @@ var pageHeight = 610;
 var currentVideo = "video1";
 var froogaloop = 'undefined';
 
-
-function current_nav_slide() {
+//General Functions
+var divIsVisible = false;
+var pageScrolling = false;
+function current_nav_slide(selectedItem) {
     //Animated Div Highlighter
     $('#mainNavigation').append('<div id="current"></div>');
-    $.currentNavItem = ('.selected');
+    $.currentNavItem = ('.selectedNav');
     //$(divHighlight) = $('#current');
     $('#current').hide();
 
-    var divIsVisible = false;
+    
 
     //Color of Selected and UnSelected Navigation
     $('#mainNavigation a').click(function() {
-    var offset = $(this).offset();
-    var width = $(this).width();
-    var right = offset.left - width/9;
-    //alert(right);
+    
+        makeCurrentSelection(this);
+    });
+}
 
-      $('#mainNavigation a').removeClass('selected');
-      $(this).toggleClass('selected');
+function makeCurrentSelection(selectedNavItem){
+
+    var offset = $(selectedNavItem).offset();
+    var width = $(selectedNavItem).width();
+    var right = offset.left - width/9;
+   // alert(right);
+
+      $('#mainNavigation a').removeClass('selectedNav');
+      $(selectedNavItem).toggleClass('selectedNav');
 
       //Div Highlight Function
-      if($(this).hasClass('logo')){
+      if($(selectedNavItem).hasClass('logo')){
         //do nothing with the logo
         $('#current').fadeOut();
 
       }
       else{
         //if the link does not have the .logo class
-        if($('selected').is(":visible")){
+        if($('selectedNav').is(":visible")){
           //do nothing
           //alert('DIV IS VISIBLE');
         }
@@ -61,9 +70,8 @@ function current_nav_slide() {
           }
 
       }
-
-    });
 }
+
 //Smooth Scroll To Links On Page
 	function smooth_scroll(){
 		//Top  minus nav bar height
@@ -74,6 +82,140 @@ function current_nav_slide() {
           return false;
         });
      }
+
+ //Fades the pages
+ function fade_pages(currentPageID){
+    
+      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.2);
+      $('#'+currentPageID).fadeTo(200,1);
+
+      
+
+     // $('#'+targetId+'_nav').attr('id', 'selectedNav');
+
+ }
+
+ function eventListener(){
+  $(window).scroll(function () {
+
+       // $('html,body').stop();
+       if(!pageScrolling){
+        pageScrolling =true;
+          scrollDelay();
+     
+        }
+        });
+ }
+
+ function scrollDelay(){
+   clearTimeout($.data(this, 'timer'));
+
+             $.data(this, 'timer', setTimeout(function() {
+           
+             //do something 
+             scrollToDiv('.section');
+
+            resetLanding();
+
+
+          }, 200));
+ }
+
+ function resetLanding(){
+   //Reset pages back to landing pages.
+
+              /////////Our Work//////////
+             $('#our_work_landing').fadeTo('fast', 1);
+             $('.thumbDim').fadeTo('fast', 0.75);
+              //Solutions////////
+              $('#solutionDescContain').hide();
+              $('#solutionTitle').fadeTo('fast', 1);
+
+              //Swap BG Image
+              var solutionImg = $('#solutionTitle').attr("bgImage");
+              $('#solutions').css('background-image', 'url(' + solutionImg + ')');
+
+              //Remove thumb glow
+              $('#solutionButtonsContain').children().children().removeClass("solutionsButtonSelected");
+              /////////// About //////////////
+              $('#aboutDescContain').hide();
+              $('#aboutTitle').fadeTo('fast', 1);
+              //Swap BG Image
+              var aboutImg = $('#aboutTitle').attr("bgImage");
+              $('#about').css('background-image', 'url(' + aboutImg + ')');
+              $('div.aboutThumbs').children().children().children("img").fadeTo('fast', 1);
+ }
+
+
+ function scrollToDiv(a){
+    
+    //Get current scroll position
+    var current = (document.all ? document.scrollTop : window.pageYOffset);
+    //Define variables for data collection
+    var target = undefined;
+    var targetpos = undefined;
+    var dif = 0;
+    //check each selected element to see witch is closest
+    $(a).each(function(){
+        //Save the position of the element to avoid repeated property lookup
+        var t = $(this).position().top;
+        //check if there is an element to check against
+        if (target != undefined){
+            //save the difference between the current element's position and the current scroll position to avoid repeated calculations
+            var tdif = Math.abs(current - t);
+            //check if its closer than the selected element
+            if(tdif < dif){
+                //set the current element to be selected
+                target = this;
+                targetpos = t -navBarHeight;
+                dif = tdif;
+            }
+        } else {
+            //set the current element to be selected
+            target = this;
+            targetpos = t -navBarHeight;
+            dif = Math.abs(current - t);
+        }
+    });
+    //check if an element has been selected
+    if (target != undefined){
+      //Fade in Current page. Fade out others
+     
+      
+        //animate scroll to the elements position      
+
+      $('html,body').animate({scrollTop: targetpos}, 300,function(){ 
+        pageScrolling = false; 
+      var targetId = target.id;
+      fade_pages(targetId);
+     // $('#'+targetId).addClass('selectedNav');
+     //  $('#'+targetId).removeClass('selectedNav');
+      $('#mainNavigation a').removeClass('selectedNav');
+        $('#'+targetId+'_nav').children('a').addClass('selectedNav');
+        if('#'+targetId+'_nav' =='#home_nav'){
+          makeCurrentSelection($('#'+targetId+'_nav'));
+        }else{
+        makeCurrentSelection($('#'+targetId+'_nav').children('a'));
+      };
+        //$('#current').fadeIn();});
+       
+        //Pause videos
+        stopVideo();
+      });
+    
+    }else{
+       pageScrolling =false;
+    }
+  
+}
+
+//pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
+    function getPageSpace(){
+      var pageSpace = Math.abs(pageHeight - $(window).height());
+      
+      $('#pageSpace').css("height",pageSpace +"px");
+    }
+      
 
  
  //////////About us///////////
@@ -276,114 +418,3 @@ function about_person_swap(thisSelected){
               $('#about').css('background-image', 'url(' + solutionImg + ')');
 }
 
- //General
- //Fades the pages
- function fade_pages(currentPageID){
-    
-      $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.2);
-      $('#'+currentPageID).fadeTo(200,1);
-
-
- }
-
- function eventListener(){
-  $(window).scroll(function () {
-
-       // $('html,body').stop();
-          scrollDelay();
-        });
- }
-
- function scrollDelay(){
-   clearTimeout($.data(this, 'timer'));
-
-             $.data(this, 'timer', setTimeout(function() {
-            
-             //do something 
-             scrollToDiv('.section');
-
-            resetLanding();
-
-
-          }, 200));
- }
-
- function resetLanding(){
-   //Reset pages back to landing pages.
-
-              /////////Our Work//////////
-             $('#our_work_landing').fadeTo('fast', 1);
-             $('.thumbDim').fadeTo('fast', 0.75);
-              //Solutions////////
-              $('#solutionDescContain').hide();
-              $('#solutionTitle').fadeTo('fast', 1);
-
-              //Swap BG Image
-              var solutionImg = $('#solutionTitle').attr("bgImage");
-              $('#solutions').css('background-image', 'url(' + solutionImg + ')');
-
-              //Remove thumb glow
-              $('#solutionButtonsContain').children().children().removeClass("solutionsButtonSelected");
-              /////////// About //////////////
-              $('#aboutDescContain').hide();
-              $('#aboutTitle').fadeTo('fast', 1);
-              //Swap BG Image
-              var aboutImg = $('#aboutTitle').attr("bgImage");
-              $('#about').css('background-image', 'url(' + aboutImg + ')');
-              $('div.aboutThumbs').children().children().children("img").fadeTo('fast', 1);
- }
-
-
- function scrollToDiv(a){
-    //Get current scroll position
-    var current = (document.all ? document.scrollTop : window.pageYOffset);
-    //Define variables for data collection
-    var target = undefined;
-    var targetpos = undefined;
-    var dif = 0;
-    //check each selected element to see witch is closest
-    $(a).each(function(){
-        //Save the position of the element to avoid repeated property lookup
-        var t = $(this).position().top;
-        //check if there is an element to check against
-        if (target != undefined){
-            //save the difference between the current element's position and the current scroll position to avoid repeated calculations
-            var tdif = Math.abs(current - t);
-            //check if its closer than the selected element
-            if(tdif < dif){
-                //set the current element to be selected
-                target = this;
-                targetpos = t -navBarHeight;
-                dif = tdif;
-            }
-        } else {
-            //set the current element to be selected
-            target = this;
-            targetpos = t -navBarHeight;
-            dif = Math.abs(current - t);
-        }
-    });
-    //check if an element has been selected
-    if (target != undefined){
-      //Fade in Current page. Fade out others
-      var targetId = target.id;
-      fade_pages(targetId);
-      $('#'+targetId).toggleClass('selected');
-        //animate scroll to the elements position      
-
-      $('html,body').animate({scrollTop: targetpos}, 300);
-       
-        //Pause videos
-        stopVideo();
-
-    
-    }
-}
-
-//pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
-    function getPageSpace(){
-      var pageSpace = Math.abs(pageHeight - $(window).height());
-      
-      $('#pageSpace').css("height",pageSpace +"px");
-    }
-      

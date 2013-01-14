@@ -57,7 +57,7 @@ http://touchslider.com
 			scroller.css({
 				position: "absolute",
 				left: 0,
-				height: viewportHeight,
+				height: viewportHeight-50,
 				width: 100000
 			});
 		}
@@ -399,6 +399,15 @@ http://touchslider.com
 		function changedView(index) {
 			pagination.removeClass(options.currentClass)
 				.eq(index).addClass(options.currentClass);
+
+				//Stop Video from playing whne not on slider.
+			
+				if(pagination.eq(index).hasClass("vimeo-vid")){
+					// Do nothing
+				}else{
+					//Pause Video
+					stopVideo();
+				}
 		}
 
 		// set item or next
@@ -413,6 +422,7 @@ http://touchslider.com
 
 		function next(complete) {
 			switching.to(ret.current + 1, { dirX: 1, complete: complete });
+
 		}
 
 		function prev(complete) {
@@ -479,7 +489,7 @@ http://touchslider.com
 				startPageX, previousPageX, distX, absDistX, startLeft,
 				startPageY, previousPageY, distY, absDistY,
 				start = function(e) {
-					if (e.which > 1) {
+			if (e.which > 1) {
 						return;
 					}
 

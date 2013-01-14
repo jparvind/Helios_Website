@@ -1,6 +1,10 @@
 //Navigation
 var navBarHeight = 60;
 var pageHeight = 610;
+//Vimeo Froogaloop Globals
+var player;
+var froogaloop;
+
 
 function current_nav_slide() {
     //Animated Div Highlighter
@@ -152,18 +156,21 @@ function our_work_slider(){
  }
 
  function our_work_vimeo(){
-         var player = $('#video1')[0];
-            $f(player).addEvent('ready', ready);
+         player = $('#video1')[0];
+           // $f(player).addEvent('ready', ready);
 
-      
+      $f(player).addEvent('ready', ready);
  }
-  function  ready(player_id) {
-                var froogaloop = $f(player_id);
-               $("button").click(function(){
-                    froogaloop.api(this.id);
-                });
-               froogaloop.api('play')
+  function  ready() {
+                froogaloop = $f(player_id);
+             
+               froogaloop.api('play');
             }
+
+  function stopVideo(){
+      alert("pause Video");
+      froogaloop.api('pause');
+  }
  ////Solutions////
 
  function solutions_hide(){
@@ -200,10 +207,7 @@ function our_work_slider(){
   function about_thumbs(){
      //TODO crossfade
         //Hide all our_work_projects exect first one
-      
-
-
-            //Dim out all but first Thumb
+          //Dim out all but first Thumb
           // $('div.aboutThumbs').children().not(':first-Child').css({ opacity: 0.5 });
           $(".aboutThumbs > a ").click(function() {
              /////////// Title -landing //////////////

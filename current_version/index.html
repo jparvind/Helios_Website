@@ -112,7 +112,7 @@
                 <div class="touchslider-nav">
                   
                   <a class="touchslider-nav-item touchslider-nav-item-current"></a>
-                  <a class="touchslider-nav-item "></a>
+                  <a class="touchslider-nav-item vimeo-vid"></a>
                   <a class="touchslider-nav-item"></a>
                   <a class="touchslider-nav-item"></a>
                   <a class="touchslider-nav-item"></a>
@@ -202,7 +202,7 @@
                  
                   <div class="touchslider-item"><img src="images/our_work/Salesforce_1.jpg" /></div>
 
-                  <div class="touchslider-item" > 
+                  <div class="touchslider-item " > 
                     <iframe src="http://player.vimeo.com/video/52493450?badge=0" width="682px" height="384px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                   </div>
 
@@ -740,11 +740,12 @@
   <!-- Navigation Current & Hover -->
   <script type="text/javascript">
   $().ready(function($) {
-
+      
+      our_work_vimeo();//Play pause controls
       our_work_hide();
       our_work_slider(); 
       current_nav_slide();//current page indicator slide bar.
-      our_work_vimeo();
+      
 
       smooth_scroll();//Smoothly scrolls to the new page
 

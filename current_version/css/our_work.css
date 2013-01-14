@@ -196,7 +196,11 @@
 			color: #000;
 
 		}
-		
+		.itemWidth{
+			width:582px;
+			height:84px;
+			background:blue;
+		}
 
 	
 		.touchslider-demo .touchslider-nav-item {

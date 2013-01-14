@@ -2,8 +2,8 @@
 var navBarHeight = 60;
 var pageHeight = 610;
 //Vimeo Froogaloop Globals
-var player;
-var froogaloop;
+var currentVideo = "video1";
+var froogaloop = 'undefined';
 
 
 function current_nav_slide() {
@@ -135,7 +135,7 @@ function our_work_slider(){
            $('.thumbDim').not(':first').css({ opacity: 0.75 });
           $(".our_work_thumbs > a ").click(function() {
                /////////// Title -landing //////////////
-              
+             
                $('#our_work_landing').hide();
             //Fade All but selected Thumb Out
                $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
@@ -152,24 +152,48 @@ function our_work_slider(){
               //Swap Gallery Page
               $("#our_workTop").children().not(".our_work_project:nth-Child("+selectedIndex+")").hide();
               $(".our_work_project:nth-Child("+selectedIndex+")").show();
+              //Pause videos
+             //Set current Video Id  
+             stopVideo(); 
+              //player = $('#video'+selectedIndex)[0];
+              currentVideo = 'video'+selectedIndex;
+            
+           // alert(currentVideo);
+             
+             
             });
  }
 
  function our_work_vimeo(){
-         player = $('#video1')[0];
+       //  player = $('#video1,#video2,#video3')[0];
            // $f(player).addEvent('ready', ready);
-
-      $f(player).addEvent('ready', ready);
+           //froogaloop = $f(playerID);
+            $('iframe.vimeo').each(function(){
+                Froogaloop(this).addEvent('ready', ready);
+            });
  }
-  function  ready() {
-                froogaloop = $f(player_id);
-             
-               froogaloop.api('play');
+  function  ready(playerID) {
+               // froogaloop = $f(playerID);
+                 Froogaloop(playerID).addEvent('play', play(playerID));
+                Froogaloop(playerID).addEvent('seek', seek);
+              // froogaloop.api('play');
+             // Froogaloop(playerID).api('play');
             }
 
+            function play(playerID){
+                alert(playerID + " is playing!!!");
+            }
+            function seek() {
+                alert('Seeking');
+            }
+
+
   function stopVideo(){
-      alert("pause Video");
-      froogaloop.api('pause');
+   //   alert("pause Video");
+   
+        
+      Froogaloop(currentVideo).api('pause');
+    
   }
  ////Solutions////
 
@@ -231,6 +255,7 @@ function our_work_slider(){
               $('#about').css('background-image', 'url(' + solutionImg + ')');
             });
  }
+ //General
  //Fades the pages
  function fade_pages(currentPageID){
     
@@ -288,6 +313,7 @@ function our_work_slider(){
               $('div.aboutThumbs').children().children().children("img").fadeTo('fast', 1);
  }
 
+
  function scrollToDiv(a){
     //Get current scroll position
     var current = (document.all ? document.scrollTop : window.pageYOffset);
@@ -325,7 +351,12 @@ function our_work_slider(){
       $('#'+targetId).toggleClass('selected');
         //animate scroll to the elements position      
 
-        $('html,body').animate({scrollTop: targetpos}, 300);
+      $('html,body').animate({scrollTop: targetpos}, 300);
+       
+        //Pause videos
+        stopVideo();
+
+    
     }
 }
 

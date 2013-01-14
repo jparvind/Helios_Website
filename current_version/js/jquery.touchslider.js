@@ -406,7 +406,7 @@ http://touchslider.com
 					// Do nothing
 				}else{
 					//Pause Video
-					stopVideo();
+					stopVideo();// Vimeo function pagefunction.js
 				}
 		}
 

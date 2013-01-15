@@ -8,6 +8,15 @@ var froogaloop = 'undefined';
 //General Functions
 var divIsVisible = false;
 var pageScrolling = false;
+var  sectionArray =[];
+var currentSection= 'home';
+
+
+function generalInit(){
+  $('.section').each(function(){
+     sectionArray.push(($(this).attr('id')));
+   });
+}
 function current_nav_slide(selectedItem) {
     //Animated Div Highlighter
     $('#mainNavigation').append('<div id="current"></div>');
@@ -76,9 +85,12 @@ function makeCurrentSelection(selectedNavItem){
 	function smooth_scroll(){
 		//Top  minus nav bar height
         $('#mainNavigation a').click(function(){
+          tempSection =  $(this).attr('href');
+         currentSection = tempSection.replace('#','');
           $('html, body').animate({
               scrollTop: $( $(this).attr('href') ).offset().top -navBarHeight
-          }, 300);
+             
+          }, 500);
           return false;
         });
      }
@@ -96,7 +108,7 @@ function makeCurrentSelection(selectedNavItem){
  }
 
  function eventListener(){
-  $(window).scroll(function () {
+ /* $(window).scroll(function () {
 
        // $('html,body').stop();
        if(!pageScrolling){
@@ -104,7 +116,49 @@ function makeCurrentSelection(selectedNavItem){
           scrollDelay();
      
         }
-        });
+        });*/
+ 
+      $('body').mousewheel(function(event,delta){
+       if(!pageScrolling){
+          if(delta >0){
+           // Mouse Scroll Up
+             prevPage();
+          }else{
+           //Mouse Scroll Down
+             nextPage();
+          }
+        }
+      });
+    
+ }
+
+ function prevPage(){
+    var newSection;
+    var currentSectionIndex = sectionArray.indexOf(currentSection);
+    //Get the next section 
+    if(currentSectionIndex >0){
+       newSection = currentSection = sectionArray[currentSectionIndex -1];
+     }else{
+        newSection = currentSection = sectionArray[0];
+     }
+   //Go to next section
+    setCurrentSelection(newSection);
+ }
+
+ function nextPage(){
+    var newSection;
+    var currentSectionIndex = sectionArray.indexOf(currentSection);
+    //Get the next section 
+    if(currentSectionIndex <sectionArray.length -1){
+
+       newSection = currentSection = sectionArray[currentSectionIndex +1];
+     }else{
+        newSection = currentSection = sectionArray[sectionArray.length -1];
+     }
+   //Go to next section
+    setCurrentSelection(newSection);
+
+
  }
 
  function scrollDelay(){
@@ -181,16 +235,43 @@ function makeCurrentSelection(selectedNavItem){
     if (target != undefined){
       //Fade in Current page. Fade out others
      
-      
         //animate scroll to the elements position      
 
-      $('html,body').animate({scrollTop: targetpos}, 300,function(){ 
+      $('html,body').animate({scrollTop: targetpos}, 500,function(){ 
         pageScrolling = false; 
       var targetId = target.id;
       fade_pages(targetId);
      // $('#'+targetId).addClass('selectedNav');
      //  $('#'+targetId).removeClass('selectedNav');
-      $('#mainNavigation a').removeClass('selectedNav');
+      setCurrentSelection(targetId);
+  
+        //$('#current').fadeIn();});
+       
+        //Pause videos
+        stopVideo();
+      });
+    
+    }else{
+       pageScrolling = false;
+    }
+  
+}
+
+
+function setCurrentSelection(targetId){
+  pageScrolling = true;
+  currentSection =targetId;
+       var targetpos = $('#' + targetId).position().top -navBarHeight;
+      $('html,body').animate({scrollTop: targetpos}, 500,function(){ 
+        pageScrolling =false;
+      });     
+      // pageScrolling = false; 
+     
+      fade_pages(targetId);
+     // $('#'+targetId).addClass('selectedNav');
+     //  $('#'+targetId).removeClass('selectedNav');
+      
+     $('#mainNavigation a').removeClass('selectedNav');
         $('#'+targetId+'_nav').children('a').addClass('selectedNav');
         if('#'+targetId+'_nav' =='#home_nav'){
           makeCurrentSelection($('#'+targetId+'_nav'));
@@ -201,12 +282,8 @@ function makeCurrentSelection(selectedNavItem){
        
         //Pause videos
         stopVideo();
-      });
-    
-    }else{
-       pageScrolling =false;
-    }
-  
+
+   
 }
 
 //pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.

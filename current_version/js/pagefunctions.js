@@ -13,6 +13,7 @@ var currentSection= 'home';
 
 
 function generalInit(){
+  $(window).scrollTop(0); // Reset page position for Refresh
   $('.section').each(function(){
      sectionArray.push(($(this).attr('id')));
    });
@@ -23,25 +24,7 @@ function generalInit(){
       
       //pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
       getPageSpace();
-      /*
-       // lock scroll position, but retain settings for later
-      var scrollPosition = [
-        self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-        self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-      ];
-      var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-      html.data('scroll-position', scrollPosition);
-      html.data('previous-overflow', html.css('overflow'));
-      html.css('overflow', 'hidden');
-      window.scrollTo(scrollPosition[0], scrollPosition[1]);
 
-
-      // un-lock scroll position
-      var html = jQuery('html');
-      var scrollPosition = html.data('scroll-position');
-      html.css('overflow', html.data('previous-overflow'));
-      window.scrollTo(scrollPosition[0], scrollPosition[1])
-    */
 
 }
 function current_nav_slide(selectedItem) {
@@ -262,8 +245,12 @@ function setCurrentNavItem(selectedNavItem){
               $('#solutionDescContain').hide();
               $('#solutionTitle').fadeTo('fast', 1);
 
-              //Swap BG Image
+              //Swap BG Image 
               var solutionImg = $('#solutionTitle').attr("bgImage");
+     
+              $('#soultionBg1').fadeOut('slow',function(){ $('#soultionBg1').attr('src', solutionImg);});
+             
+            
               $('#solutions').css('background-image', 'url(' + solutionImg + ')');
 
               //Remove thumb glow

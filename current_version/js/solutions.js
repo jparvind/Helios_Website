@@ -1,4 +1,6 @@
  ////Solutions////
+ var soultionImgToggle = true;
+
 
  function solutions_init(){
           //Hide not selected
@@ -20,13 +22,23 @@
               //Swap Content
               $("#solutionDescContain").children().not(".solutionDesc:nth-Child("+selectedIndex+")").hide();
               $(".solutionDesc:nth-Child("+selectedIndex+")").show();
-
+              $('#soultionBg1').hide();
               //Swap background Image
-              //alert($(this).attr("bgImage"));
+              //alert($(this).attr("bgImage")); 
+               var prevSolutionImg = $('#soultionBg1').attr("src");
+               $('#solutions').css('background-image', 'url(' + prevSolutionImg + ')');
+
               var solutionImg = $(this).attr("bgImage");
              // background-image:url('../images/solutions/solutions_image.png');
 
               // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
-              $('#solutions').css('background-image', 'url(' + solutionImg + ')');
+                  $('#soultionBg1').attr('src', solutionImg );
+                  $('#soultionBg1').fadeIn('slow');
+          
+    		
+    		// var solutionImg = $('#solutionTitle').attr("bgImage");
+            
+   
+
             });
  }

@@ -77,3 +77,11 @@
 	font-size:25px;
 	
 }
+.solutionBgImage{
+	position: absolute;
+
+	top:0px;
+	right:0px;
+	z-index: 0;
+
+}

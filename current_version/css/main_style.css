@@ -76,8 +76,9 @@ ul{
 	padding: 15px 0 15px 0;
 	background-color: #0d161c;
 	position: fixed;
-	margin-top: -20px;
+
 	z-index: 100;
+	top:0px;
 }
 
 #mainNavigation li{

@@ -78,8 +78,8 @@ function our_work_slider(){
               //alert(selectedIndex);
               //$("#our_workTop").children().not(1).hide();
               //Swap Gallery Page
-              $("#our_workTop").children().not(".our_work_project:nth-Child("+selectedIndex+")").hide();
-              $(".our_work_project:nth-Child("+selectedIndex+")").show();
+              $("#our_workTop").children().not(".our_work_project:nth-Child("+selectedIndex+")").fadeOut('slow');
+              $(".our_work_project:nth-Child("+selectedIndex+")").fadeTo('slow',1);
               //Pause videos
              //Set current Video Id  
              stopVideo(); 

@@ -247,7 +247,7 @@ function setCurrentNavItem(selectedNavItem){
 
               //Swap BG Image 
               var solutionImg = $('#solutionTitle').attr("bgImage");
-     
+              // Go back to landing image
               $('#soultionBg1').fadeOut('slow',function(){ $('#soultionBg1').attr('src', solutionImg);});
              
             
@@ -259,7 +259,12 @@ function setCurrentNavItem(selectedNavItem){
               $('#aboutDescContain').hide();
               $('#aboutTitle').fadeTo('fast', 1);
               //Swap BG Image
+                //Swap BG Image 
               var aboutImg = $('#aboutTitle').attr("bgImage");
+              // Go back to landing image
+              $('#aboutBg1').fadeOut('slow',function(){ $('#aboutBg1').attr('src', aboutImg);});
+             
+            
               $('#about').css('background-image', 'url(' + aboutImg + ')');
               $('div.aboutThumbs').children().children().children("img").fadeTo('fast', 1);
  }

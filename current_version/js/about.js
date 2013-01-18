@@ -8,6 +8,11 @@ function about_init(){
 	    //$('#about_image').hide();
 	    $('#about_image').fadeIn(500 +'ms');    // Fade Bug if you double click too fast the page scrolls up a bit.
 	    $('#about_image').html('<img src="' + about_image + '"/>');
+
+
+
+
+
 	    return false;
  	});
  }
@@ -23,6 +28,8 @@ function about_init(){
 
           $(".aboutThumbs > a ").click(function() {
               about_person_swap(this);
+
+
             });
  }
 
@@ -44,7 +51,26 @@ function about_person_swap(thisSelected){
               $(".aboutDesc:nth-Child("+selectedIndex+")").show();
 
               //Swap BG Image
-               var solutionImg = $(thisSelected).attr("bgImage");
-              $('#about').css('background-image', 'url(' + solutionImg + ')');
+            //  var solutionImg = $(thisSelected).attr("bgImage");
+            // $('#about').css('background-image', 'url(' + solutionImg + ')');
+
+
+
+
+              $('#aboutBg1').hide();
+              //Swap background Image
+              //alert($(this).attr("bgImage")); 
+               var prevAboutImg = $('#aboutBg1').attr("src");
+               $('#about').css('background-image', 'url(' + prevAboutImg + ')');
+
+              var aboutImg = $(thisSelected).attr("bgImage");
+
+             // background-image:url('../images/solutions/solutions_image.png');
+
+              // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
+                  $('#aboutBg1').attr('src', aboutImg );
+                  $('#aboutBg1').fadeIn(200);
+          
+                
 }
 

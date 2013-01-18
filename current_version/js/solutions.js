@@ -22,6 +22,7 @@
               //Swap Content
               $("#solutionDescContain").children().not(".solutionDesc:nth-Child("+selectedIndex+")").hide();
               $(".solutionDesc:nth-Child("+selectedIndex+")").show();
+
               $('#soultionBg1').hide();
               //Swap background Image
               //alert($(this).attr("bgImage")); 
@@ -33,7 +34,7 @@
 
               // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
                   $('#soultionBg1').attr('src', solutionImg );
-                  $('#soultionBg1').fadeIn('slow');
+                  $('#soultionBg1').fadeIn(600);
           
     		
     		// var solutionImg = $('#solutionTitle').attr("bgImage");

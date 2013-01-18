@@ -28,12 +28,43 @@ function current_nav_slide(selectedItem) {
 
     //Color of Selected and UnSelected Navigation
     $('#mainNavigation a').click(function() {
+       var tempSection =  $(this).attr('href');
+         currentSection = tempSection.replace('#','');
+        makeCurrentSection(currentSection);
+
     
-        makeCurrentSelection(this);
     });
 }
 
-function makeCurrentSelection(selectedNavItem){
+function makeCurrentSection(targetId){
+  pageScrolling = true;
+  currentSection =targetId;
+       var targetpos = $('#' + targetId).position().top -navBarHeight;
+      $('html,body').animate({scrollTop: targetpos}, 500,function(){ 
+        pageScrolling =false;
+      });     
+      // pageScrolling = false; 
+     
+      fade_pages(targetId);
+     // $('#'+targetId).addClass('selectedNav');
+     //  $('#'+targetId).removeClass('selectedNav');
+      
+     $('#mainNavigation a').removeClass('selectedNav');
+        $('#'+targetId+'_nav').children('a').addClass('selectedNav');
+        if('#'+targetId+'_nav' =='#home_nav'){
+          setCurrentNavItem($('#'+targetId+'_nav'));
+        }else{
+        setCurrentNavItem($('#'+targetId+'_nav').children('a'));
+      };
+        //$('#current').fadeIn();});
+       
+        //Pause videos
+        stopVideo();
+
+   
+}
+
+function setCurrentNavItem(selectedNavItem){
 
     var offset = $(selectedNavItem).offset();
     var width = $(selectedNavItem).width();
@@ -80,7 +111,7 @@ function makeCurrentSelection(selectedNavItem){
 
       }
 }
-
+/*
 //Smooth Scroll To Links On Page
 	function smooth_scroll(){
 		//Top  minus nav bar height
@@ -89,11 +120,11 @@ function makeCurrentSelection(selectedNavItem){
          currentSection = tempSection.replace('#','');
           $('html, body').animate({
               scrollTop: $( $(this).attr('href') ).offset().top -navBarHeight
-             
+           
           }, 500);
           return false;
         });
-     }
+     }*/
 
  //Fades the pages
  function fade_pages(currentPageID){
@@ -142,7 +173,7 @@ function makeCurrentSelection(selectedNavItem){
         newSection = currentSection = sectionArray[0];
      }
    //Go to next section
-    setCurrentSelection(newSection);
+    makeCurrentSection(newSection);
  }
 
  function nextPage(){
@@ -156,7 +187,7 @@ function makeCurrentSelection(selectedNavItem){
         newSection = currentSection = sectionArray[sectionArray.length -1];
      }
    //Go to next section
-    setCurrentSelection(newSection);
+    makeCurrentSection(newSection);
 
 
  }
@@ -167,7 +198,7 @@ function makeCurrentSelection(selectedNavItem){
              $.data(this, 'timer', setTimeout(function() {
            
              //do something 
-             scrollToDiv('.section');
+           //  scrollToDiv('.section');
 
             resetLanding();
 
@@ -240,10 +271,11 @@ function makeCurrentSelection(selectedNavItem){
       $('html,body').animate({scrollTop: targetpos}, 500,function(){ 
         pageScrolling = false; 
       var targetId = target.id;
-      fade_pages(targetId);
+      //fade_pages(targetId);
+
      // $('#'+targetId).addClass('selectedNav');
      //  $('#'+targetId).removeClass('selectedNav');
-      setCurrentSelection(targetId);
+      makeCurrentSection(targetId);
   
         //$('#current').fadeIn();});
        
@@ -258,33 +290,6 @@ function makeCurrentSelection(selectedNavItem){
 }
 
 
-function setCurrentSelection(targetId){
-  pageScrolling = true;
-  currentSection =targetId;
-       var targetpos = $('#' + targetId).position().top -navBarHeight;
-      $('html,body').animate({scrollTop: targetpos}, 500,function(){ 
-        pageScrolling =false;
-      });     
-      // pageScrolling = false; 
-     
-      fade_pages(targetId);
-     // $('#'+targetId).addClass('selectedNav');
-     //  $('#'+targetId).removeClass('selectedNav');
-      
-     $('#mainNavigation a').removeClass('selectedNav');
-        $('#'+targetId+'_nav').children('a').addClass('selectedNav');
-        if('#'+targetId+'_nav' =='#home_nav'){
-          makeCurrentSelection($('#'+targetId+'_nav'));
-        }else{
-        makeCurrentSelection($('#'+targetId+'_nav').children('a'));
-      };
-        //$('#current').fadeIn();});
-       
-        //Pause videos
-        stopVideo();
-
-   
-}
 
 //pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
     function getPageSpace(){

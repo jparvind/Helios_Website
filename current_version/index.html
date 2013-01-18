@@ -23,6 +23,10 @@
     <script src="js/jquery.touchslider.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script src="js/froogaloop.min.js"></script>
+    <script src="js/our_work.js" type="text/javascript"></script>
+    <script src="js/about.js" type="text/javascript"></script>
+    <script src="js/solutions.js" type="text/javascript"></script>
+
 
 
 </head>
@@ -740,30 +744,17 @@
   <!-- Navigation Current & Hover -->
   <script type="text/javascript">
   $().ready(function($) {
-      
-      our_work_vimeo();//Play pause controls
-      our_work_hide();
-      our_work_slider(); 
-      current_nav_slide();//current page indicator slide bar.
-      
-
+      our_work_init();
       //smooth_scroll();//Smoothly scrolls to the new page
 
-      //Solutions
-      solutions_hide();
-
+      solutions_init();
+    
       //About
       //about_image_switch();
-      about_thumbs();
+      about_init();
 
       //General functions
       generalInit();
-      fade_pages('home');
-     
-      eventListener();
-      
-      //pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
-      getPageSpace();
 
 
 

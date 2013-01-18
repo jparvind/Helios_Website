@@ -37,6 +37,7 @@ function current_nav_slide(selectedItem) {
 }
 
 function makeCurrentSection(targetId){
+  resetLanding();
   pageScrolling = true;
   currentSection =targetId;
        var targetpos = $('#' + targetId).position().top -navBarHeight;

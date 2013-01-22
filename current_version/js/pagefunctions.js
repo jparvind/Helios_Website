@@ -13,7 +13,8 @@ var currentSection= 'home';
 
 
 function generalInit(){
-  $(window).scrollTop(0); // Reset page position for Refresh
+  // Reset page position for Refresh
+  
   $('.section').each(function(){
      sectionArray.push(($(this).attr('id')));
    });
@@ -29,7 +30,7 @@ function generalInit(){
 }
 function current_nav_slide(selectedItem) {
     //Animated Div Highlighter
-    $('#mainNavigation').append('<div id="current"></div>');
+   // $('#mainNavigation').append('<div id="current"></div>');
     $.currentNavItem = ('.selectedNav');
     //$(divHighlight) = $('#current');
     $('#current').hide();
@@ -76,11 +77,11 @@ function makeCurrentSection(targetId){
 }
 
 function setCurrentNavItem(selectedNavItem){
-
-    var offset = $(selectedNavItem).offset();
+    var divOffSet =$('#mainNavigation').offset();
+    var offset = $(selectedNavItem).offset() ;
     var width = $(selectedNavItem).width();
-    var right = offset.left - width/9;
-   // alert(right);
+    var right = offset.left -divOffSet.left -5;
+  
 
       $('#mainNavigation a').removeClass('selectedNav');
       $(selectedNavItem).toggleClass('selectedNav');
@@ -142,7 +143,7 @@ function setCurrentNavItem(selectedNavItem){
     
       $('#pageContent').children().not('#'+currentPageID).fadeTo('fast', 0.2);
       $('#'+currentPageID).fadeTo(200,1);
-
+     
       
 
      // $('#'+targetId+'_nav').attr('id', 'selectedNav');

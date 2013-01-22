@@ -30,10 +30,11 @@
                $('#solutions').css('background-image', 'url(' + prevSolutionImg + ')');
 
               var solutionImg = $(this).attr("bgImage");
+
              // background-image:url('../images/solutions/solutions_image.png');
 
               // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
-                  $('#soultionBg1').attr('src', solutionImg );
+                  $('#soultionBg1').attr('src', solutionImg );  // Cause error local,
                   $('#soultionBg1').fadeIn(600);
           
     		

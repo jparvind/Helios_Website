@@ -6,6 +6,7 @@
 	height:609px;
 	width:1024px;
 	background-image:url('../images/about/about_landing.jpg');
+	overflow: hidden;
 }
 .aboutButtonContain{
 	clear: both;
@@ -52,11 +53,10 @@
 	line-height: 1.6;
 }
 .aboutThumbs{
-	/*background:black;
-
-
 	width:1024px;
-	height:64px;*/
+						
+	position:absolute;
+	bottom:0px;
 }
 .aboutThumb{
 		width:128px;

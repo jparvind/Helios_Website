@@ -45,9 +45,10 @@ function our_work_slider(){
           // $('#our_work').replaceWith('<h2>New heading</h2>');
             */  
             //Dim out all but first Thumb
-            $('.thumbDim:first').css({ opacity: 0.3 });
+            $('.thumbDim').css({ opacity: 0.4 });
+            //Thumbnail Text Color
             $('.our_workThumb:first').addClass('ourWorkSelected');
-           $('.thumbDim').not(':first').css({ opacity: 0.75 });
+          // $('.thumbDim').not(':first').css({ opacity: 0.75 });
            
         $(".our_work_thumbs > a ").click(function() {
           our_work_project_swap(this);
@@ -69,7 +70,7 @@ function our_work_slider(){
                $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
                 $('.our_workThumb').removeClass('ourWorkSelected');
                //Fade Selected Thumb in
-              $(thisSelected).children().children(':first').fadeTo('fast', 0.3);
+              $(thisSelected).children().children('.thumbDim').fadeTo('fast', 0.3);
              $(thisSelected).children('.our_workThumb').addClass('ourWorkSelected');
               //Change Project 
               //Hide all but selected

@@ -158,8 +158,12 @@ ul{
 	text-align:center;
 	color:#3F3F3F;
 	height:33px;
-	width: 
+	line-height: 33px;
+	padding:0px;
+	 
 }
+
+
 
 .titleColor1{
 	color:#09B2C3;

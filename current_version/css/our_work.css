@@ -125,6 +125,7 @@
 				opacity: .25;
 				height:64px;
 				width:122px;
+				position: absolute;
 
 			}
 
@@ -138,6 +139,7 @@
 			    float:left;
 			    position:relative;
 				color:#cac8c8;
+				
 
 			}
 

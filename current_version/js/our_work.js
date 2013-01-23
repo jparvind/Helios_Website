@@ -110,10 +110,10 @@ function our_work_slider(){
             }
 
             function play(playerID){
-                alert(playerID + " is playing!!!");
+                //alert(playerID + " is playing!!!");
             }
             function seek() {
-                alert('Seeking');
+              //  alert('Seeking');
             }
 
 

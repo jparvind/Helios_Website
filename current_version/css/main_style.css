@@ -20,7 +20,7 @@ body{
 h1{
 	font-size: 1.5em;
 	color:#0AB8C9;
-	font-weight: 400;
+	font-weight: 800;
 }
 
 
@@ -163,8 +163,10 @@ ul{
 
 .titleColor1{
 	color:#09B2C3;
+	font-weight: 800;
 }
 .titleColor2{
 	color:#FFFFFF;
+	font-weight: 100;
 }
 

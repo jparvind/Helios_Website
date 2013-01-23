@@ -80,9 +80,10 @@ function setCurrentNavItem(selectedNavItem){
     var divOffSet =$('#mainNavigation').offset();
     var offset = $(selectedNavItem).offset() ;
     var width = $(selectedNavItem).width();
-    var right = offset.left -divOffSet.left -5;
-  
+    var currentBarWidth = $('#current').width();
 
+    var right = (offset.left -divOffSet.left) -(currentBarWidth -width )/2 +2;
+   
       $('#mainNavigation a').removeClass('selectedNav');
       $(selectedNavItem).toggleClass('selectedNav');
 

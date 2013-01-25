@@ -3,7 +3,7 @@
 	position: relative;
 	margin:auto;
 
-	height:609px;
+	height:605px;
 	width:1024px;
 	background-image:url('../images/about/about_landing.jpg');
 	overflow: hidden;
@@ -32,11 +32,11 @@
 
 #aboutDescContain{
 	position: absolute;
-	left:48px;
-	top:185px;
-	width:450px;
-	height:195px;
-	background-color:rgba(0,0,0,0.6);
+	left:0;
+	top:56px;
+	width:441px;
+	height:253px;
+	background-color:rgba(0,0,0,0.5);
 
 }
 .aboutDesc{

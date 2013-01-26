@@ -38,24 +38,34 @@ function about_person_swap(thisSelected){
               $('#aboutDescContain').fadeTo(200, 1);
                $('#aboutTitle').fadeTo('fast', 0);
 
-
+               /*
             //Fade All but selected Thumb Out
               $('div.aboutThumbs').children().not($(thisSelected)).children().children("img").fadeTo('fast', 1);
                //Fad Selected Thumb in
               $("img:first",thisSelected).fadeTo(300, 0);
-        
+              */
+                      //Fade All but selected Thumb Out
+               $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
+                $('.aboutThumb').removeClass('selectedThumb');
+               //Fade Selected Thumb in
+              $(thisSelected).children().children('.thumbDim').fadeTo(100, 0.3);
+             $(thisSelected).children('.aboutThumb').addClass('selectedThumb');
+
+
+
                var selectedIndex = $(thisSelected).index()+1;
          
            //Swap Content
               $("#aboutDescContain").children().not(".aboutDesc:nth-Child("+selectedIndex+")").hide();
               $(".aboutDesc:nth-Child("+selectedIndex+")").show();
 
-              //Swap BG Image
-            //  var solutionImg = $(thisSelected).attr("bgImage");
-            // $('#about').css('background-image', 'url(' + solutionImg + ')');
-
-
-
+              //Descrition box position
+              var descBoxRight = $(".aboutDesc:nth-Child("+selectedIndex+")").attr("descBoxPos");
+              if(descBoxRight == 'right'){
+              $("#aboutDescContain").addClass('aboutDescRight');
+              }else{
+                $("#aboutDescContain").removeClass('aboutDescRight');
+              }
 
               $('#aboutBg1').hide();
               //Swap background Image
@@ -70,7 +80,9 @@ function about_person_swap(thisSelected){
               // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
                   $('#aboutBg1').attr('src', aboutImg );
                   $('#aboutBg1').fadeIn(200);
-          
+              
+
+      
                 
 }
 

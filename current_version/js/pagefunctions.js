@@ -245,10 +245,10 @@ function setCurrentNavItem(selectedNavItem){
              $('.thumbDim').fadeTo('fast', 0.75);
               //Solutions////////
               $('#solutionDescContain').hide();
-              $('#solutionTitle').fadeTo('fast', 1);
+              $('#solutionTitleDesc').fadeTo('fast', 1);
 
               //Swap BG Image 
-              var solutionImg = $('#solutionTitle').attr("bgImage");
+              var solutionImg = $('#solutions').attr("bgImage");
               // Go back to landing image
               $('#soultionBg1').fadeOut('slow',function(){ $('#soultionBg1').attr('src', solutionImg);});
              

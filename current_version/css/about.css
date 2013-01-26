@@ -32,16 +32,22 @@
 
 #aboutDescContain{
 	position: absolute;
-	left:0;
 	top:56px;
 	width:441px;
 	height:253px;
 	background-color:rgba(0,0,0,0.5);
 
 }
+.aboutDescRight{
+	right:0px;
+}
 .aboutDesc{
 	margin:35px 32px;
 }
+.aboutDesc h1{
+	color:#09B2C3;
+}
+
 
 #aboutDescContain h1{
 	font-size: 24px;
@@ -53,13 +59,14 @@
 	line-height: 1.6;
 }
 .aboutThumbs{
+	background:grey;
 	width:1024px;
 						
 	position:absolute;
 	bottom:0px;
 }
 .aboutThumb{
-		width:128px;
+		width:122px;
 		height:64px;
 		/*
 		-webkit-transform: skew(35deg);
@@ -69,11 +76,20 @@
 	    position:relative;
 
 
+
 }
 .aboutThumb img{
 	position: absolute;
 	
 }
+.aboutThumb span{
+	font-family:'Cabin',Helvetica,Arial, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	margin-right: 2px;
+
+}
+
 .thumbDivide {
 	position:absolute;
 	right:0px;

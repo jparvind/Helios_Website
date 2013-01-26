@@ -139,12 +139,18 @@
 			    float:left;
 			    position:relative;
 				//color:#cac8c8;
-
+				text-align: center;
 
 			}
 
 			.our_workThumb img {
 				position: absolute;
+			}
+			.our_workThumb span{
+				font-family:'Cabin',Helvetica,Arial, sans-serif;
+				font-size: 11pt;
+				font-weight: 400;
+
 			}
 
 			.our_work_divide{
@@ -171,32 +177,6 @@
 
 
 
-			.parallelogram {
-				border-top:#333333;
-			
-				float:left;
-			 	width: 93px;
-			 	height: 108px; 
-			  	-webkit-transform: skew(-35deg);
-			   	-moz-transform: skew(-35deg);
-			    -o-transform: skew(-35deg); 
-
-
-			   
-			    overflow: hidden;
-
-			    border-width:0px 5px 5px 0px;
-			    border-spacing:0px;
-			    border-style:solid;
-				border-color:#272726;
-				-webkit-backface-visibility:hidden; //Fix jagged images?
-
-
-				
-			}
-			.firstParallelogram{
-				 border-width:0px 5px 5px 5px;
-			}
 
 			
 		/**************** Slider ******************/

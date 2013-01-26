@@ -7,17 +7,22 @@
 }
 
 .solutionButton{
-	width:189px;
-	height:72px;
-	background:#000;
-	margin-bottom:6px;
-	background-color:rgba(0,0,0,0.6);
+	width:182px;
+	height:63px;
+
+	
 	position: relative;
+
+	background-image:url('../images/solutions/dottedLine.png');
+	background-repeat:no-repeat;
+	
+	background-position:left bottom;
 	
 
 }
+
 .solutionsButtonSelected{
-	background-color:rgba(10,184,201,0.6);
+	background-color:rgba(0,0,0,0.5);
 }
 .solutionButton p{
 	position:absolute;
@@ -39,43 +44,70 @@
   margin-bottom: -193px; 
 }
 
+
+.solutionDesc{
+	position:absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	width:650px;
+	height:190px;
+
+}
 #solutionDescContain{
 	position: absolute;
-	right:16px;
-	bottom:13px;
-	width:690px;
-	height:211px;
-	background-color:rgba(0,0,0,0.6);
+	top:0;
+	right:0;
+	width:721px;
+	height:315px;
+	
 
 }
-.solutionDesc{
-	margin:41px 50px;
-}
-
 #solutionDescContain h1{
 	text-transform: uppercase;
 }
 
 #solutionDescContain p{
 	color:#FFF;
-	margin-top: 14px;
-	line-height: 1.6;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 15px;
+
+	line-height: 1.3;
 }
-#solutionTitle{
-	position: absolute;
-	right:15px;
-	bottom:58px;
-	width:689px;
-	height:118px;
-	background-color:rgba(0,0,0,0.6);
+#solutionContentCenter{
+	position:absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+
+	width:921px;
+	height:315px;
+	background-color:rgba(0,0,0,0.5);
 	line-height: 1.5;
 }
 #solutionTitleDesc{
-	margin:20px 53px;
-}
-#solutionTitle h1{
-	font-size:25px;
+	//margin:20px 53px;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	height:130px;
+	width: 550px;
+	margin:auto 230px;
 	
+	
+}
+
+#solutionContentCenter h1{
+	font-size:25px;
+}
+
+#solutionTitleDesc h1{
+	font-size: 32px;
 }
 .pageBgImage{
 	position: absolute;

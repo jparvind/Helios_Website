@@ -9,7 +9,7 @@
           $("#solutionButtonsContain > a ").click(function() {
               /////////// Title //////////////
               $('#solutionDescContain').show();
-               $('#solutionTitle').hide();
+               $('#solutionTitleDesc').hide();
             //Fade All but selected Thumb Out
                $('#solutionButtonsContain').children().not($(this)).children().removeClass("solutionsButtonSelected");
                //Fad Selected Thumb in
@@ -31,9 +31,9 @@
 
               var solutionImg = $(this).attr("bgImage");
 
-             // background-image:url('../images/solutions/solutions_image.png');
+               // background-image:url('../images/solutions/solutions_image.png');
 
-              // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
+               // $('#solutions').css("background-image","url('../images/solutions/solutions_image.png')");
                   $('#soultionBg1').attr('src', solutionImg );  // Cause error local,
                   $('#soultionBg1').fadeIn(600);
           

@@ -68,16 +68,13 @@ function our_work_slider(){
                $('#our_work_landing').fadeTo('fast', 0,function(){ $('#our_work_landing').hide()});
             //Fade All but selected Thumb Out
                $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
-                $('.our_workThumb').removeClass('ourWorkSelected');
+                $('.our_workThumb').removeClass('selectedThumb');
                //Fade Selected Thumb in
               $(thisSelected).children().children('.thumbDim').fadeTo(100, 0.3);
-             $(thisSelected).children('.our_workThumb').addClass('ourWorkSelected');
+             $(thisSelected).children('.our_workThumb').addClass('selectedThumb');
               //Change Project 
               //Hide all but selected
               var selectedIndex = $(thisSelected).index()+1;
-
-              //alert(selectedIndex);
-              //$("#our_workTop").children().not(1).hide();
               //Swap Gallery Page
               $("#our_workTop").children().not(".our_work_project:nth-Child("+selectedIndex+")").fadeOut('slow');
               $(".our_work_project:nth-Child("+selectedIndex+")").fadeTo('slow',1);

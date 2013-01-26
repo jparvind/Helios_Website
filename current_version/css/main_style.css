@@ -10,25 +10,20 @@ html, body{
 body{
 	background: #000000;
   	
-	font-family:Helvetica,Arial;
+	font-family:'Open Sans',Helvetica,Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-		overflow-x: hidden;
-		overflow-y:hidden;
+	overflow-x: hidden;
+	overflow-y:hidden;
 
-}
-h1{
-	font-size: 1.5em;
-	color:#0AB8C9;
-	font-weight: 800;
 }
 
 
 a:link, a:visited, a:active, a:hover{
-  
+  	
   	color: #a4a4a4;
 	font-size: 0.85em;
-	font-weight: 400;
+	
 	letter-spacing: .01em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -72,7 +67,8 @@ ul{
 	
 }
 
-#centerNav{position: fixed;
+#centerNav{
+	position: fixed;
 	width:100%;
 	position: fixed;
 	z-index: 100;
@@ -82,6 +78,9 @@ ul{
 }
 
 #mainNavigation{
+	font-family:'Cabin',Helvetica,Arial, sans-serif;
+	font-size: 13pt;
+	font-weight: 700;
 	height:68px;
 	width: 1024px;
 	//padding: 15px 0 15px 0;
@@ -118,40 +117,36 @@ ul{
 /* ----------------------> Home <---------------------- */
 #home{
 	width:inherit;
+
+	height: 605px;
+	background:url(../images/home/LandingBG.jpg);
+	text-align: center;
 }
 #greeting{
 
-	height: 610px;
-	background: #000000 url(../images/main/welcome_bg.png) repeat;
-	margin: 0px 0 0 0;
-	text-align: center;
-	z-index: 99;
+	left:50%;
+	top:300px;
+	position:absolute;
 	
 }
 
 #greeting h1{
+	position: relative;
 	font-size: 24px;
 	
-	color: #b0b0b0;
-	width: 750px;
+
+	width: 540px;
 	line-height: 1.2em;
-	margin: 0 auto;
+	left:-50%;
 }
 
-#greeting h1 span{
-	font-weight: 400;
-	color: #08d7eb;
+/*--------------> Thumbs <-----------------------*/
+
+.selectedThumb{
+	color:#FFFFFF;
 }
 
-#greeting img{
-	margin-top: 7%;
-}
-
-/* ----------------------> Our Work <---------------------- */
-#our_work{
-
-}
-
+/* ----------------------> Page <---------------------- */
 
 #footer {
 	background: #292929;
@@ -173,10 +168,10 @@ ul{
 
 .titleColor1{
 	color:#09B2C3;
-	font-weight: 800;
+	font-weight: 700;
 }
 .titleColor2{
 	color:#FFFFFF;
-	font-weight: 100;
+	font-weight: 400;
 }
 

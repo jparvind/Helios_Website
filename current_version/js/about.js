@@ -36,7 +36,7 @@ function about_init(){
 function about_person_swap(thisSelected){
                /////////// Title -landing //////////////
               $('#aboutDescContain').fadeTo(200, 1);
-               $('#aboutTitle').fadeTo('fast', 0);
+               $('#aboutTitle').fadeTo(200, 0);
 
                /*
             //Fade All but selected Thumb Out
@@ -45,7 +45,7 @@ function about_person_swap(thisSelected){
               $("img:first",thisSelected).fadeTo(300, 0);
               */
                       //Fade All but selected Thumb Out
-               $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
+               $('.thumbDim').not($(this)).fadeTo(100, 0.75);
                 $('.aboutThumb').removeClass('selectedThumb');
                //Fade Selected Thumb in
               $(thisSelected).children().children('.thumbDim').fadeTo(100, 0.3);

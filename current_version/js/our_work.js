@@ -67,7 +67,7 @@ function our_work_slider(){
              
                $('#our_work_landing').fadeTo('fast', 0,function(){ $('#our_work_landing').hide()});
             //Fade All but selected Thumb Out
-               $('.thumbDim').not($(this)).fadeTo('fast', 0.75);
+               $('.thumbDim').not($(this)).fadeTo(200, 0.75);
                 $('.our_workThumb').removeClass('selectedThumb');
                //Fade Selected Thumb in
               $(thisSelected).children().children('.thumbDim').fadeTo(100, 0.3);

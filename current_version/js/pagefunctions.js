@@ -74,7 +74,8 @@ function makeCurrentSection(targetId){
         stopVideo();
 
    
-}
+}    
+
 
 function setCurrentNavItem(selectedNavItem){
     var divOffSet =$('#mainNavigation').offset();
@@ -91,13 +92,22 @@ function setCurrentNavItem(selectedNavItem){
       if($(selectedNavItem).hasClass('logo')){
         //do nothing with the logo
         $('#current').fadeOut();
+        //Make logo Glow
+        //window.document.logo.src = window.document.logo.src.replace("_Off","_On");
 
-      }
-      else{
+        $('#logoOn').fadeIn(500);
+
+
+        $('#home_nav').attr('src') = 'wakaka';
+      }else{
+        $('#logoOn').fadeOut(500);
+
         //if the link does not have the .logo class
         if($('selectedNav').is(":visible")){
           //do nothing
           //alert('DIV IS VISIBLE');
+
+
         }
           else{
             //alert('I CAN SEE THE DIV NOW!');
@@ -106,7 +116,6 @@ function setCurrentNavItem(selectedNavItem){
             if(divIsVisible === false){
              // alert('Fade In & Position');
 
-              
               $('#current').css({
                 "margin-left": right
               });
@@ -124,6 +133,9 @@ function setCurrentNavItem(selectedNavItem){
 
       }
 }
+
+
+
 /*
 //Smooth Scroll To Links On Page
 	function smooth_scroll(){

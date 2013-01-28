@@ -64,7 +64,7 @@ ul{
 #mainContainer{
 	width: 100%;
 	padding-top: 0px;
-	
+
 }
 
 #centerNav{
@@ -72,8 +72,6 @@ ul{
 	width:100%;
 	position: fixed;
 	z-index: 100;
-
-
 
 }
 
@@ -85,7 +83,7 @@ ul{
 	width: 1024px;
 	//padding: 15px 0 15px 0;
 	
-	background-color: #0d161c;
+	background-color: #000;
 	margin: 0px auto;
 
 	
@@ -101,10 +99,23 @@ ul{
 	
 } 
 
-#mainNavigation img{
+#logo{
 	float: left;
-	margin-left: 5%;
+	margin-left: 30px;
+	width:100px;
+	position: relative;
 } 
+#logoOff{
+	position:relative;
+	top:0;
+	left:0;
+
+}
+#logoOn{
+	position: absolute;
+	top:0;
+	left:0;
+}
 
 #mainNavigation ul{
 	margin-left: 13%;
@@ -121,6 +132,7 @@ ul{
 	height: 605px;
 	background:url(../images/home/LandingBG.jpg);
 	text-align: center;
+
 }
 #greeting{
 

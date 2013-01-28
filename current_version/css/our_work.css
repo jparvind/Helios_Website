@@ -16,7 +16,7 @@
 				
 				overflow: hidden;
 
-				font-size: 13px;
+				font-size: 10px;
 			}
 			.our_work_project{
 				position: absolute;
@@ -148,7 +148,7 @@
 			}
 			.our_workThumb span{
 				font-family:'Cabin',Helvetica,Arial, sans-serif;
-				font-size: 10pt;
+				font-size: 13px;
 				font-weight: 400;
 
 			}

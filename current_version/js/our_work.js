@@ -3,6 +3,7 @@ function our_work_init(){
       our_work_hide();
       our_work_slider(); 
       current_nav_slide();//current page indicator slide bar.
+      //$('.touchslider-prev').fadeOut(10000);
 }
 
 

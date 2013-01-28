@@ -51,7 +51,7 @@ ul{
 	width: 93px;
 	height: 3px;
 	position: absolute;
-	bottom:0px;
+	bottom:3px;
 	background-color: rgb(8, 215, 235);
 }
 
@@ -118,33 +118,18 @@ ul{
 }
 
 .socialIcons{
-	float: right;
+
+	float:right;
+}
+
+#githubIcon{
+	float:left;
 	margin-right: 10px;
-	width:80px;
-	position: relative;
+}
+#vimeoIcon{
+	float:left;
 }
 
-#githubOff{
-	position:relative;
-	right:0;
-	top:0;
-}
-#githubOn{
-	position: absolute;
-	right:0;
-	top:0;
-}
-
-#vimeoOff{
-	position:relative;
-	right:0;
-	top:0;
-}
-#vimeoOn{
-	position: absolute;
-	right:0;
-	top:0;
-}
 
 
 
@@ -180,7 +165,7 @@ ul{
 	font-size: 24px;
 	
 
-	width: 540px;
+	width: 550px;
 	line-height: 1.2em;
 	left:-50%;
 }

@@ -117,6 +117,39 @@ ul{
 	left:0;
 }
 
+.socialIcons{
+	float: right;
+	margin-right: 10px;
+	width:80px;
+	position: relative;
+}
+
+#githubOff{
+	position:relative;
+	right:0;
+	top:0;
+}
+#githubOn{
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+#vimeoOff{
+	position:relative;
+	right:0;
+	top:0;
+}
+#vimeoOn{
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+
+
+
+
 #mainNavigation ul{
 	margin-left: 13%;
 

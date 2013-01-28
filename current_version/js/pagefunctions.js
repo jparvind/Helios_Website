@@ -26,8 +26,24 @@ function generalInit(){
       //pagespace is the ammount of extra padding needed at the bottom of the site to allow contact to line up at the top.
       getPageSpace();
 
+     // iconRollOver();
+
 
 }
+
+function iconRollOver(){
+  //Social icon hover 
+   $(".rollover").hover(function(){
+      $(this).fadeOut(200);
+      var glowIcon ='#' + $(this).attr("ref");
+      alert(glowIcon);
+      $(String(glowIcon)).fadeIn(200);
+
+   });
+
+}
+
+
 function current_nav_slide(selectedItem) {
     //Animated Div Highlighter
    // $('#mainNavigation').append('<div id="current"></div>');
@@ -98,7 +114,7 @@ function setCurrentNavItem(selectedNavItem){
         $('#logoOn').fadeIn(500);
 
 
-        $('#home_nav').attr('src') = 'wakaka';
+
       }else{
         $('#logoOn').fadeOut(500);
 

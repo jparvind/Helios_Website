@@ -3,9 +3,22 @@ function our_work_init(){
       our_work_hide();
       our_work_slider(); 
       current_nav_slide();//current page indicator slide bar.
-      //$('.touchslider-prev').fadeOut(10000);
+      showTouchSliderArrows();
+      //
 }
-
+function showTouchSliderArrows () {
+  $('.touchslider').hover(
+    function(){
+       $('.touchslider-prev').fadeTo(200,1);
+      $('.touchslider-next').fadeTo(200,1);
+     }
+  ,
+  function(){
+     $('.touchslider-prev').fadeTo(400,.2);
+      $('.touchslider-next').fadeTo(400,.2);
+  }
+  );
+}
 
 function our_work_slider(){
   

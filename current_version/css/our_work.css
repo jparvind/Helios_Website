@@ -16,7 +16,7 @@
 				
 				overflow: hidden;
 
-				font-size: 10px;
+				font-size: 13px;
 			}
 			.our_work_project{
 				position: absolute;
@@ -36,7 +36,7 @@
 				line-height: 1.5;
 			}
 			#ourWorkTitleDesc{
-				margin:36px 53px;
+				margin:56px 53px;
 			}
 			#ourWorkTitle h1{
 				font-size:25px;
@@ -139,16 +139,15 @@
 			    float:left;
 			    position:relative;
 				//color:#cac8c8;
-				text-align: center;
-
+		
 			}
 
 			.our_workThumb img {
 				position: absolute;
 			}
 			.our_workThumb span{
-				font-family:'Cabin',Helvetica,Arial, sans-serif;
-				font-size: 13px;
+				font-family:'Open Sans',Helvetica,Arial, sans-serif;
+				font-size: 12px;
 				font-weight: 400;
 
 			}
@@ -158,14 +157,14 @@
 				
 			}
 			.thumb_number{
-					font-size: 1.2em;
+					//font-size: 1.2em;
 					
 					position:absolute;
 					bottom:3px;
 					left:4px;
 			}
 			.thumb_name{
-				font-size: 1.2em;
+				//font-size: 1.2em;
 				
 				position:absolute;
 				bottom:3px;
@@ -220,6 +219,7 @@
 			left: 00px;
 			top: 140px;
 			z-index: 1;
+			opacity: .2;
 		}
 
 		.touchslider-next{
@@ -227,6 +227,7 @@
 			left: 637px;
 			top: 140px;
 			z-index: 1;
+			opacity: .2;
 		}
 		.touchslider-viewport{
 			width: 682px; 

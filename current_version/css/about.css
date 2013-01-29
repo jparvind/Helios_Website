@@ -83,8 +83,8 @@
 	
 }
 .aboutThumb span{
-	font-family:'Cabin',Helvetica,Arial, sans-serif;
-	font-size: 10pt;
+	font-family:'open sans',Helvetica,Arial, sans-serif;
+	font-size: 13px;
 	font-weight: 400;
 	margin-right: 2px;
 
@@ -109,6 +109,6 @@
 	margin:56px 55px;
 }
 #aboutTitle h1{
-	font-size:30px;
+	font-size:25px;
 	
 }

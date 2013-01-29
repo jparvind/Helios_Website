@@ -18,7 +18,7 @@
 }
 
 #contactInnerContainer h1 {
-	font-size: 12px
+	font-size: 13px
 }
 
 /* --------------------------------------- */
@@ -43,6 +43,7 @@
 	
 	float:left;
 	width:240px;
+	margin-right:25px;
 }
 .contactLineSpace{
 	margin-bottom: 17px
@@ -58,12 +59,12 @@
 #contactRight {
 	
 	float:left;
-	width:436px;
+	width:411px;
 }
 
 #questionBox {
-	width: 436px;
-	height:147px;
+	width: 411px;
+	height:154px;
 
 
 }
@@ -92,7 +93,7 @@
 
 .formBtn {
   color: #0AB8C9;
-  background-color: #121212;
+  background-color: #191919;
   font-weight: bold;
   border-style: none;
   font-size: 12px;

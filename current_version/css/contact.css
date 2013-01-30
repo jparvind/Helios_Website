@@ -44,10 +44,13 @@
 	float:left;
 	width:240px;
 	margin-right:25px;
+	line-height: 1.1em;
 }
 .contactLineSpace{
-	margin-bottom: 17px
+	//margin-bottom: 17px
 }
+
+
 
 #contactMid {
 	
@@ -86,13 +89,12 @@
 	width:58px;
 }
 
-.emailFont a{
-	color: #08d7eb;
-	text-decoration: underline;
+a.emailFont{
+	text-transform: none;
 }
 
 .formBtn {
-  color: #0AB8C9;
+  color: #08d7eb;
   background-color: #191919;
   font-weight: bold;
   border-style: none;
